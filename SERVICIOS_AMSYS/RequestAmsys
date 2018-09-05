@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:purchaseProduct>
+      <!--Optional:-->
+      <v1:simpleOrderRequest>
+        <channelId>65</channelId>
+        <subscriberId>34234</subscriberId>
+        <productId>1326</productId>
+        <quantity>1</quantity>
+        <!--Optional:-->
+        <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
+        <comment>1</comment>
+        <additionalParameters>
+          <parameter>
+            <key>SERVICES</key>
+            <value>{ "PACKAGE": { "PACKAGE_ID": "CM720", "SERVICE_1": { "NUMSERVICE": "3434", "SERVICE": "DIGAV", "ACTION": "A", "PRICE": "10.44", "CURRENCY":"DL", "INSTALLDATE": "20180228" }, "SERVICE_2": { "NUMSERVICE": "3435", "SERVICE": "BASIC", "ACTION":
+              "A", "PRICE": "15.13", "CURRENCY":"DL", "INSTALLDATE": "20180228" } }, "ADD_SERVICE": { "SERVICE_1": { "NUMSERVICE": "3436", "SERVICE": "AVAHD", "ACTION": "A", "PRICE": "15.13", "CURRENCY":"DL", "INSTALLDATE": "20180228" }, "SERVICE_2": {
+              "NUMSERVICE": "3437", "SERVICE": "HDDVB", "ACTION": "A", "PRICE": "15.13", "CURRENCY":"DL", "INSTALLDATE": "20180228" } } }</value>
+          </parameter>
+          <parameter>
+            <key>CONECTION</key>
+            <value>050901</value>
+          </parameter>
+          <parameter>
+            <key>PHONE</key>
+            <value>50498390224</value>
+          </parameter>
+        </additionalParameters>
+        <!--Optional:-->
+      </v1:simpleOrderRequest>
+    </v1:purchaseProduct>
+  </soapenv:Body>
+</soapenv:Envelope>

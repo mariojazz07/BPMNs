@@ -1,0 +1,101 @@
+package hn.com.tigo.josm.rule.queryOfferingInfo
+dialect "mvel"
+
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+
+global FactResponse response;
+
+
+
+rule "1_733"
+when 
+    f: FactRequest(input["OFFERING"] == "1")
+then
+
+		
+		response.setEntry("RESULT",
+        "
+		'_comment':'**********************************Aplicaciones**********************************',\n
+		'1959128569':{'PRODUCT_ID':'353','PRODUCT_NAME':'WhatsApp Ilimitado','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '359129482':{'PRODUCT_ID':'355','PRODUCT_NAME':'Facebook Ilimitado','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1559192057':{'PRODUCT_ID':'358','PRODUCT_NAME':'WhatsApp Ilimitado 10Lps','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '559192373':{'PRODUCT_ID':'403','PRODUCT_NAME':'Pokemon Go','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1559193217':{'PRODUCT_ID':'721','PRODUCT_NAME':'Facebook Ilimitado L.15 1 dia','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1859193596':{'PRODUCT_ID':'722','PRODUCT_NAME':'Instagram Ilimitado L.22 1 dia','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1159727673':{'PRODUCT_ID':'509','PRODUCT_NAME':'Instagram Ilimitado L.20 1 dia','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '759194267':{'PRODUCT_ID':'493','PRODUCT_NAME':'Paquete Facebook Ilimitado(L25/3 dias)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1759207429':{'PRODUCT_ID':'527','PRODUCT_NAME':'Clash of Clans Ilimitado(L12/1 dia)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1159207677':{'PRODUCT_ID':'528','PRODUCT_NAME':'Clash Royale Ilimitado(L17/1 dia)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '959208130':{'PRODUCT_ID':'526','PRODUCT_NAME':'YouTube Ilimitado(L28/1 Hora)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1868112247':{'PRODUCT_ID':'515','PRODUCT_NAME':'Apps Redes Sociales  Zero Rate (Instagram)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1968112409':{'PRODUCT_ID':'516','PRODUCT_NAME':'Apps Redes Sociales  Zero Rate (Snapchat)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1966298539':{'PRODUCT_ID':'532','PRODUCT_NAME':'Whatsapp Ilimitado 7 dias','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '566292865':{'PRODUCT_ID':'535','PRODUCT_NAME':'Whatsapp Chat Ilimitado (L 2 / 2 horas)','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         '1959128569':{'PRODUCT_ID':'723','PRODUCT_NAME':'Whatsapp Ilimitado Costo Cero','QTA':'0','PROFILE':'0','TYPE':'APP','PACKAGE':'FALSE'},\n
+         	         
+        '_comment':'**********************************Suscripciones**********************************',\n
+		'758697355':{'PRODUCT_ID':'701','PRODUCT_NAME':'WhatsApp Chat Ilim+600MB (L.120/7 dias)','QTA':'614400','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1558953839':{'PRODUCT_ID':'710','PRODUCT_NAME':'WhatsApp Chat Ilim+1MB (L.10/1 dia)','QTA':'1024','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'158954263':{'PRODUCT_ID':'710','PRODUCT_NAME':'WhatsApp Chat Ilim+1MB (LPSPROMO.30/1 dia)','QTA':'1024','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'358692867':{'PRODUCT_ID':'713','PRODUCT_NAME':'WhatsApp Chat Ilim+50MB (L.20/1 dia)','QTA':'51200','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'558952932':{'PRODUCT_ID':'714','PRODUCT_NAME':'WhatsApp Chat Ilim+100MB (L.30/1 dia)','QTA':'102400','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1359102943':{'PRODUCT_ID':'479','PRODUCT_NAME':'WhatsApp Chat Ilim+1MB (L.30/1 dia) LPSPROMO','QTA':'1024','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1959103149':{'PRODUCT_ID':'479','PRODUCT_NAME':'WhatsApp Chat Ilim+1MB (L.5/1 dia)','QTA':'1024','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1258953445':{'PRODUCT_ID':'714','PRODUCT_NAME':'WhatsApp Chat Ilim+100MB (LPSPROMO.90/1 dia)','QTA':'102400','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'759104425':{'PRODUCT_ID':'716','PRODUCT_NAME':'Suscripcion Fuleados WhatsApp Chat + 600MB 7 dias','QTA':'614400','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'959042546':{'PRODUCT_ID':'477','PRODUCT_NAME':'Whatsapp Chat Ilimitado + 200MB (1 dia)','QTA':'204800','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1059042221':{'PRODUCT_ID':'477','PRODUCT_NAME':'Whatsapp Chat Ilimitado + 200MB (1 dia)','QTA':'204800','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'778296796':{'PRODUCT_ID':'703','PRODUCT_NAME':'Suscripcion Facebook Ilimitado (L 15 / 1 dia)','QTA':'0','PROFILE':'92','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'968112580':{'PRODUCT_ID':'794','PRODUCT_NAME':'Suscripcion Whatsapp Chat Ilimitado (L 11 / 24 Hrs)','QTA':'0','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+		'1468113001':{'PRODUCT_ID':'993','PRODUCT_NAME':'Suscripcion Whatsapp Chat Ilimitado (L 12 / 24 Hrs)','QTA':'0','PROFILE':'5','TYPE':'SUS','PACKAGE':'FALSE'},\n
+         '_comment':'**********************************Combos**********************************',\n
+		
+	'1362749781':{'PRODUCT_ID':'265','PRODUCT_NAME':'Paquetigo Duo 5Min y 30MB L15','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1562750247':{'PRODUCT_ID':'266','PRODUCT_NAME':'Paquetigo Chat 25Sms y 30MB L15','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'330041007':{'PRODUCT_ID':'409','PRODUCT_NAME':'Top Up Paquetigo $7','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'930043470':{'PRODUCT_ID':'410','PRODUCT_NAME':'Top Up Paquetigo $10','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'149325165':{'PRODUCT_ID':'474','PRODUCT_NAME':'Paquetigo Mes de la Madre Tigo USA','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'130620711':{'PRODUCT_ID':'711','PRODUCT_NAME':'WP Tigo Shop','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1030620977':{'PRODUCT_ID':'712','PRODUCT_NAME':'WP Tigo Shop','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1333615163':{'PRODUCT_ID':'962','PRODUCT_NAME':'Llamadas Ilimitadas x 7 dias','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1733616044':{'PRODUCT_ID':'963','PRODUCT_NAME':'Llamadas Ilimitadas x 30 dias','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+	'1235209967':{'PRODUCT_ID':'964','PRODUCT_NAME':'Combo 300MB + 25 Minutos + 15SMS','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'935210556':{'PRODUCT_ID':'965','PRODUCT_NAME':'Combo 100MB + 60 Minutos + 30SMS 3 dias Lps.70','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1763253291':{'PRODUCT_ID':'966','PRODUCT_NAME':'Combo 600MB + 50 Minutos + 50SMS 7 dias Lps.160','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'1863252750':{'PRODUCT_ID':'967','PRODUCT_NAME':'Combo 30MB + 10 Minutos + 10SMS 1 dia Lps.20','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'1867545775':{'PRODUCT_ID':'992','PRODUCT_NAME':'Paq.16 Mins TR/USA/CAN+16MB','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1048351509':{'PRODUCT_ID':'1117','PRODUCT_NAME':'300MB + 25 Minutos + 15SMS+Costo Cero','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'148351673':{'PRODUCT_ID':'1118','PRODUCT_NAME':'100MB+60Min y 30SMS+Costo Cero','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'148351673':{'PRODUCT_ID':'1119','PRODUCT_NAME':'600MB + 50MIN + 50SMS+Costo Cero','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1048351011':{'PRODUCT_ID':'1120','PRODUCT_NAME':'30MB+10Min+10SMS+Costo Cero','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'150163669':{'PRODUCT_ID':'1126','PRODUCT_NAME':'Combo de 5 min Tigo y 30MB','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1950595833':{'PRODUCT_ID':'1127','PRODUCT_NAME':'Combo de 25 msj Tigo y 30MB','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1048351011':{'PRODUCT_ID':'1144','PRODUCT_NAME':'LendME 30MB+10Min+10SMS+Costo Cero','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'955623195':{'PRODUCT_ID':'1154','PRODUCT_NAME':'Paquetigo 70 SMS USA/CAN/TR, L.11, 1 dia','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1855623551':{'PRODUCT_ID':'1155','PRODUCT_NAME':'Paquetigo 150 SMS USA/CAN/TR, L.17, 2 días','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1048351509':{'PRODUCT_ID':'1158','PRODUCT_NAME':'Lend Me 300MB+25min+15sms TR/USA/CAN Cst 0','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1656594820':{'PRODUCT_ID':'1189','PRODUCT_NAME':'Paquetigo 70 Mensajitos, L.11, 1 dia. Vastrix','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'156598631':{'PRODUCT_ID':'1190','PRODUCT_NAME':'Paquetigo 150 Mensajitos, L.17, 2 días. Vastrix','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1665216261':{'PRODUCT_ID':'1259','PRODUCT_NAME':'Combo 15min TR 15MB  2dias L15','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1230045615':{'PRODUCT_ID':'1081','PRODUCT_NAME':'Combo Todo Incluido Mundo #1','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1551863605':{'PRODUCT_ID':'1132','PRODUCT_NAME':'Combo Todo Incluido L.15.00 (L.30 LPS-Promo/100MB/1dias)','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1063251232':{'PRODUCT_ID':'1133','PRODUCT_NAME':'Combo Todo Incluido L.25.00 (L.50 LPS-Promo/250MB/1Amigo/50 Mins On Net/ 1 Dia + Whatsapp Chat Ilimitado','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'563265537':{'PRODUCT_ID':'1134','PRODUCT_NAME':'Combo Todo Incluido L.50.00 (L.100 LPS-Promo/500MB/1Amigo/100 Mins On Net/ 3 Dias + Whatsapp Chat Ilimitado','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'1063265726':{'PRODUCT_ID':'1135','PRODUCT_NAME':'Combo Todo Incluido L.100.00 (L.200 LPS-Promo/800MB/1Amigo/300 Mins On Net/ 7 Dias + Whatsapp Chat Ilimitado','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'1559762405':{'PRODUCT_ID':'1223','PRODUCT_NAME':'Combo Super Recarga L20','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1259762605':{'PRODUCT_ID':'1224','PRODUCT_NAME':'Combo Super Recarga L30','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1259762816':{'PRODUCT_ID':'1225','PRODUCT_NAME':'Combo Super Recarga L40','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1259763098':{'PRODUCT_ID':'1226','PRODUCT_NAME':'Combo Super Recarga L60','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'359763320':{'PRODUCT_ID':'1227','PRODUCT_NAME':'Combo Super Recarga L70','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1059763525':{'PRODUCT_ID':'1228','PRODUCT_NAME':'Combo Super Recarga L80','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1859763701':{'PRODUCT_ID':'1229','PRODUCT_NAME':'Combo Super Recarga L90','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'959763886':{'PRODUCT_ID':'1230','PRODUCT_NAME':'Combo Super Recarga L150','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'559761920':{'PRODUCT_ID':'1247','PRODUCT_NAME':'Combo Super Recarga L5','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1659762245':{'PRODUCT_ID':'1248','PRODUCT_NAME':'Combo Super Recarga L10','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'FALSE'},\n
+		'1162748441':{'PRODUCT_ID':'226','PRODUCT_NAME':'100MB/24hrs (L.40)FB/Whatsapp','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'},\n
+		'1164737562':{'PRODUCT_ID':'529','PRODUCT_NAME':'Paquete 4G LTE','QTA':'0','PROFILE':'0','TYPE':'CMB','PACKAGE':'TRUE'}
+         
+         ");
+end

@@ -1,0 +1,47 @@
+{
+	"transactionId": "MAMV2018_1",
+	"subscriber": "98672131",
+	"eventType": "PLAN_VAS",
+	"subevent": "CREATESUBS",
+	"subscribertype": "POS",
+	"TYPEPLAN": "HIB20",
+	"annex": "4070356295",
+	"additionalsParams": [
+		{
+			"attribute": "llave",
+			"value": "{llave}CREATESUBS"
+		},
+		{
+			"attribute": "IDTRANSACTION",
+			"value": "b7c12902-5807-4b74-96d3-51c7ec7890cd"
+		},
+		{
+			"attribute": "ACCOUNTID",
+			"value": "{accountID}"
+		},
+		{
+			"attribute": "MSISDN",
+			"value": "{msisdn}"
+		},
+		{
+			"attribute": "IMSI",
+			"value": "{imsi}"
+		},
+		{
+			"attribute": "BILLINGDAY",
+			"value": "{billingDay}"
+		},
+		{
+			"attribute": "TIER",
+			"value": "{tier}"
+		},
+		{
+			"attribute": "ENTITLEMENT",
+			"value": "{entitlement}"
+		},
+		{
+			"attribute": "SERVICE_END_DATE",
+			"value": "{SERVICE_END_DATE}"
+		}
+	]
+}

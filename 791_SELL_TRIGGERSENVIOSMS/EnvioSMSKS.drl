@@ -1,0 +1,391 @@
+package hn.com.tigo.josm.rule.EnvioSMS
+dialect "mvel"
+
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+
+global FactResponse response;
+
+//**********************************Inicio Planes Internet**********************************
+
+rule "SendSMS_MT_SMS_QU_80_1"
+when 
+    f: FactRequest(input["OFFERING"] in ("1162748441","1463163896"), input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Alcanzaste el 80% de tu navegacion. Activa Super Recarga de L50 y recibe mas! L100 para llamar/500MB de internet/WA Chat/Amigo Favorito/100min a Tigo por 1 dia.");
+        response.setEntry("SMS_TO", "50499000000" );
+end
+
+rule "SendSMS_MT_SMS_QU_80_2"
+when 
+    f: FactRequest(input["OFFERING"] == "562752428", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Has alcanzado el 80% de tu navegacion. Compra este paquete por Tigo Shop y recibe el DOBLE de MEGAS al mismo precio. Haz clic aqui http://tinyurl.com/hulr5at");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+
+rule "SendSMS_MT_SMS_QU_80_3"
+when 
+    f: FactRequest(input["OFFERING"] == "1962752648", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion del paquete Blackberry");
+        response.setEntry("SMS_TO", "50499000000" );
+end
+
+rule "SendSMS_MT_SMS_QU_80_4"
+when 
+    f: FactRequest(input["OFFERING"] == "1863165906", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Por la compra de tu paquetigo de 15 min has recibido internet para chatear en Whatsapp! Aprovechalo y conectate ya!");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+
+rule "SendSMS_MT_SMS_QU_80_5"
+when 
+    f: FactRequest(input["OFFERING"] in ("1359102943","158954263","1559192057","1558953839"), input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Tu servicio de WhatsApp Chat Ilimitado sigue activo si deseas navegar en otros sitios adquiere un paquete marcando #111# o ingresa a Tigo Shop App.");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_80_6"
+when 
+     f: FactRequest(input["OFFERING"] in ("1663251832","162732413","162733565","563167619","149325165","1962835352","763165080","1863165453","362747110","1762734370","762732991","962746876","1163181087","1963180748","963268468","163248798","330041007","930043470","1463250179","1463252474","1463248473","1463252229","1763253291"), input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion revisa tu consumo en Tigo Shop https://goo.gl/Gmntqwh o ingresando a www.tigointernet.hn");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+
+rule "SendSMS_MT_SMS_QU_80_7"
+when 
+    f: FactRequest(input["OFFERING"] == "1662750853", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de  tu navegacion, puedes consultar tu consumo ingresando a https://shop.tigo.com.hn/");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_80_9"
+when 
+     f: FactRequest(input["OFFERING"] == "762751545", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tu consumo en Tigo Shop App https://shop.tigo.com.hn/");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+
+rule "SendSMS_MT_SMS_QU_100_1"
+when 
+    f: FactRequest(input["OFFERING"] == "1662750853", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 100% de navegacion, revisa GRATIS tu consumo ingresando a https://shop.tigo.com.hn/");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_3"
+when 
+     f: FactRequest(input["OFFERING"] == "762751545", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 100% de navegacion, revisa GRATIS tu consumo ingresando a https://shop.tigo.com.hn/");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//-----------------20180723 westrada modificacion de mensajeria de paquetes CHR 282------INICIO---
+//------------2.5GB Producto 229-------
+rule "SendSMS_MT_SMS_QU_80_229"
+when 
+    f: FactRequest(input["OFFERING"] == "1362747765", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80 de  tu navegacion, puedes consultar tu consumo ingresando a http://tigointernet.hn");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_229"
+when 
+     f: FactRequest(input["OFFERING"] == "1362747765", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 100% de navegacion, revisa GRATIS tu consumo en Tigo Shop App http://goo.gl/rA2LDw o en www.tigointernet.hn");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//------------1GB 24 horas Producto 228-------
+rule "SendSMS_MT_SMS_QU_80_228"
+when 
+    f: FactRequest(input["OFFERING"] == "1862319524", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_228"
+when 
+     f: FactRequest(input["OFFERING"] == "1862319524", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//------------200MB 48 horas Producto 227-------
+rule "SendSMS_MT_SMS_QU_80_227"
+when 
+    f: FactRequest(input["OFFERING"] == "1562748696", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_227"
+when 
+     f: FactRequest(input["OFFERING"] == "1562748696", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//------------100MB 24 horas Producto 179-------
+rule "SendSMS_MT_SMS_QU_80_179"
+when 
+    f: FactRequest(input["OFFERING"] == "1562751050", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_179"
+when 
+     f: FactRequest(input["OFFERING"] == "1562751050", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//**********************************Inicio Planes Internet Scratchcard Super recarga**********************************
+
+//Super recarga 25L
+rule "SendSMS_MT_SMS_QU_80_10"
+when 
+     f: FactRequest(input["OFFERING"] == "184986131", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 80% de los 250MB de tu Super Recarga, revisa GRATIS tus consumos en http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_4"
+when 
+     f: FactRequest(input["OFFERING"] == "184986131", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 100% de los 250MB de tu Super Recarga, revisa GRATIS tus consumos en http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//Super recarga 50L
+rule "SendSMS_MT_SMS_QU_80_11"
+when 
+     f: FactRequest(input["OFFERING"] == "1984988640", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 80% de tu paquete de 500MB de tu Super Recarga, compra un nuevo paquete en Tigo Shop  http://tinyurl.com/hulr5at");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_5"
+when 
+     f: FactRequest(input["OFFERING"] == "1984988640", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 100% de tu paquete 500MB de tu Super Recarga, compra un nuevo paquete en Tigo Shop  http://tinyurl.com/hulr5at");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//Super recarga 100L
+rule "SendSMS_MT_SMS_QU_80_12"
+when 
+     f: FactRequest(input["OFFERING"] == "184990302", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 80% de tu paquete de 800MB de tu Super Recarga, compra un nuevo paquete en Tigo Shop  http://tinyurl.com/hulr5at");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_6"
+when 
+     f: FactRequest(input["OFFERING"] == "184990302", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 100% de tu paquete 800MB de tu Super Recarga, compra un nuevo paquete en Tigo Shop  http://tinyurl.com/hulr5at");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//**********************************Fin Planes Internet Scratchcard Super recarga**********************************
+
+//-----------------20180726 westrada modificacion de mensajeria de paquetes CHR 282------INICIO---
+//------------2GB + llamadas ilimitadas 7 dias L.200 Producto 962-------
+rule "SendSMS_MT_SMS_QU_80_962"
+when 
+    f: FactRequest(input["OFFERING"] == "1663179997", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_962"
+when 
+     f: FactRequest(input["OFFERING"] == "1663179997", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//------------2GB 7 dias L.200 Producto 429-------
+rule "SendSMS_MT_SMS_QU_80_429"
+when 
+    f: FactRequest(input["OFFERING"] == "1963182957", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_429"
+when 
+     f: FactRequest(input["OFFERING"] == "1963182957", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//------------850MB 7 dias L.100 Producto 478-------
+rule "SendSMS_MT_SMS_QU_80_478"
+when 
+    f: FactRequest(input["OFFERING"] == "963252021", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_478"
+when 
+     f: FactRequest(input["OFFERING"] == "963252021", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//-------------5.5GM MES L.600 232-------------------
+rule "SendSMS_MT_SMS_QU_80_232"
+when 
+    f: FactRequest(input["OFFERING"] == "162747998", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de navegacion, revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_232"
+when 
+    f: FactRequest(input["OFFERING"] == "162747998", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de navegacion. Revisa GRATIS tus consumos en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//-----------------20180730 westrada modificacion de mensajeria de paquetes CHR 282------INICIO---
+//-------------Super recarga de L.25-------------------
+rule "SendSMS_MT_SMS_QU_80_1129"
+when 
+    f: FactRequest(input["OFFERING"] == "1063251232", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 80% de los 250MB de tu Super Recarga, revisa GRATIS tus consumos en http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_1129"
+when 
+    f: FactRequest(input["OFFERING"] == "1063251232", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Te informamos que has alcanzado el 100% de los 250MB de tu Super Recarga, revisa GRATIS tus consumos en http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//-------------Paquete de 170 SMS + 5 MB por L.17-------------------
+rule "SendSMS_MT_SMS_QU_80_1155"
+when 
+    f: FactRequest(input["OFFERING"] == "1563269422", input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente te informamos que has alcanzado el 80% de consumo de tu paquete, revisalo GRATIS en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_1155"
+when 
+    f: FactRequest(input["OFFERING"] == "1563269422", input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente informamos que has alcanzado el 100% de consumo de tu paquete, revisalo GRATIS en Tigo Shop http://shop.tigo.com.hn o http://a.tigo.com/2xbky");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+//-------------Planes de Internet Pospago-------------------
+rule "SendSMS_MT_SMS_QU_80_Planes"
+when 
+    f: FactRequest(input["OFFERING"] in ("1385819480","1585823019","1085823204","1485823288","1485823414","1085823586","1785823723","785909914","1085910113",
+    "1786250911","186251119","1686251245","586251342","1286251554","1186251649","1586251743","1086251826","1486251930","186252184","386252302",
+    "1986252389","1486252480","1486252605","1586252700","786252782","1386252868","1186252955","586253037","1186253117","586253200",
+    "186253266","1986253345","986253430","586253515","1686254176","186844782","386845459","185825176","1185825800","1085825947","1085826314",
+    "1785888721","585889149","1385889261","1285889406","1385889867","1885890045","1385890155","1485890309","1185890448","1285890680","1585890894",
+    "1585891025","585891140","1485890309","585891563","185891682","585891810","1385891953","586149719","1586149921","386150161",
+    "1086165556","1486165698","1986150336","386165852","1586165945","1586166056","1786166180",
+    "386166316","1586166441","186944380","586944488","1586944620","1386944736","586944835","1186944962","1786945082",
+    "1686166565","1586166649","1386945190","1686945308","386945452","1786166790","1486167205","986167324","1186845758",
+    "186167618","1486167998","1286168914","1186169057","386169363","1786169464","1586169535","1586169920","1786170146","386170304","786170402",
+    "1686170522","786845948","586170607","1386170698","186170790","986170929","986171016","1586171163","1286171244","1886171366",
+    "1086171440","1086171506","986171664","1886171977","986172055","1886172127","1386172220","1086172323","186172391",
+    "1786172509","1986172791","1886172883","1986172955","1886173034","1686173133","186173223","1786173349","386846169",
+    "186846408","1086173431","1086173537","986173627","1986173710","786846545","1286173801","1986173877","786236429","586236561","786236660",
+    "386237016","1086236899","1086237287","986237603","1786846749","1586846958","1586847206","1986847327","1286847491",
+    "1886847649","386847781","386848077","786848328","1086848548","786848628","986848730","1386848897","1186849043","1486849202",
+    "1786849440","1986849661","1886849894","1286850026","1586850159","1186850374","586850440","786851335","586851537","1386851698",
+    "1986851884","1086851943","1586852363","1486852273","1386852092","1786852642","786852510","1186852801","1386852925",
+    "1886853281","786853478","1486853688","386853622","1886853889","1486854025","986854124","1686854215","786854349","186854489","1986854566",
+    "386854924","386855048","1486855152","1486855271","786855368","786855462","786855589","1186855709","1186855798","986856009",
+    "1586856105","1886856214","1886856301","1186856424","1586856531","786857053","586859520","1286859613",
+    "386859709","1686859786","786859874","1386859969","386860051","1486860262","986860352","986860464","986860558",
+    "1486860715","1186860818","786860952","1186861049","1886861146","1386861278","1286861373","1786861458","1386861550",
+    "1686861645","1786861738","1086861843","186861959","1786862069","186862208","385724144","1885724618","1985235803",
+    "385278874","585279250","1785280545","1785280787","1785281252","1285027635","1685133547","1985136265","985136470","1585137417",
+    "185137693","1785137893","1785138079","585138249","1085138346","185138487","185138626","1393169392","1593169643","1993169776","793169904","393170085","793170206","993170310","1193170433","1393170574","193170684","1293170782","393170888",
+"193171054","993171163","793171495","193171609","1586169920","1786170146","193171860","193171959","1693172056","593172198","193172278","1192296133"), input["PERCENT"] == "80" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente has alcanzado el 80% de consumo de tu plan de internet, entra a Mi Tigo http://a.tigo.com/mtcon para revisar tu cuota de datos restante.");
+        response.setEntry("SMS_TO", "50499000000");
+end
+
+rule "SendSMS_MT_SMS_QU_100_Planes"
+when 
+    f: FactRequest(input["OFFERING"] in ("1385819480","1585823019","1085823204","1485823288","1485823414","1085823586","1785823723","785909914","1085910113",
+    "1786250911","186251119","1686251245","586251342","1286251554","1186251649","1586251743","1086251826","1486251930","186252184","386252302",
+    "1986252389","1486252480","1486252605","1586252700","786252782","1386252868","1186252955","586253037","1186253117","586253200",
+    "186253266","1986253345","986253430","586253515","1686254176","186844782","386845459","185825176","1185825800","1085825947","1085826314",
+    "1785888721","585889149","1385889261","1285889406","1385889867","1885890045","1385890155","1485890309","1185890448","1285890680","1585890894",
+    "1585891025","585891140","1485890309","585891563","185891682","585891810","1385891953","586149719","1586149921","386150161",
+    "1086165556","1486165698","1986150336","386165852","1586165945","1586166056","1786166180",
+    "386166316","1586166441","186944380","586944488","1586944620","1386944736","586944835","1186944962","1786945082",
+    "1686166565","1586166649","1386945190","1686945308","386945452","1786166790","1486167205","986167324","1186845758",
+    "186167618","1486167998","1286168914","1186169057","386169363","1786169464","1586169535","1586169920","1786170146","386170304","786170402",
+    "1686170522","786845948","586170607","1386170698","186170790","986170929","986171016","1586171163","1286171244","1886171366",
+    "1086171440","1086171506","986171664","1886171977","986172055","1886172127","1386172220","1086172323","186172391",
+    "1786172509","1986172791","1886172883","1986172955","1886173034","1686173133","186173223","1786173349","386846169",
+    "186846408","1086173431","1086173537","986173627","1986173710","786846545","1286173801","1986173877","786236429","586236561","786236660",
+    "386237016","1086236899","1086237287","986237603","1786846749","1586846958","1586847206","1986847327","1286847491",
+    "1886847649","386847781","386848077","786848328","1086848548","786848628","986848730","1386848897","1186849043","1486849202",
+    "1786849440","1986849661","1886849894","1286850026","1586850159","1186850374","586850440","786851335","586851537","1386851698",
+    "1986851884","1086851943","1586852363","1486852273","1386852092","1786852642","786852510","1186852801","1386852925",
+    "1886853281","786853478","1486853688","386853622","1886853889","1486854025","986854124","1686854215","786854349","186854489","1986854566",
+    "386854924","386855048","1486855152","1486855271","786855368","786855462","786855589","1186855709","1186855798","986856009",
+    "1586856105","1886856214","1886856301","1186856424","1586856531","786857053","586859520","1286859613",
+    "386859709","1686859786","786859874","1386859969","386860051","1486860262","986860352","986860464","986860558",
+    "1486860715","1186860818","786860952","1186861049","1886861146","1386861278","1286861373","1786861458","1386861550",
+    "1686861645","1786861738","1086861843","186861959","1786862069","186862208","385724144","1885724618","1985235803",
+    "385278874","585279250","1785280545","1785280787","1785281252","1285027635","1685133547","1985136265","985136470","1585137417",
+    "185137693","1785137893","1785138079","585138249","1085138346","185138487","185138626","1393169392","1593169643","1993169776","793169904","393170085","793170206","993170310","1193170433","1393170574","193170684","1293170782","393170888",
+"193171054","993171163","793171495","193171609","1586169920","1786170146","193171860","193171959","1693172056","593172198","193172278","1192296133"), input["PERCENT"] == "100" )
+then
+        response.setEntry("SMS_TEXT", "Estimado cliente has consumido el 100% de consumo de tu plan de internet, compra mas internet en #101# y sigue disfrutando de la navegacion con Tigo.");
+        response.setEntry("SMS_TO", "50499000000");
+end

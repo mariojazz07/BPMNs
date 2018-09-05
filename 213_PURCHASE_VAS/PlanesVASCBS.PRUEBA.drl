@@ -1,0 +1,41 @@
+package hn.com.tigo.josm.rule.planesvascbs
+dialect "mvel"
+
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+
+global FactResponse response;
+
+rule "PlanesVAS_CBS_851"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "851")
+then
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP");//Parametro para cambiar RG en UPCC
+	  response.setEntry("CBS_OFFERING", "NA");//Parametro de offering suplementario en CBS
+	  response.setEntry("SVKEY","7799");
+	 // response.setEntry("IS_PRIMARY","TRUE");//Parametro usado para saber si es oferta primaria todo incluido
+	  
+	  
+end
+
+
+rule "PlanesVAS_CBS_853"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "853")
+then
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "585279250");
+	  response.setEntry("SVKEY","7799");
+	  //response.setEntry("IS_PRIMARY","FALSE");
+end
+
+rule "PlanesVAS_CBS_854"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "854")
+then
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP");
+	  response.setEntry("CBS_OFFERING", "585279250");
+	  response.setEntry("SVKEY","7799");
+	  //response.setEntry("IS_PRIMARY","FALSE");
+end

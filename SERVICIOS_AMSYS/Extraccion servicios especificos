@@ -1,0 +1,63 @@
+--Extracción de Servicios
+
+--SERVICIOS PRINCIPALES DTH
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio t1 where t1.espaquete = 'N' and t1.tipo = 'TVDTH'  and t1.estado = 'A' and t1.naturaleza = 'DTH'
+	 UNION
+	 --CAJAS DTH como principales DTH
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio t1 where t1.espaquete = 'N' and t1.tipo = 'TVDTH'  and t1.estado = 'A' and t1.naturaleza = 'DTHAD' and clase =
+'AE'
+	 UNION
+	 --SERVICIOS SECUNDARIOS DTH
+	 select naturaleza, servicio, descripcion, 'S' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio t1 where t1.espaquete = 'N' and t1.tipo = 'TVDTH'  and t1.estado = 'A' and t1.naturaleza = 'DTHAD' and clase !=
+'AE'
+	 UNION
+	 -- PLAN PRINCIPAL DE TELEVISION (BASIC)
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio where (TIPO = 'TELEV' AND NATURALEZA = 'CABLE' AND ESPAQUETE = 'N') or servicio = 'DIGBA'
+	 UNION
+	 -- PLANES PRINCIPALES DE TELEVISION (CAJAS DE ALQUILER)
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio where TIPO = 'TELEV' AND NATURALEZA != 'CABLE' AND ESPAQUETE = 'N' AND CLASE = 'AE' and estado = 'A'
+	 UNION
+	 -- INGRESO DE SERVICIOS DE TELEVISION SECUNDARIOS
+	 select naturaleza, servicio, descripcion, 'S' as categoria, 'D' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio where tipo = 'TELEV' and naturaleza != 'CABLE' AND espaquete = 'N' and CLASE != 'AE' and estado = 'A' AND
+servicio != 'DIGBA'
+	 UNION
+	 -- INGRESO DE PLANES DE INTERNET PRINCIPALES
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'E' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio where TIPO = 'DATOS' AND NATURALEZA = 'INTER' AND ESPAQUETE = 'N' and estado = 'A'
+	 UNION
+	 -- INGRESO DE PLANES DE INTERNET SECUNDARIOS
+	 select naturaleza, servicio, descripcion, 'S' as categoria, 'E' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 from genservicio where tipo = 'DATOS' and naturaleza != 'INTER' and espaquete = 'N' and estado = 'A'
+	 UNION
+	 -- INGRESO DE PLANES DE TELEFONIA PRINCIPALES
+	 select naturaleza, servicio, descripcion, 'P' as categoria, 'F' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 FROM GENSERVICIO WHERE TIPO = 'TELEF' AND (DESCRIPCION) LIKE '%PLAN%' AND ESTADO='A'
+	 UNION
+	 -- INGRESO DE PLANES DE TELEFONIA SECUNDARIOS
+	 select naturaleza, servicio, descripcion, 'S' as categoria, 'F' as tipoAS,
+	 TO_CHAR(FECHAINI, 'DD') DIAINI, TO_CHAR(FECHAINI, 'MM') MESINI, TO_CHAR(FECHAINI, 'YYYY') AZOINI
+	 FROM GENSERVICIO WHERE TIPO='TELEF' AND (DESCRIPCION) NOT LIKE '%PLAN%' AND ESTADO = 'A'
+	 UNION
+	 -- PLANES ACTIVOS EN VENCONEXIONSERVICIOS INACTIVOS EN GENSERVICIO
+	 select t1.naturaleza, t1.servicio, t1.descripcion, 'P' as categoria, DECODE(t1.TIPO,'DATOS','E','TELEV','D','F') as tipoAS,
+	 TO_CHAR(t1.FECHAINI, 'DD') DIAINI, TO_CHAR(t1.FECHAINI, 'MM') MESINI, TO_CHAR(t1.FECHAINI, 'YYYY') AZOINI
+	 from genservicio t1
+	 where t1.espaquete = 'N' and t1.servicio in (select S.SERVICIO
+	 from genservicio s, venconexionservicio v
+	 where S.SERVICIO=V.SERVICIO and S.ESTADO='I' and V.ESTADO='A'
+	 group by S.SERVICIO)

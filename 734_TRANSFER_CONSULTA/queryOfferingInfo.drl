@@ -1,0 +1,868 @@
+package hn.com.tigo.josm.rule.queryOfferingInfo
+dialect "mvel"
+
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+
+global FactResponse response;
+
+//**********************************Aplicaciones**********************************
+
+rule "APP_WAPP_24HRS_CMB"
+when 
+    f: FactRequest(input["OFFERING"] == "1959128569")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "353");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Ilimitado");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_FB_24HRS_CMB"
+when 
+    f: FactRequest(input["OFFERING"] == "359129482")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "355");
+        response.setEntry("PRODUCT_NAME", "Facebook Ilimitado");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_WAPP_ILIM_10LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1559192057")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "358");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Ilimitado 10Lps");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_PKMN_GO"
+when 
+    f: FactRequest(input["OFFERING"] == "559192373")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "403");
+        response.setEntry("PRODUCT_NAME", "Pokemon Go");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_FB_24HRS_15LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1559193217")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "721");
+        response.setEntry("PRODUCT_NAME", "Facebook Ilimitado L.15 1 dia");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_INGRM_24HRS_22LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1859193596")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "722");
+        response.setEntry("PRODUCT_NAME", "Instagram Ilimitado L.22 1 dia");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_INGRM_24HRS_20LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1159727673")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "509");
+        response.setEntry("PRODUCT_NAME", "Instagram Ilimitado L.20 1 dia");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_FB_3D_25LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "759194267")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "493");
+        response.setEntry("PRODUCT_NAME", "Paquete Facebook Ilimitado(L25/3 dias)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_COC_1D_12LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1759207429")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "527");
+        response.setEntry("PRODUCT_NAME", "Clash of Clans Ilimitado(L12/1 dia)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_CR_1D_17LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1159207677")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "528");
+        response.setEntry("PRODUCT_NAME", "Clash Royale Ilimitado(L17/1 dia)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_YT_1HRA_28LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "959208130")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "526");
+        response.setEntry("PRODUCT_NAME", "YouTube Ilimitado(L28/1 Hora)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_INST_90D_0LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1868112247")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "515");
+        response.setEntry("PRODUCT_NAME", "Apps Redes Sociales  Zero Rate (Instagram)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_SNAP_90D_0LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1968112409")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "516");
+        response.setEntry("PRODUCT_NAME", "Apps Redes Sociales  Zero Rate (Snapchat)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_WA_7D_0LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1966298539")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "532");
+        response.setEntry("PRODUCT_NAME", "Whatsapp Ilimitado 7 dias");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_WA_2H_2LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "566292865")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "535");
+        response.setEntry("PRODUCT_NAME", "Whatsapp Chat Ilimitado (L 2 / 2 horas)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+
+rule "APP_WA_0LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1959128569")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "723");
+        response.setEntry("PRODUCT_NAME", "Whatsapp Ilimitado Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "APP");
+end
+//**********************************Fin Aplicaciones**********************************
+
+//**********************************Suscripciones**********************************
+rule "SUS_WAPP_ILIM_600MB_120LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "758697355")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "701");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+600MB (L.120/7 dias)");
+        response.setEntry("QTA", "614400");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_1MB_10LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1558953839")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "710");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+1MB (L.10/1 dia)");
+        response.setEntry("QTA", "1024");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_1MB_30LPSPROMO"
+when 
+    f: FactRequest(input["OFFERING"] == "158954263")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "710");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+1MB (LPSPROMO.30/1 dia)");
+        response.setEntry("QTA", "1024");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_50MB_20LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "358692867")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "713");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+50MB (L.20/1 dia)");
+        response.setEntry("QTA", "51200");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_100MB_30LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "558952932")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "714");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+100MB (L.30/1 dia)");
+        response.setEntry("QTA", "102400");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_20MB_30LPSPROMO"
+when 
+    f: FactRequest(input["OFFERING"] == "1359102943")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "479");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+1MB (L.30/1 dia) LPSPROMO");
+        response.setEntry("QTA", "1024");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_20MB_5LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1959103149")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "479");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+1MB (L.5/1 dia)");
+        response.setEntry("QTA", "1024");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_100MB_90LPSPROMO"
+when 
+    f: FactRequest(input["OFFERING"] == "1258953445")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "714");
+        response.setEntry("PRODUCT_NAME", "WhatsApp Chat Ilim+100MB (LPSPROMO.90/1 dia)");
+        response.setEntry("QTA", "102400");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_FULEADOSWAPP_ILIM_600MB"
+when 
+    f: FactRequest(input["OFFERING"] == "759104425")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "716");
+        response.setEntry("PRODUCT_NAME", "Suscripcion Fuleados WhatsApp Chat + 600MB 7 dias");
+        response.setEntry("QTA", "614400");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_INTERNET_DIARIO_100MB_WAPPDOB"
+when 
+    f: FactRequest(input["OFFERING"] == "959042546")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "477");
+        response.setEntry("PRODUCT_NAME", "Whatsapp Chat Ilimitado + 200MB (1 dia)");
+        response.setEntry("QTA", "204800");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_INTERNET_DIARIA_200MB_WAPP"
+when 
+    f: FactRequest(input["OFFERING"] == "1059042221")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "477");
+        response.setEntry("PRODUCT_NAME", "Whatsapp Chat Ilimitado + 200MB (1 dia)");
+        response.setEntry("QTA", "204800");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_INTERNET_DIARIA_FACEPP"
+when 
+    f: FactRequest(input["OFFERING"] == "778296796")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "703");
+        response.setEntry("PRODUCT_NAME", "Suscripcion Facebook Ilimitado (L 15 / 1 dia)");
+        response.setEntry("QTA", "0");
+        response.setEntry("PROFILE", "92");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_1MB_11LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "968112580")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "794");
+        response.setEntry("PRODUCT_NAME", "Suscripcion Whatsapp Chat Ilimitado (L 11 / 24 Hrs)");
+        response.setEntry("QTA", "0");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+
+rule "SUS_WAPP_ILIM_1MB_12LPS"
+when 
+    f: FactRequest(input["OFFERING"] == "1468113001")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "993");
+        response.setEntry("PRODUCT_NAME", "Suscripcion Whatsapp Chat Ilimitado (L 12 / 24 Hrs)");
+        response.setEntry("QTA", "0");
+        response.setEntry("PROFILE", "5");
+        response.setEntry("TYPE", "SUS");
+end
+//**********************************Fin Suscripciones**********************************
+
+//**********************************Combos**********************************
+rule "CMB_PAQDUO_30MB_5MIN_L15"
+when 
+    f: FactRequest(input["OFFERING"] == "1362749781")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "265");
+        response.setEntry("PRODUCT_NAME", "Paquetigo Duo 5Min y 30MB L15");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+            
+        
+end
+
+rule "CMB_PAQCHT_25SMS_30MB_L15"
+when 
+    f: FactRequest(input["OFFERING"] == "1562750247")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "266");
+        response.setEntry("PRODUCT_NAME", "Paquetigo Chat 25Sms y 30MB L15");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        
+end
+
+rule "CMB_TOP_UP_D7"
+when 
+    f: FactRequest(input["OFFERING"] == "330041007")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "409");
+        response.setEntry("PRODUCT_NAME", "Top Up Paquetigo $7");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_TOP_UP_D10"
+when 
+    f: FactRequest(input["OFFERING"] == "930043470")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "410");
+        response.setEntry("PRODUCT_NAME", "Top Up Paquetigo $10");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_MES_MADRE_USA"
+when 
+    f: FactRequest(input["OFFERING"] == "149325165")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "474");
+        response.setEntry("PRODUCT_NAME", "Paquetigo Mes de la Madre Tigo USA");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_WP_TIGO_SHOP_711"
+when 
+    f: FactRequest(input["OFFERING"] == "130620711")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "711");
+        response.setEntry("PRODUCT_NAME", "WP Tigo Shop");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_WP_TIGO_SHOP_712"
+when 
+    f: FactRequest(input["OFFERING"] == "1030620977")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "712");
+        response.setEntry("PRODUCT_NAME", "WP Tigo Shop");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_ILIM_CALLS_7D"
+when 
+    f: FactRequest(input["OFFERING"] == "1333615163")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "962");
+        response.setEntry("PRODUCT_NAME", "Llamadas Ilimitadas x 7 dias");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_ILIM_CALLS_30D"
+when 
+    f: FactRequest(input["OFFERING"] == "1733616044")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "963");
+        response.setEntry("PRODUCT_NAME", "Llamadas Ilimitadas x 30 dias");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_300MB_25MIN_15SMS"
+when 
+    f: FactRequest(input["OFFERING"] == "1235209967")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "964");
+        response.setEntry("PRODUCT_NAME", "Combo 300MB + 25 Minutos + 15SMS");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_100MB_60MIN_30SMS_3D"
+when 
+    f: FactRequest(input["OFFERING"] == "935210556")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "965");
+        response.setEntry("PRODUCT_NAME", "Combo 100MB + 60 Minutos + 30SMS 3 dias Lps.70");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_600MB_50MIN_50SMS_7D"
+when 
+    f: FactRequest(input["OFFERING"] == "1763253291")  
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "966");
+        response.setEntry("PRODUCT_NAME", "Combo 600MB + 50 Minutos + 50SMS 7 dias Lps.160");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");    
+        response.setEntry("PACKAGE", "TRUE");    
+end
+
+rule "CMB_30MB_10MIN_10SMS_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1863252750")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "967");
+        response.setEntry("PRODUCT_NAME", "Combo 30MB + 10 Minutos + 10SMS 1 dia Lps.20");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+        
+end
+
+rule "CMB_16MB_16MIN_TR_USA_CAN"
+when 
+    f: FactRequest(input["OFFERING"] == "1867545775")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "992");
+        response.setEntry("PRODUCT_NAME", "Paq.16 Mins TR/USA/CAN+16MB");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_300MB_25MIN_15SMS_CostoCero"
+when 
+    f: FactRequest(input["OFFERING"] == "1048351509")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1117");
+        response.setEntry("PRODUCT_NAME", "300MB + 25 Minutos + 15SMS+Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_100MB_60MIN_30SMS_CostoCero"
+when 
+    f: FactRequest(input["OFFERING"] == "148351673")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1118");
+        response.setEntry("PRODUCT_NAME", "100MB+60Min y 30SMS+Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_600MB_50MIN_50SMS_CostoCero"
+when 
+    f: FactRequest(input["OFFERING"] == "148351673")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1119");
+        response.setEntry("PRODUCT_NAME", "600MB + 50MIN + 50SMS+Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_30MB_10MIN_10SMS_CostoCero"
+when 
+    f: FactRequest(input["OFFERING"] == "1048351011")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1120");
+        response.setEntry("PRODUCT_NAME", "30MB+10Min+10SMS+Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_5MIN_TIGO_30MB"
+when 
+    f: FactRequest(input["OFFERING"] == "150163669")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1126");
+        response.setEntry("PRODUCT_NAME", "Combo de 5 min Tigo y 30MB");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_25SMS_TIGO_30MB"
+when 
+    f: FactRequest(input["OFFERING"] == "1950595833")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1127");
+        response.setEntry("PRODUCT_NAME", "Combo de 25 msj Tigo y 30MB");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_LENDME_30MB_10MIN_10SMS_CostoCero"
+when 
+    f: FactRequest(input["OFFERING"] == "1048351011")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1144");
+        response.setEntry("PRODUCT_NAME", "LendME 30MB+10Min+10SMS+Costo Cero");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_70SMS_USA_CAN_TR_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "955623195")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1154");
+        response.setEntry("PRODUCT_NAME", "Paquetigo 70 SMS USA/CAN/TR, L.11, 1 dia");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_150SMS_USA_CAN_TR_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1855623551")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1155");
+        response.setEntry("PRODUCT_NAME", "Paquetigo 150 SMS USA/CAN/TR, L.17, 2 días");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_LENDME_30MB_25MIN_15SMS_TR_USA_CAN_CST0"
+when 
+    f: FactRequest(input["OFFERING"] == "1048351509")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1158");
+        response.setEntry("PRODUCT_NAME", "Lend Me 300MB+25min+15sms TR/USA/CAN Cst 0");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_70SMS_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1656594820")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1189");
+        response.setEntry("PRODUCT_NAME", "Paquetigo 70 Mensajitos, L.11, 1 dia. Vastrix");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_150SMS_2D"
+when 
+    f: FactRequest(input["OFFERING"] == "156598631")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1190");
+        response.setEntry("PRODUCT_NAME", "Paquetigo 150 Mensajitos, L.17, 2 días. Vastrix");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_15MIN_TR_15MB_2D"
+when 
+    f: FactRequest(input["OFFERING"] == "1665216261")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1259");
+        response.setEntry("PRODUCT_NAME", "Combo 15min TR 15MB  2dias L15");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_TODO_INCLUIDO_MUNDO_1"
+when 
+    f: FactRequest(input["OFFERING"] == "1230045615")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1081");
+        response.setEntry("PRODUCT_NAME", "Combo Todo Incluido Mundo #1");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_30LPSPROMO_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1551863605")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1132");
+        response.setEntry("PRODUCT_NAME", "Combo Todo Incluido L.15.00 (L.30 LPS-Promo/100MB/1dias)");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_50MIN_50LPSPROMO_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1063251232")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1133");
+        response.setEntry("PRODUCT_NAME", "Combo Todo Incluido L.25.00 (L.50 LPS-Promo/250MB/1Amigo/50 Mins On Net/ 1 Dia + Whatsapp Chat Ilimitado");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+end
+
+rule "CMB_500MB_1AMGO_100MIN_WAPP_3D"
+when 
+    f: FactRequest(input["OFFERING"] == "563265537")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1134");
+        response.setEntry("PRODUCT_NAME", "Combo Todo Incluido L.50.00 (L.100 LPS-Promo/500MB/1Amigo/100 Mins On Net/ 3 Dias + Whatsapp Chat Ilimitado");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+end
+
+rule "CMB_800MB_1AMGO_300MIN_WAPP_7D"
+when 
+    f: FactRequest(input["OFFERING"] == "1063265726")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1135");
+        response.setEntry("PRODUCT_NAME", "Combo Todo Incluido L.100.00 (L.200 LPS-Promo/800MB/1Amigo/300 Mins On Net/ 7 Dias + Whatsapp Chat Ilimitado");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+end
+
+rule "CMB_SUPER_RECARGA_L20"
+when 
+    f: FactRequest(input["OFFERING"] == "1559762405")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1223");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L20");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L30"
+when 
+    f: FactRequest(input["OFFERING"] == "1259762605")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1224");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L30");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L40"
+when 
+    f: FactRequest(input["OFFERING"] == "1259762816")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1225");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L40");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L60"
+when 
+    f: FactRequest(input["OFFERING"] == "1259763098")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1226");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L60");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L70"
+when 
+    f: FactRequest(input["OFFERING"] == "359763320")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1227");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L70");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L80"
+when 
+    f: FactRequest(input["OFFERING"] == "1059763525")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1228");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L80");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L90"
+when 
+    f: FactRequest(input["OFFERING"] == "1859763701")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1229");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L90");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L150"
+when 
+    f: FactRequest(input["OFFERING"] == "959763886")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1230");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L150");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L5"
+when 
+    f: FactRequest(input["OFFERING"] == "559761920")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1247");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L5");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SUPER_RECARGA_L10"
+when 
+    f: FactRequest(input["OFFERING"] == "1659762245")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "1248");
+        response.setEntry("PRODUCT_NAME", "Combo Super Recarga L10");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+end
+
+rule "CMB_SMART_WAPP_FB_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1162748441")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "226");
+        response.setEntry("PRODUCT_NAME", "100MB/24hrs (L.40)FB/Whatsapp");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+    
+end
+
+rule "CMB_4G_LTE_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1164737562")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "529");
+        response.setEntry("PRODUCT_NAME", "Paquete 4G LTE");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "CMB");
+        response.setEntry("PACKAGE", "TRUE");
+    
+end
+//**********************************Fin Combos**********************************
+rule "PLN_4G_LTE_1D"
+when 
+    f: FactRequest(input["OFFERING"] == "1985235803")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_ID", "851");
+        response.setEntry("PRODUCT_NAME", "Plan VAS Amigos Sin limites $19.99");
+        response.setEntry("PROFILE", "0");
+        response.setEntry("TYPE", "PLN");
+        response.setEntry("PACKAGE", "TRUE");
+    
+end

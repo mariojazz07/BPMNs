@@ -1,0 +1,66 @@
+{
+	"subscriber": "94453740",
+	"event": "PLAN_VAS",
+	"subevent": "MODIFYSUBS",
+	"subscribertype": "POS",
+	"TYPEPLAN": "HIB20",
+	"annex": "4070356295",
+	"additionalParams": [
+		{
+			"attribute": "llave",
+			"value": "{llave}MODIFYSUBS"
+		},
+		{
+			"attribute": "IDTRANSACTION",
+			"value": "b7c12902-5807-4b74-96d3-51c7ec7890cd"
+		},
+		{
+			"attribute": "KEYNAME",
+			"value": "{keyName}"
+		},
+		{
+			"attribute": "KEYVALUE",
+			"value": "{keyValue}"
+		},
+		{
+			"attribute": "ACCOUNTID",
+			"value": "{accountID}"
+		},
+		{
+			"attribute": "MSISDN",
+			"value": "{msisdn}"
+		},
+		{
+			"attribute": "IMSI",
+			"value": "{imsi}"
+		},
+		{
+			"attribute": "BILLINGDAY",
+			"value": "{billingDay}"
+		},
+		{
+			"attribute": "TIER",
+			"value": "{tier}"
+		},
+		{
+			"attribute": "ENTITLEMENT",
+			"value": "{Entitlement}"
+		},
+		{
+			"attribute": "SERVICE_END_DATE",
+			"value": "{SERVICE_END_DATE}"
+		},
+		{
+			"attribute": "CUSTOM1",
+			"value": "{custom1}"
+		},
+		{
+			"attribute": "CUSTOM2",
+			"value": "{custom2}"
+		},
+		{
+			"attribute": "TYPE1",
+			"value": "{type1}"
+		}
+	]
+}

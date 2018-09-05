@@ -1,0 +1,24 @@
+SELECT
+  vcs.numservicio numService,  gs.servicio service,
+  COALESCE(vcs.PRECIO,
+    COALESCE((SELECT vlpd.PRECIO
+        FROM VENLISTAPRECIODET vlpd
+        WHERE COALESCE(vlpd.PAQUETE,' ')= COALESCE(  vcs.PAQUETE,' ')
+          AND vlpd.LISTA = vc.LISTAPRECIO
+          AND vlpd.SERVICIO = vcs.SERVICIO),  0)) price,
+  COALESCE(vcs.moneda,
+    COALESCE((SELECT vlpd.moneda
+        FROM VENLISTAPRECIODET vlpd
+        WHERE COALESCE(vlpd.PAQUETE,' ')= COALESCE(  vcs.PAQUETE,' ')
+          AND vlpd.LISTA = vc.LISTAPRECIO
+          AND vlpd.SERVICIO = vcs.SERVICIO),  'DL')) currency
+FROM  venconexionservicio vcs,vencontrato vc,genservicio gs
+where vcs.contrato = vc.contrato
+      AND vcs.tipo = vc.tipo
+      AND vcs.servicio = gs.servicio
+      AND vc.CIA = '503'
+      AND vc.PAIS = 'HON'
+      AND gs.PAIS = 'HON'
+      AND vcs.CIA = '503'
+      AND vcs.ESTADO = 'A'
+      AND vcs.numservicio = 2101548;

@@ -1,0 +1,26 @@
+{
+	"subscriber": "94453740",
+	"event": "PLAN_VAS",
+	"subevent": "DELETESUBS",
+	"subscribertype": "POS",
+	"TYPEPLAN": "HIB20",
+	"annex": "4070356295",
+	"additionalParams": [
+		{
+			"attribute": "llave",
+			"value": "{llave}DELETESUBS"
+		},
+		{
+			"attribute": "IDTRANSACTION",
+			"value": "b7c12902-5807-4b74-96d3-51c7ec7890cd"
+		},
+		{
+			"attribute": "KEYNAME",
+			"value": "{keyName}"
+		},
+		{
+			"attribute": "KEYVALUE",
+			"value": "{keyValue}"
+		}
+	]
+}

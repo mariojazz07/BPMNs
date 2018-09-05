@@ -1,0 +1,39 @@
+SELECT
+	vc.cliente client,	vcs.numservicio numService,
+	gs.servicio service,
+	vcs.conexion conexion,
+	COALESCE(vcs.NUMTELEFONO,' ') phone,
+	COALESCE(vcs.PAQUETE,' ') PACKAGE,
+	COALESCE(vcs.PRECIO,COALESCE((SELECT vlpd.PRECIO FROM VENLISTAPRECIODET vlpd WHERE COALESCE(vlpd.PAQUETE,' ')= COALESCE(	vcs.PAQUETE,' ')
+					AND vlpd.LISTA = vc.LISTAPRECIO	AND vlpd.SERVICIO = vcs.SERVICIO),	0)) price,
+          COALESCE(TO_CHAR( vcs.fechainstalacion, 'YYYYMMDD' ),'00000000') installDate,
+  COALESCE(vcs.MONEDA,COALESCE((SELECT vlpd.MONEDA FROM VENLISTAPRECIODET vlpd WHERE COALESCE(vlpd.PAQUETE,' ')= COALESCE(	vcs.PAQUETE,' ')
+        					AND vlpd.LISTA = vc.LISTAPRECIO	AND vlpd.SERVICIO = vcs.SERVICIO),	' ')) currency,
+          'A' ACTION
+
+FROM	venconexionservicio vcs
+INNER JOIN vencontrato vc ON(vcs.contrato = vc.contrato	AND vcs.tipo = vc.tipo)
+INNER JOIN genservicio gs ON(vcs.servicio = gs.servicio	)
+WHERE
+	vc.CIA = '503'
+	AND vc.PAIS = 'HON'
+	AND gs.TIPO NOT IN(
+		'OTROS',
+		'CARGOS'
+	)
+	AND gs.naturaleza NOT IN(
+		'TIGOF',
+		'4GLTE'
+	)
+	AND gs.PAIS = 'HON'
+	AND vcs.CIA = '503'
+	AND vcs.ESTADO = 'A'
+	AND vcs.CUOTAS IS NULL
+	AND vcs.CUOTASAPLICADAS IS NULL
+	--AND TO_CHAR( vcs.FECHAINSTALACION, 'YYYYMMDD' )=:fecha
+    and vc.cliente=:cliente
+		and vcs.servicio in ( select  ots.servicio from OTSERVICIO ots where ots.accion='I' and ots.ot in (
+        select oto.OT
+        from otorden oto where oto.cliente=:cliente and oto.ot=:ot
+        and EXISTS (select 1  from ottipo ott where ott.tipo
+					in ('IADSV','IADDI','ESFAC','INSAD','INSNU','INSCF','INLTE','TEXIN') and ott.tipo = oto.tipo)));
