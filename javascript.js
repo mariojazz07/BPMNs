@@ -10,7 +10,7 @@ if(typeof PCCGetSubscriberAllInfTask__platformErrorCode != 'undefined'){
 
     } else {
 
-        allowError = false;
+        allowError = false;//lo cambie en mac
 
     }
 
