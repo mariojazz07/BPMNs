@@ -9,6 +9,7 @@ var activePackSeq = '0';
 var activeAppsSeq = new Array();
 var packInstances;
 var tmpInstances;
+
 if(navObject.offeringJson.filled){
     supplementaryOffers = getSupplementaryOfferings('', navObject.offeringJson.obj);
 }
@@ -36,6 +37,7 @@ function setNavObjects(){
     }
     return navObject;
 }
+
 function getWalletObj(walletName, walletObj){
     var tmpItm;
     if(walletObj.filled){
@@ -149,6 +151,7 @@ function snatchInstances(itemArray, offeringLst, include, snatchIns, snatchSeq){
     }
     return snatchedInstances;
 }
+
 function existsOffer(offerLst, offerSeq){
     var flag = false;
     if(offerLst instanceof Array){
@@ -163,6 +166,7 @@ function existsOffer(offerLst, offerSeq){
     }
     return flag;
 }
+
 function setPackageItems(instances, queue){
     var packItem;
     var tmpItem;
@@ -253,6 +257,7 @@ function setItem(pOffering, pProduct, pPurchaseSeq, pName, pType, pMeasure, pSer
     objItem["class"] = pClass;
     return objItem;
 }
+
 function setItemSubs(pOffering, pProduct, pPurchaseSeq, pName, pType, pMeasure, pServiceStart, 
     pServiceEnd, pQtaPcntg, pQtaValue, pQtaConsumption, pQtaBalance, pClass, isApp, addActive, pActive){
     var objItem = new Object();
