@@ -539,7 +539,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10177")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1385889867");
 	  response.setEntry("SVKEY","7799");
 	
@@ -551,7 +551,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10178")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1885890045");
 	  response.setEntry("SVKEY","7799");
 	
@@ -563,7 +563,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10179")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 4GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1385890155");
 	  response.setEntry("SVKEY","7799");
 	
@@ -576,7 +576,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10180")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1485890309");
 	  response.setEntry("SVKEY","7799");
 	
@@ -588,7 +588,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10181")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 12GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1185890448");
 	  response.setEntry("SVKEY","7799");
 	
@@ -600,7 +600,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10182")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1285890680");
 	  response.setEntry("SVKEY","7799");
 	
@@ -611,7 +611,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10183")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1585890894");
 	  response.setEntry("SVKEY","7799");
 	
@@ -623,7 +623,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10184")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1585891025");
 	  response.setEntry("SVKEY","7799");
 	
@@ -635,7 +635,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10185")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 4GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "585891140");
 	  response.setEntry("SVKEY","7799");
 	
@@ -646,7 +646,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10186")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1485890309");
 	  response.setEntry("SVKEY","7799");
 	
@@ -657,7 +657,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10187")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 12GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "585891563");
 	  response.setEntry("SVKEY","7799");
 	
@@ -668,7 +668,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10188")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "185891682");
 	  response.setEntry("SVKEY","7799");
 	
@@ -703,7 +703,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10191")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1.5GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "586149719");
 	  response.setEntry("SVKEY","7799");
 	
@@ -715,7 +715,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10192")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 3GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586149921");
 	  response.setEntry("SVKEY","7799");
 	
@@ -738,7 +738,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10198")
 then
 	  response.setEntry("PLAN_NAME","PLAN_INTERNET 1.5GB_10198");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1086165556");
 	  response.setEntry("SVKEY","7799");
 	
@@ -749,7 +749,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10199")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 3GB_10199");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486165698");
 	  response.setEntry("SVKEY","7799");
 	
@@ -761,7 +761,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10200")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 5GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986150336");
 	  response.setEntry("SVKEY","7799");
 	
@@ -773,7 +773,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10201")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 7GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386165852");
 	  response.setEntry("SVKEY","7799");
 	
@@ -784,7 +784,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10202")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586165945");
 	  response.setEntry("SVKEY","7799");
 	
@@ -795,7 +795,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10203")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB_10203");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586166056");
 	  response.setEntry("SVKEY","7799");
 	
@@ -807,7 +807,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10204")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 4GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1786166180");
 	  response.setEntry("SVKEY","7799");
 	
@@ -819,7 +819,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10205")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB_10205");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386166316");
 	  response.setEntry("SVKEY","7799");
 	
@@ -831,7 +831,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10206")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586166441");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1608,7 +1608,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10218")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1.5GB_10218");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786236660");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1632,7 +1632,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10225")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1.5GB_10225");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1086236899");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1657,7 +1657,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10422")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB BYOD");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "986237603");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1669,7 +1669,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10412")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1786846749");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1681,7 +1681,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10410")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586846958");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1693,7 +1693,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10417")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586847206");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1706,7 +1706,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10402")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986847327");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1719,7 +1719,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10216")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 11GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1286847491");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1731,7 +1731,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10418")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 12GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886847649");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1743,7 +1743,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10403")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 12GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386847781");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1755,7 +1755,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10213")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 13GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386848077");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1767,7 +1767,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10230")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786848328");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1779,7 +1779,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10223")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1086848548");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1790,7 +1790,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10419")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786848628");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1801,7 +1801,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10404")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 15GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "986848730");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1813,7 +1813,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10214")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 16GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1386848897");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1824,7 +1824,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10411")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 18GB ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1186849043");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1836,7 +1836,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10415")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 18GB HIB ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486849202");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1861,7 +1861,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10400")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986849661");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1873,7 +1873,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10528")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 20GB DY");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886849894");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1885,7 +1885,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10423")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 20GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1286850026");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1897,7 +1897,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10426")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 20GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586850159");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1910,7 +1910,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10405")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 20GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1186850374");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1923,7 +1923,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10408")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 20GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "586850440");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1937,7 +1937,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "80082")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786851335");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1950,7 +1950,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10219")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "586851537");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1962,7 +1962,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10226")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1386851698");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1975,7 +1975,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10416")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986851884");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1988,7 +1988,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10401")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 2GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1086851943");
 	  response.setEntry("SVKEY","7799");
 	
@@ -1999,7 +1999,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10424")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 30GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586852363");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2011,7 +2011,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10407")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 30GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486852273");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2023,7 +2023,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10409")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 3GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1386852092");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2057,7 +2057,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10220")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 4GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1186852801");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2069,7 +2069,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10227")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 4GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1386852925");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2093,7 +2093,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10232")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 5GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786853478");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2106,7 +2106,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10420")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 5GB BYOD");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486853688");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2119,7 +2119,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10414")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 5GB ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386853622");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2132,7 +2132,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10215")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 7GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886853889");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2179,7 +2179,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10228")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786854349");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2190,7 +2190,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10209")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB (PRUEBAS PA)");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "186854489");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2202,7 +2202,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10421")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 8GB BYOD");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986854566");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2214,7 +2214,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10212")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 9GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386854924");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2249,7 +2249,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10525")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET SIN LIMITE 1GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486855271");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2261,7 +2261,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10168")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET SIN LIMITE 2GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786855368");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2387,7 +2387,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10045")
 then
 	  response.setEntry("PLAN_NAME","WHATSAPP ILIMITADO USD5");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "786857053");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2646,7 +2646,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10428")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET (SE) 12GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1786861738");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2658,7 +2658,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10429")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET (SE) 15GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1086861843");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2670,7 +2670,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10430")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET (SE) 20GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "186861959");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2682,7 +2682,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10427")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET (SE) 3GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1786862069");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2700,6 +2700,77 @@ then
 	  response.setEntry("SVKEY","7799");
 	
 end
+
+/*********************Nuevas Ofertas 17092018********************************************************/
+rule "PlanesVAS_CBS_10237"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10237")
+then
+	  response.setEntry("PLAN_NAME","PLAN EMPLEADOS 12GB");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1595241917");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_10235"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10235")
+then
+	  response.setEntry("PLAN_NAME","PLAN EMPLEADOS 2GB");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "795242132");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_10029"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10029")
+then
+	  response.setEntry("PLAN_NAME","PLAN STAFF & GERENTES 4G HSPA+");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "1595242537");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_10236"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10236")
+then
+	  response.setEntry("PLAN_NAME","PLAN EMPLEADOS 6GB");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "195242723");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_88900"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "88900")
+then
+	  response.setEntry("PLAN_NAME","PLAN INTERNET $22 VIP (DYNAMIC)");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "1595242872");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_10238"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10238")
+then
+	  response.setEntry("PLAN_NAME","PLAN EMPLEADOS 20GB");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1095243342");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
 
 /*********************Finaliza Corporate B2B Planes VAS*************************************/
 
@@ -2734,7 +2805,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "851")
 then
 	  response.setEntry("PLAN_NAME","Amigos Sin limites $19.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1985235803");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2745,7 +2816,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "852")
 then
 	  response.setEntry("PLAN_NAME","Amigos Sin limites $29.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "385278874");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2758,7 +2829,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "853")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limites $39.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "585279250");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2769,7 +2840,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "854")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limites $59.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1785280545");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2781,7 +2852,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "855")
 then
 	  response.setEntry("PLAN_NAME","Todo Sin limites $79.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1785280787");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2793,7 +2864,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "856")
 then
 	  response.setEntry("PLAN_NAME","Todo Sin limites $99.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1785281252");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2805,7 +2876,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "857")
 then
 	  response.setEntry("PLAN_NAME","Amigos Sin limites $19.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1285027635");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2817,7 +2888,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "858")
 then
 	  response.setEntry("PLAN_NAME","Amigos Sin limites $29.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1685133547");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2829,7 +2900,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "859")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limites $39.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1985136265");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2841,7 +2912,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "860")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limites $59.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "985136470");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2853,7 +2924,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "861")
 then
 	  response.setEntry("PLAN_NAME","Todo Sin limites $79.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1585137417");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2865,7 +2936,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "862")
 then
 	  response.setEntry("PLAN_NAME","Todo Sin limites $99.99 mixto");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "185137693");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2877,7 +2948,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "879")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limite (SE) $19.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1785137893");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2889,7 +2960,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "880")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limite (SE) $29.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1785138079");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2901,7 +2972,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "881")
 then
 	  response.setEntry("PLAN_NAME","Tigo Sin limite mixto (SE) $39.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "585138249");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2913,7 +2984,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "882")
 then
 	  response.setEntry("PLAN_NAME","Todo Sin limite mixto (SE)  $ 45.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1085138346");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2926,7 +2997,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "353")
 then
 	  response.setEntry("PLAN_NAME","Chip Postpago (SE) $19.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "185138487");
 	  response.setEntry("SVKEY","7799");
 	
@@ -2939,7 +3010,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "403")
 then
 	  response.setEntry("PLAN_NAME","Plan Postpago $10.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "185138626");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3013,7 +3084,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "379")
 then
 	  response.setEntry("PLAN_NAME","PLAN CON SMARTPHONE  $29.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1292388124");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3025,7 +3096,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "380")
 then
 	  response.setEntry("PLAN_NAME","PLAN CON SMARTPHONE  $39.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1892389517");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3037,7 +3108,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "381")
 then
 	  response.setEntry("PLAN_NAME","PLAN CON SMARTPHONE  $59.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T,OCS_APP_DEEZER_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY,OCS_APP_DZ_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1192389734");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3055,14 +3126,183 @@ then
 	
 end
 
+rule "PlanesVAS_CBS_849"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "849")
+then
+	  response.setEntry("PLAN_NAME","LTE_CONATEL");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "1095495876");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_911"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "911")
+then
+	  response.setEntry("PLAN_NAME","TIGO SIN LIMITES $59.99 (PRUEBAS PA)");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1195388469");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_928"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "928")
+then
+	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE HIBRIDO (SEC) $19.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1686474052");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_929"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "929")
+then
+	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE HIBRIDO (SEC) $29.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1986474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_930"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "930")
+then
+	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE HIBRIDO (SEC) $39.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1386474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_931"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "931")
+then
+	  response.setEntry("PLAN_NAME","TODO SIN LIMITE HIBRIDO (SEC) $45.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "386474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_949"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "949")
+then
+	  response.setEntry("PLAN_NAME","Plan Proyecto SEDIS HIB $8.50");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "586474052");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
 
 rule "PlanesVAS_CBS_493"
 when 
     f: FactRequest(input["PLAN_CODE"] == "493")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE ESP ALUCOM $12.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486474809");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_725"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "725")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $15.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
+	  response.setEntry("CBS_OFFERING", "192800385");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_726"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "726")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $19.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "592802137");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_727"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "727")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $29.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1492803802");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_728"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "728")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $39.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1292813080");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_729"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "729")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $59.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "192813483");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_730"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "730")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $79.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1492813704");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_731"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "731")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $99.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1492814038");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_732"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "732")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp $120");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1892814386");
 	  response.setEntry("SVKEY","7799");
 	
 end
@@ -3073,7 +3313,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "974")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $12 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1586474811");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3084,7 +3324,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "12")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $12 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "186474808");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3095,11 +3335,185 @@ when
     f: FactRequest(input["PLAN_CODE"] == "20")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $120 ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "986474807");
 	  response.setEntry("SVKEY","7799");
 	
 end
+
+
+rule "PlanesVAS_CBS_21"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "21")
+then
+	  response.setEntry("PLAN_NAME","PLAN PROYECTO SEDIS HIB $10.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "786474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_31"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "31")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $12 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
+	  response.setEntry("CBS_OFFERING", "786474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_32"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "32")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $19.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1586474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_32"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "32")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $19.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1586474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_33"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "33")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $29.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1186474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_34"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "34")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $39.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "986474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_35"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "35")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $59.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1386474052");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_36"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "36")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $79.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1786474052");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_37"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "37")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $99.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1186474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_38"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "38")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $120 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1286474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_39"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "39")
+then
+	  response.setEntry("PLAN_NAME","SIN LIMITE HIB $120 ESPECIAL");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1486474054");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_40"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "40")
+then
+	  response.setEntry("PLAN_NAME","Tigo Sin Limite Hibrido (SEC) $19.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1286474055");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_41"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "41")
+then
+	  response.setEntry("PLAN_NAME","Tigo Sin Limite Hibrido (SEC) $29.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1886474055");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_42"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "42")
+then
+	  response.setEntry("PLAN_NAME","Tigo Sin Limite Hibrido (SEC) $39.99 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "586474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+
+rule "PlanesVAS_CBS_43"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "43")
+then
+	  response.setEntry("PLAN_NAME","Tigo Sin Limite Hibrido (SEC) $45.00 VIP");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "186474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
 
 
 rule "PlanesVAS_CBS_19"
@@ -3107,7 +3521,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "19")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $120 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886474812");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3118,7 +3532,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "975")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $19.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "186474812");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3130,7 +3544,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "13")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $19.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1786474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3142,7 +3556,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "976")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $29.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1286474809");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3154,7 +3568,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "14")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $29.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3166,7 +3580,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "977")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $39.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3178,7 +3592,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "15")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $39.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1286474812");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3190,7 +3604,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "978")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $59.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386474807");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3202,7 +3616,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "16")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $59.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "586474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3214,7 +3628,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "979")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $79.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "586474811");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3226,7 +3640,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "17")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $79.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1886474808");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3239,7 +3653,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "980")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite $99.99 Especial");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "186474807");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3252,7 +3666,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "18")
 then
 	  response.setEntry("PLAN_NAME","SIN LIMITE $99.99 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1986474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3291,7 +3705,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "490")
 then
 	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE ALUCOM $5.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "386474809");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3304,7 +3718,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "49")
 then
 	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE DYNAMIC $25.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1486474811");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3316,7 +3730,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "50")
 then
 	  response.setEntry("PLAN_NAME","TIGO SIN LIMITE DYNAMIC $40.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1386474810");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3327,7 +3741,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "75")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $15.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1892540490");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3338,7 +3752,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "76")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $19.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "192543456");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3349,7 +3763,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "77")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $29.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1592544672");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3360,7 +3774,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "78")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $39.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1792555286");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3371,7 +3785,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "79")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $59.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "792556506");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3382,7 +3796,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "80")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $79.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1992557499");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3393,7 +3807,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "81")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $99.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1992558184");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3404,18 +3818,64 @@ when
     f: FactRequest(input["PLAN_CODE"] == "82")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp $120");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "992558724");
 	  response.setEntry("SVKEY","7799");
 	
 end
+
+
+rule "PlanesVAS_CBS_444"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "444")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp $19.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "992814772");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_445"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "445")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp $29.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "392815577");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_446"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "446")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp $39.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1492816118");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_447"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "447")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp  $45.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1092816437");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
 
 rule "PlanesVAS_CBS_736"
 when 
     f: FactRequest(input["PLAN_CODE"] == "736")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $15.00");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1792562615");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3426,7 +3886,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "737")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $19.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1392562875");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3437,7 +3897,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "739")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $29.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1892562995");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3448,7 +3908,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "740")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $39.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1792563146");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3459,7 +3919,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "742")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $59.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "392563309");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3470,7 +3930,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "743")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $79.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "992563383");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3481,7 +3941,7 @@ when
     f: FactRequest(input["PLAN_CODE"] == "744")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $99.99");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1292563487");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3492,23 +3952,175 @@ when
     f: FactRequest(input["PLAN_CODE"] == "757")
 then
 	  response.setEntry("PLAN_NAME","Sin Limite Corp Prime $120");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1192563602");
 	  response.setEntry("SVKEY","7799");
 	
 end
 
+rule "PlanesVAS_CBS_758"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "758")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $15.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY");
+	  response.setEntry("CBS_OFFERING", "992816986");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_759"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "759")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $19.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "792818083");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_760"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "760")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $29.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "192818464");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_761"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "761")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $39.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1992818884");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_762"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "762")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $59.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "192819121");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_770"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "770")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $79.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1792819282");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_771"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "771")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $99.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "592819507");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+
+rule "PlanesVAS_CBS_772"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "772")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite Hib Corp Prime $120");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1292819630");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_773"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "773")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp Prime $19.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "792820158");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_774"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "774")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp Prime $29.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1892820660");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_776"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "776")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp Prime $39.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "392820898");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_777"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "777")
+then
+	  response.setEntry("PLAN_NAME","Sin Limite (SEC) Hib Corp Prime  $45.00");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1392821069");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_811"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "811")
+then
+	  response.setEntry("PLAN_NAME","Plan BYOD Sin Contrato $14.99");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
+	  response.setEntry("CBS_OFFERING", "1886474053");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+
 
 /*********************Finaliza Planes VAS-Oferta Primaria*************************************/
 
-//Suplementarias Delta 2
+//Suplementarias Delta 22
 
 rule "PlanesVAS_CBS_100"
 when 
     f: FactRequest(input["PLAN_VAS"] == "100")
 then
 	  response.setEntry("PLAN_NAME","PLAN BASICO");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1393169392");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3520,7 +4132,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "101")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET TABLETS USD25 VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1593169643");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3532,7 +4144,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "102")
 then
 	  response.setEntry("PLAN_NAME","PLAN PREMIUM");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1993169776");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3543,7 +4155,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "103")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET USD35");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793169904");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3554,7 +4166,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "109")
 then
 	  response.setEntry("PLAN_NAME","PLAN BASICO ESPECIAL");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "393170085");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3565,7 +4177,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "110")
 then
 	  response.setEntry("PLAN_NAME","PLAN EXTRA PREMIUM 12GB USD25");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793170206");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3576,7 +4188,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "113")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET MOVIL PREMIUM USD10");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "993170310");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3587,7 +4199,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "115")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET MOVIL BASICO USD3");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1193170433");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3599,7 +4211,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "116")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET MOVIL AVANZADO USD5");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1393170574");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3609,7 +4221,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "126")
 then
 	  response.setEntry("PLAN_NAME","PLAN COMPU BASICO");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193170684");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3619,7 +4231,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "127")
 then
 	  response.setEntry("PLAN_NAME","PLAN COMPU AVANZADO");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1293170782");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3629,7 +4241,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "349")
 then
 	  response.setEntry("PLAN_NAME","PLAN DE RETENCION INTERNET USD8");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "393170888");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3639,7 +4251,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "350")
 then
 	  response.setEntry("PLAN_NAME","PLAN DE RETENCION INTERNET USD10");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171054");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3650,7 +4262,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10174")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET MOVIL AVANZADO USD4");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "993171163");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3660,7 +4272,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10175")
 then
 	  response.setEntry("PLAN_NAME","PLAN DE DATOS USD14");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793171495");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3673,13 +4285,22 @@ when
     f: FactRequest(input["PLAN_VAS"] == "50010")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET ESPECIAL USD25.00 10GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171609");
 	  response.setEntry("SVKEY","7799");
 	
 end
 
-
+rule "PlanesVAS_CBS_10035"
+when 
+    f: FactRequest(input["PLAN_VAS"] == "10035")
+then
+	  response.setEntry("PLAN_NAME","PLAN INTERNET VENDEDORES TIGO BUSINESSS");
+	  response.setEntry("PCC_SERVICE", "NA");
+	  response.setEntry("CBS_OFFERING", "193171609");
+	  response.setEntry("SVKEY","7799");
+	
+end
 
 
 
@@ -3690,7 +4311,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "80075")
 then
 	  response.setEntry("PLAN_NAME","PLAN CONTRATISTAS TIGO SMART USD16");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171860");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3701,7 +4322,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10211")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 1GB 3USD SEDIS");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171959");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3712,7 +4333,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10425")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 40GB HIB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1693172056");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3724,7 +4345,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "10406")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 40GB VIP");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "593172198");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3735,7 +4356,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "339")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET MOVIL PREMIUM USD10 CANJE P.");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193172278");
 	  response.setEntry("SVKEY","7799");
 	
@@ -3747,7 +4368,7 @@ when
     f: FactRequest(input["PLAN_VAS"] == "NEW")
 then
 	  response.setEntry("PLAN_NAME","PLAN INTERNET 10GB");
-	  response.setEntry("PCC_SERVICE", "OCS_APP_WHATSAPP_POS_T,OCS_APP_FACEBOOK_POS_T");
+	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1192296133");
 	  response.setEntry("SVKEY","7799");
 	
