@@ -10,8 +10,14 @@ else if (vUpdateService){
 	vMasterSequence=vPurchaseSeqVAS;
 }
 else{
+	if(typeof vCBSOffering!='undefined'){
 	vOffCbs=vCBSOffering;
 	vMasterSequence=transactionId;
+	}
+	else{
+		vOffCbs='NA';
+		vMasterSequence='NA';
+	}
 }
 
 

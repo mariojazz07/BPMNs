@@ -8,14 +8,14 @@ var doLoop=false;
 var vPCCArray=new Array();
 
 
-if (vPCCService!= 'undefined' && vPCCService != 'NA')
+if (typeof vPCCService!= 'undefined' && vPCCService != 'NA')
 {
 	doPCC=true;
 	vPCCArray=vPCCService.split(',');
 	vSrvPcc=vPCCArray[vCounter2];
 }
 
-if(vOfferingPlanVAS != 'undefined' && !vIsPrimary){
+if(typeof vOfferingPlanVAS != 'undefined' && !vIsPrimary){
 	doCBS=true;
 	vOffCbs=vOfferingPlanVAS;
 }
