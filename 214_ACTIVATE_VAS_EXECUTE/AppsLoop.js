@@ -1,10 +1,11 @@
 doLoop=false;
 vCounter2++;
 
-if(vCounter2<vAppsArray.length){
+//if(vCounter2<vAppsArray.length){
+	if(vCounter2<vPCCArray.length){
 	doLoop=true;	
 	
-	vSrvPcc=vAppsArray[vCounter2];
+	vSrvPcc=vPCCArray[vCounter2];
 	
 }
 
