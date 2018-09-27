@@ -135,6 +135,9 @@ function splitInstancesPlan(itemArray, activeId) {
     if (itemArray instanceof Array) {
         if (itemArray.length > 0) {
             for (var i = 0; i < itemArray.length; i++) {
+                 if(java.lang.Thread.interrupted()){
+				break;
+			}
                 if (activeId == itemArray[i].FreeUnitOrigin.OfferingKey.PurchaseSeq) {
                     activeInstance = itemArray[i];
                     //strtIdx = 1;
@@ -165,6 +168,9 @@ function splitInstancesAddons(itemArray, activeOff) {
     if (itemArray instanceof Array) {
         if (itemArray.length > 0) {
             for (var i = 0; i < itemArray.length; i++) {
+                 if(java.lang.Thread.interrupted()){
+				break;
+			}
                 if (activeOff == itemArray[i].FreeUnitOrigin.OfferingKey.OfferingID) {
                     addRetInstance = itemArray[i];
                 } else {
@@ -197,6 +203,9 @@ function splitInstances(itemArray, activeId) {
             }
             if (itemArray.length >= 1) {
                 for (var i = strtIdx; i < itemArray.length; i++) {
+                    if(java.lang.Thread.interrupted()){
+				break;
+			}
                     queuedInstances.push(itemArray[i]);
                 }
             }
@@ -218,6 +227,9 @@ function snatchInstances(itemArray, offeringLst, include, snatchIns, snatchSeq) 
     var snatchId = '';
     if (itemArray instanceof Array) {
         for (var i = 0; i < itemArray.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             if (snatchSeq) {
                 if (snatchIns) {
                     snatchId = itemArray[i].FreeUnitOrigin.OfferingKey.PurchaseSeq;
@@ -272,6 +284,9 @@ function existsOffer(offerLst, offerSeq) {
     var flag = false;
     if (offerLst instanceof Array) {
         for (var i = 0; i < offerLst.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             if (offerLst[i] == offerSeq) {
                 flag = true;
                 break;
@@ -305,6 +320,9 @@ function setPackageItems(instances, queue) {
     if (instances instanceof Array) {
         packItem = new Array();
         for (var i = 0; i < instances.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             tmpItem = new Object();
             currentAmtBts = new Number(instances[i].CurrentAmount);
             initialAmtBts = new Number(instances[i].InitialAmount);
@@ -372,6 +390,9 @@ function setPlanItems(instances, CbsCycle, queue) {
     if (instances instanceof Array) {
        
         for (var i = 0; i < instances.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             tmpItem = new Object();
             currentAmtBts = new Number(instances[i].CurrentAmount);
             initialAmtBts = new Number(instances[i].InitialAmount);
@@ -502,6 +523,9 @@ function setAddonsItems(instances, CbsCycle, queue) {
         itmServiceStart = instances[instances.length - 1].EffectiveTime;
         itmServiceEnd = instances[0].ExpireTime;
         for (var i = 0; i < instances.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             tmpItem = new Object();
             //currentAmtBts = new Number(instances[i].CurrentAmount);
             currentAmtBts += new Number(instances[i].CurrentAmount);
@@ -759,6 +783,9 @@ function splitApps(itemArray) {
     var bustedOffers = new Array();
     var tmpId;
     for (var i = 0; i < itemArray.length; i++) {
+         if(java.lang.Thread.interrupted()){
+				break;
+			}
         tmpId = itemArray[i].OfferingKey.OfferingID;
         if (!existsOffer(bustedOffers, tmpId)) {
             bustedOffers.push(tmpId);
@@ -780,6 +807,9 @@ function splitOffers(pApps, pActiveIds) {
     var queuedOffers = new Array();
     var tmpArray;
     for (var i = 0; i < pApps.length; i++) {
+         if(java.lang.Thread.interrupted()){
+				break;
+			}
         tmpArray = pApps[i];
         for (var j = 0; j < tmpArray.length; j++) {
             if (existsOffer(pActiveIds, tmpArray[j].OfferingKey.PurchaseSeq)) {
@@ -816,6 +846,9 @@ function setAppItems(instances, queue) {
     if (instances instanceof Array) {
         packItem = new Array();
         for (var i = 0; i < instances.length; i++) {
+             if(java.lang.Thread.interrupted()){
+				break;
+			}
             tmpItem = new Object();
             itmServiceStart = instances[i].EffectiveTime;
             itmServiceEnd = instances[i].ExpirationTime;
@@ -868,6 +901,9 @@ function getHoursDiff(pIni, pFin, sysdate) {
 function getActiveApps(pArray) {
     var activeArray = new Array();
     for (var i = 0; i < pArray.length; i++) {
+         if(java.lang.Thread.interrupted()){
+				break;
+			}
         if (pArray[i] instanceof Array) {
             activeArray.push(pArray[i][0].OfferingKey.PurchaseSeq);
         } else {
