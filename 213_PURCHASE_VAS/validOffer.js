@@ -4,7 +4,7 @@ var vHasFUP64 = false;
 var vPccJsonInfo;
 var vUpdateUsrCategory = false;
 var vSetOffering = false;
-var vCategoryPCC='normal';
+var vCategoryPCC = 'normal';
 
 if (typeof vPCCService != 'undefined') {
 	if (vPCCService != 'NA') {
@@ -25,24 +25,16 @@ if (typeof vPaqInfo != 'undefined') {
 }
 
 
-if (typeof FUP128 != 'undefined') {
+if (typeof FUP != 'undefined') {
 	vHasFUP128 = true;
-	vCategoryPCC=FUP128;
+	vCategoryPCC = GetUsrCategoryByType(vPaymentType,FUP);
 	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
-	
 
-} else if (typeof FUP64 != 'undefined') {
-	vHasFUP64 = true;
-	vCategoryPCC=FUP64;
+} else if (vSubscriberFound && vPaymentType == '2') {
+	vCategoryPCC = 'Hibrido';
 	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
-	
-}
-else if(vSubscriberFound && vPaymentType == '2'){
-	vCategoryPCC='Hibrido';
-	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
-}
-else{
-	vCategoryPCC='normal';
+} else {
+	vCategoryPCC = 'normal';
 	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
 }
 
@@ -76,4 +68,31 @@ function GetUsrCategory(vPCCObject) {
 		}
 	}
 	return vUsrActualCategory;
+}
+
+function GetUsrCategoryByType(vSubType, vFUPType) {
+	var vFUPByType = '';
+	if (vSubType == '1') {
+		switch (vFUPType) {
+			case '128':
+				vFUPByType = 'PosF128';
+				break;
+			case '64':
+				vFUPByType = 'PosF64';
+				break;
+		}
+
+	}
+	else if(vSubType=='2'){
+		switch(vFUPType){
+			case '128':
+				vFUPByType = 'HibF128';
+				break;
+			case '64':
+				vFUPByType = 'HibF64';
+				break;
+		}
+	}
+
+	return vFUPByType;
 }

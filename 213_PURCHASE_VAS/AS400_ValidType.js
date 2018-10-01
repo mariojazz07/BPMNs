@@ -36,8 +36,6 @@ if (typeof vAS400SubType != 'undefined') {
 	}
 
 
-vPostpaid = true;
-vPaymentType = '1';
 
 
 

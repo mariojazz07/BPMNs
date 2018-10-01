@@ -520,7 +520,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1393169392");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -533,7 +533,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1593169643");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -546,7 +546,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1993169776");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -558,7 +558,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793169904");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 
 end
 
@@ -583,7 +583,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "393170085");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -595,7 +595,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793170206");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -607,7 +607,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "993170310");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -632,7 +632,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1193170433");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -645,7 +645,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1393170574");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -658,7 +658,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193170684");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 rule "PlanesVAS_CBS_127"
@@ -669,7 +669,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1293170782");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -718,7 +718,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193172278");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -797,7 +797,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "393170888");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -809,7 +809,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171054");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -2160,7 +2160,7 @@ then
 	  response.setEntry("PCC_SERVICE", "NA");
 	  response.setEntry("CBS_OFFERING", "193171609");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -2494,7 +2494,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "993171163");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 rule "PlanesVAS_CBS_10175"
@@ -2505,7 +2505,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "793171495");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -2858,7 +2858,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171959");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -3522,7 +3522,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "593172198");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP64","TRUE");
+	  response.setEntry("FUP","64");
 	
 end
 
@@ -3756,7 +3756,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "1693172056");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP64","TRUE");
+	  response.setEntry("FUP","64");
 	
 end
 
@@ -4213,7 +4213,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171609");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
@@ -4504,7 +4504,7 @@ then
 	  response.setEntry("PCC_SERVICE", "OCS_APP_WA_POS_SY,OCS_APP_FB_POS_SY");
 	  response.setEntry("CBS_OFFERING", "193171860");
 	  response.setEntry("SVKEY","7799");
-	  response.setEntry("FUP128","TRUE");
+	  response.setEntry("FUP","128");
 	
 end
 
