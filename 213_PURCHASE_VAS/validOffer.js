@@ -1,23 +1,79 @@
+var vHasUnlimited = false;
+var vHasFUP128 = false;
+var vHasFUP64 = false;
+var vPccJsonInfo;
+var vUpdateUsrCategory = false;
+var vSetOffering = false;
+var vCategoryPCC='normal';
 
-var vHasUnlimited=false;
-
-if(typeof vPCCService != 'undefined'){
-	if(vPCCService!= 'NA'){
-		vHasUnlimited=true;
+if (typeof vPCCService != 'undefined') {
+	if (vPCCService != 'NA') {
+		vHasUnlimited = true;
 	}
+}
+
+if (typeof vIsPrimaryPlan != 'undefined') {
+	if (!vIsPrimaryPlan) {
+		vSetOffering = true;
+	}
+}
+
+
+//Validar tipo de plan FUP
+if (typeof vPaqInfo != 'undefined') {
+	vPccJsonInfo = JSON.parse(vPaqInfo);
+}
+
+
+if (typeof FUP128 != 'undefined') {
+	vHasFUP128 = true;
+	vCategoryPCC=FUP128;
+	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+	
+
+} else if (typeof FUP64 != 'undefined') {
+	vHasFUP64 = true;
+	vCategoryPCC=FUP64;
+	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
 	
 }
-
-
-var vSetOffering=false;
-
-if(typeof vIsPrimaryPlan!= 'undefined'){
-	if(!vIsPrimaryPlan){
-		vSetOffering=true;
-	}
+else if(vSubscriberFound && vPaymentType == '2'){
+	vCategoryPCC='Hibrido';
+	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+}
+else{
+	vCategoryPCC='normal';
+	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
 }
 
 
-LOGGER.info(tLinea+'vHasUnlimited:'+vHasUnlimited+tLinea);
 
-LOGGER.info(tLinea+'vSetOffering:'+vSetOffering+tLinea);
+
+
+function ValidateCategory(vPCCObject, vFUPType) {
+	var vActualCategory = '';
+	var vUpdateCategory = false;
+	if (typeof vPCCObject != 'undefined') {
+		vActualCategory = GetUsrCategory(vPCCObject);
+		if (vFUPType != vActualCategory) {
+			vUpdateCategory = true;
+		}
+	}
+	return vUpdateCategory;
+}
+
+function GetUsrCategory(vPCCObject) {
+	var vUsrCategory = 'USRCATEGORY';
+	var vUsrSubscriber = '';
+	var vUsrActualCategory = '';
+	if (typeof vPCCObject != 'undefined') {
+		vUsrSubscriber = vPCCObject.getSubscriberAllInfResponse.result.subscriber.attribute;
+		for (var i = 0; i < vUsrSubscriber.length; i++) {
+			if (vUsrCategory == vUsrSubscriber[i].key) {
+				vUsrActualCategory = vUsrSubscriber[i].value;
+				break;
+			}
+		}
+	}
+	return vUsrActualCategory;
+}

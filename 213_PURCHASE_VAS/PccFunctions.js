@@ -1,5 +1,6 @@
 var plMultiQuota=false;
 var quotaBL = 'TEST_FUP_APP_FACEBOOK Quota';
+
 function processJson(strJsonInfo){
     var vSubscribedServices;
     var vSubscriberQuotas;
@@ -27,6 +28,7 @@ function processJson(strJsonInfo){
     }
     return vDataObj;
 }
+
 function getAttribute(serviceItems, attribute){
     var attributeItem = {key: 'NA', value: 'NA'};
     if(typeof serviceItems != 'undefined'){
