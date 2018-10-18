@@ -25,9 +25,9 @@ if (typeof vPaqInfo != 'undefined') {
 }
 
 
-if (typeof FUP != 'undefined') {
+if (typeof vPlanFUP != 'undefined') {
 	vHasFUP128 = true;
-	vCategoryPCC = GetUsrCategoryByType(vPaymentType,FUP);
+	vCategoryPCC = GetUsrCategoryByType(vPaymentType,vPlanFUP);
 	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
 
 } else if (vSubscriberFound && vPaymentType == '2') {
