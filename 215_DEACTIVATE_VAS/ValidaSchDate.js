@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-
-
-    <button onclick="myFunction()">Debug</button>
-
-    <p id="demo"></p>
-
-    <script>
-        function myFunction() {
-            var result = working();
-            document.getElementById("demo").innerHTML = result;
-        }
-    </script>
-    <script>
-        function working() {
-
-          var DoRemove = false;
+var DoRemove = false;
 var vSchDay = '';
 var vSchMonth = '';
 var vSchYear = '';
@@ -29,9 +10,6 @@ var vSchTasksToRemove = new Array();
 var vSchTask = '';
 var vSchCounter = 0;
 var vSchID = '';
-
-
-vSchJSON='{"listSchedule":[{"scheduleId":17368118,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":28,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":19,"minute":52,"second":12,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0},{"scheduleId":17368119,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":30,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":18,"minute":40,"second":43,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0}]}';
 
 if (typeof vSchJSON != 'undefined') {
 	vSchTask = JSON.parse(vSchJSON);
@@ -86,19 +64,3 @@ function CompareSchDates(vYear,vMonth,vDay,vHour,vMin,vSec) {
 // 	var format = year + month + day;
 // 	return format;
 // }
-
-
-
-return vSchID;
-            
-        }
-    </script>
-
-
-
-
-
-
-</body>
-
-</html>

@@ -26,10 +26,12 @@ var vCRemarkCbs = "";
 var pipe = '|';
 var vDoSchedule = false;
 var vScheduleDateWarning = "";
-var vRecurrent='FALSE';
-var ENDTIME='235959';
-var STARTIME='000000';
+var vRecurrent = 'FALSE';
+var ENDTIME = '235959';
+var STARTIME = '000000';
 //var vSkey=SVKEY;
+var vExecuteProcess = false;
+var vExecuteValue = false;
 
 
 /* if(typeof TYPE != 'undefined'){
@@ -38,66 +40,77 @@ var STARTIME='000000';
 
 vGnricType = true;
 
-if (vGnricType) {
 
-  if (typeof ENTITLEMENT != "undefined") {
-    //vEntitlement = ENTITLEMENT.replace('"', '').split(/[",",";"]/)[0];
-    vEntitlement = ENTITLEMENT;
-    addService = vEntitlement.toLowerCase() != 'prepaid' && vEntitlement.toLowerCase() != 'postpaid';
-    //addService= typeof vEntitlement !="undefined";
-  } else {
-    vMissingParam = true;
-    vParams += "ENTITLEMENT";
+if (typeof EXECUTE != 'undefined') {
+
+  if (EXECUTE == 'TRUE') {
+    vExecuteValue = true;
   }
+}
 
-  if (typeof BILLDAY != "undefined") {
-    vBillingDay = BILLDAY == "0" || BILLDAY == "00" ? "1" : BILLDAY;
-    vBillingDay = new Number(String(vBillingDay));
-  } else {
-    vMissingParam = true;
-    vConcat = vParams == "" ? "" : ",";
-    vParams += vConcat + "BILLDAY";
-  }
+if (vExecuteValue) {
+  vExecuteProcess = true;
+  if (vGnricType) {
 
-  if (typeof subscriberType != "undefined") {
-    vTier = subscriberType.toUpperCase() == "PRE" ? "0" : "1";
-    vSubType = typeSubscriber.indexOf(subscriberType.toUpperCase()) >= 0 ? subscriberType : "POS";
-  } else {
-    vMissingParam = true;
-    vConcat = vParams == "" ? "" : ",";
-    vParams += vConcat + "subscriberType";
-  }
-
-
-if (typeof SRVSTARDATE != 'undefined') {
-    vStarDateAs400 = SRVSTARDATE+STARTIME;
-    vServiceStartDate = getCbsDate(vStarDateAs400);
-    if (vServiceStartDate > SysDate) {
-      vDoSchedule = true;
-     
-     vScheduleDateWarning = parseTimeToScheduleDate(vServiceStartDate.getTime());
+    if (typeof ENTITLEMENT != "undefined") {
+      //vEntitlement = ENTITLEMENT.replace('"', '').split(/[",",";"]/)[0];
+      vEntitlement = ENTITLEMENT;
+      addService = vEntitlement.toLowerCase() != 'prepaid' && vEntitlement.toLowerCase() != 'postpaid';
+      //addService= typeof vEntitlement !="undefined";
+    } else {
+      vMissingParam = true;
+      vParams += "ENTITLEMENT";
     }
 
+    if (typeof BILLDAY != "undefined") {
+      vBillingDay = BILLDAY == "0" || BILLDAY == "00" ? "1" : BILLDAY;
+      vBillingDay = new Number(String(vBillingDay));
+    } else {
+      vMissingParam = true;
+      vConcat = vParams == "" ? "" : ",";
+      vParams += vConcat + "BILLDAY";
+    }
+
+    if (typeof subscriberType != "undefined") {
+      vTier = subscriberType.toUpperCase() == "PRE" ? "0" : "1";
+      vSubType = typeSubscriber.indexOf(subscriberType.toUpperCase()) >= 0 ? subscriberType : "POS";
+    } else {
+      vMissingParam = true;
+      vConcat = vParams == "" ? "" : ",";
+      vParams += vConcat + "subscriberType";
+    }
+
+
+    if (typeof SRVSTARDATE != 'undefined') {
+      vStarDateAs400 = SRVSTARDATE + STARTIME;
+      vServiceStartDate = getCbsDate(vStarDateAs400);
+      if (vServiceStartDate > SysDate) {
+        vDoSchedule = true;
+
+        vScheduleDateWarning = parseTimeToScheduleDate(vServiceStartDate.getTime());
+      }
+
+    }
+
+
+
+    if (typeof SRVENDDATE != "undefined" && SRVENDDATE != '0') {
+      vEndDateAs400 = SRVENDDATE + ENDTIME;
+      vUpdateService = true;
+
+      vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
+      vServiceEndDate = getCbsDate(vEndDateAs400);
+
+    } else {
+      vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
+      vServiceEndDate = parseDateToStringCBS2(SysDate, vBillingDay);
+
+    }
+
+    //vCRemarkCbs=transformMtr(C_REMARKS,productId,vSkey);
+
+
   }
-
-
-
-  if (typeof SRVENDDATE != "undefined" && SRVENDDATE != '0') {
-    vEndDateAs400 = SRVENDDATE+ENDTIME;
-    vUpdateService = true;
-
-    vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
-    vServiceEndDate = getCbsDate(vEndDateAs400);
-
-  } else {
-    vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
-    vServiceEndDate = parseDateToStringCBS2(SysDate, vBillingDay);
-
-  }
-
-  //vCRemarkCbs=transformMtr(C_REMARKS,productId,vSkey);
-
-
 }
 
 
@@ -340,6 +353,6 @@ var tSaltoL = '\n';
 var tLinea = tSaltoL + '************************************************************************' + tSaltoL;
 
 
-LOGGER.info(tLinea+'vDoSchedule:'+vDoSchedule+tLinea);
-LOGGER.info(tLinea+'vServiceStartDate:'+vServiceStartDate+tLinea);
-LOGGER.info(tLinea+'vScheduleDateWarning:'+vScheduleDateWarning+tLinea);
+LOGGER.info(tLinea + 'vDoSchedule:' + vDoSchedule + tLinea);
+LOGGER.info(tLinea + 'vServiceStartDate:' + vServiceStartDate + tLinea);
+LOGGER.info(tLinea + 'vScheduleDateWarning:' + vScheduleDateWarning + tLinea);

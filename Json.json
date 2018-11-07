@@ -1,4 +1,1 @@
-{"OFFERINGID": "12345","PRODUCT_ID": "343","PRODUCT_NAME":"WhatsApp Ilimitado","QTA":"614400",
-"PROFILE":"0","TYPE":"APP","PACKAGE":"TRUE"},
-{"OFFERINGID": "12345","PRODUCT_ID": "343","PRODUCT_NAME":"WhatsApp Ilimitado","QTA":"614400",
-"PROFILE":"0","TYPE":"APP","PACKAGE":"TRUE"}
+{"listSchedule":[{"scheduleId":17368118,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":28,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":19,"minute":52,"second":12,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0},{"scheduleId":17368119,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":30,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":18,"minute":40,"second":43,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0}]}

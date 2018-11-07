@@ -7,9 +7,9 @@ var vUnSubCbs = false;
 var vPlanVasPurchaseSeq = '';
 
 //if (typeof vPaqInfo != 'undefined') {
-if(navObject.pccJson.filled){
+if (navObject.pccJson.filled) {
 	//navInfo = processJson(vPaqInfo);
-	navInfo=navObject.pccJson.obj;
+	navInfo = navObject.pccJson.obj;
 	// if(typeof navInfo.Plans != 'undefined'){
 	// 	vPlanEntitlement = navInfo.Plans.ServiceName;
 	// 	vUnsub = true;
@@ -34,14 +34,19 @@ if(navObject.pccJson.filled){
 	// 		}
 	// 	}
 	// }
-	if(typeof navInfo.Plans != 'undefined') {
+	if (typeof navInfo.Plans != 'undefined') {
 		for (var j = 0; j < navInfo.Plans.length; j++) {
 			vUnsubPCCApp.push(navInfo.Plans[j].ServiceName);
 		}
 		vUnsub = true;
 		vPCCAppDel = vUnsubPCCApp[vCounter2];
 	}
+	
+	
 }
+
+
+
 /****************************** Validacion CBS***********************/
 if (typeof supplementaryOffers != 'undefined') {
 	if (supplementaryOffers instanceof Array) {
