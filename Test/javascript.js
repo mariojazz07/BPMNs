@@ -1,73 +1,44 @@
-var BPMN_RESPONSE_CODE = '0';
-var BPMN_RESPONSE_MESSAGE = '';
-var strMsj = '';
+var typeSubscriber = 'PRE,HIC,CIN,HIB,HIB20,POS';
 
-if(!validPlan){
-BPMN_RESPONSE_CODE = '105';
-BPMN_RESPONSE_MESSAGE = 'Plan no compatible.';
-strMsj = vMsjPlanActivo;
-MESSAGE = strMsj;
-} else if(!validCos){
-BPMN_RESPONSE_CODE = '103';
-BPMN_RESPONSE_MESSAGE = 'Cos Invalido';
-strMsj = vMsjCos;
-MESSAGE = strMsj;
-}
+var vSubscriberFound = false;
+
+var vPaidType = '0';
 
 
 
+if(typeof vSubscriberType != 'undefined'){
 
-/*
-var BPMN_RESPONSE_CODE = '0';
+    if(typeSubscriber.indexOf(vSubscriberType) < 0){
 
-var BPMN_RESPONSE_MESSAGE = '';
+        vSubscriberType = 'POS';
 
-var strMsj = '';
+    }
 
+    if(vSubscriberType == 'CIN'){
 
+        vSubscriberType = 'HIC';
 
-if(tEntitlementActivoInvalido){
+    }
 
-    BPMN_RESPONSE_CODE = '120';
+    
 
-    BPMN_RESPONSE_MESSAGE = 'Paquete Activo no compatible.';
+    switch(vSubscriberType){
 
-    strMsj = MSG_PAQ_ACTIVO_INVALIDO;
+        case "PRE":
 
-    strMsj = strMsj.replace('<NOMBRE_PAQUETE_ACTUAL>', tNombrePaqActual);
+            vPaidType = '0';
 
-    MESSAGE = strMsj;
+            break;
 
-} else if(tPaqEncoladoInvalido) {
+        default:
 
-    BPMN_RESPONSE_CODE = '121';
+            vPaidType = '1';
 
-    BPMN_RESPONSE_MESSAGE = 'Paquete Encolado no compatible.';
+    }
 
-    strMsj = MSG_PAQ_ENCOLADO_INVALIDO;
+    
 
-    MESSAGE = strMsj;
-
-} else if(!validPlan){
-
-    BPMN_RESPONSE_CODE = '105';
-
-    BPMN_RESPONSE_MESSAGE = 'Plan no compatible.';
-
-    strMsj = vMsjPlanActivo;
-
-    MESSAGE = strMsj;
-
-} else if(!validCos){
-
-    BPMN_RESPONSE_CODE = '103';
-
-    BPMN_RESPONSE_MESSAGE = 'Cos Invalido';
-
-    strMsj = vMsjCos;
-
-    MESSAGE = strMsj;
+    vSubscriberFound = true;
 
 }
-
-*/
+LOGGER.info(tLinea+'Llego a Validar Suscriptor'+tLinea);

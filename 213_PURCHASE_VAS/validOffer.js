@@ -5,6 +5,7 @@ var vPccJsonInfo;
 var vUpdateUsrCategory = false;
 var vSetOffering = false;
 var vCategoryPCC = 'normal';
+var vPaidTypePCC='1';
 
 if (typeof vPCCService != 'undefined') {
 	if (vPCCService != 'NA') {
@@ -28,14 +29,15 @@ if (typeof vPaqInfo != 'undefined') {
 if (typeof vPlanFUP != 'undefined') {
 	vHasFUP128 = true;
 	vCategoryPCC = GetUsrCategoryByType(vPaymentType,vPlanFUP);
-	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+	//vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+	
 
-} else if (vSubscriberFound && vPaymentType == '2') {
+} else if (vPaymentType == '2') {
 	vCategoryPCC = 'Hibrido';
-	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
-} else {
+	//vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+} else if (vPaymentType == '1'){
 	vCategoryPCC = 'normal';
-	vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
+	//vUpdateUsrCategory = ValidateCategory(vPccJsonInfo, vCategoryPCC);
 }
 
 
@@ -96,3 +98,8 @@ function GetUsrCategoryByType(vSubType, vFUPType) {
 
 	return vFUPByType;
 }
+
+
+LOGGER.info(tLinea+'vCategoryPCC:'+vCategoryPCC+tLinea);
+//LOGGER.info(tLinea+'vPlanFUP:'+vPlanFUP+tLinea);
+LOGGER.info(tLinea+'vPaymentType:'+vPaymentType+tLinea);

@@ -1,12 +1,14 @@
 if (typeof vHasPCCPlan == 'undefined') {
 
 
-    var plan = new Object();
-    var user = new Object();
+    // var plan = new Object();
+    // var user = new Object();
 
     if (vSubscriberType != 'PRE') {
         if (!vIsPrimaryPlan) {
             if (typeof (planWallet) != 'undefined') {
+                var plan = new Object();
+                var user = new Object();
                 activePlanSeq = vPurchaseSeqVAS;
                 planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
                 tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
@@ -14,7 +16,8 @@ if (typeof vHasPCCPlan == 'undefined') {
             }
         } else {
             if (typeof (planWallet) != 'undefined') {
-
+                var plan = new Object();
+                var user = new Object();
                 planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
                 tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
                 plan = setPlanCBS(tmpInstances_plan, planBillCycle);
@@ -36,12 +39,14 @@ if (typeof vHasPCCPlan == 'undefined') {
 }
 
 else if(!vHasPCCPlan){
-        var plan = new Object();
-    var user = new Object();
+        // var plan = new Object();
+        // var user = new Object();
 
     if (vSubscriberType != 'PRE') {
         if (!vIsPrimaryPlan) {
             if (typeof (planWallet) != 'undefined') {
+                var plan = new Object();
+                var user = new Object();
                 activePlanSeq = vPurchaseSeqVAS;
                 planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
                 tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
@@ -49,7 +54,8 @@ else if(!vHasPCCPlan){
             }
         } else {
             if (typeof (planWallet) != 'undefined') {
-
+                var plan = new Object();
+                var user = new Object();
                 planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
                 tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
                 plan = setPlanCBS(tmpInstances_plan, planBillCycle);

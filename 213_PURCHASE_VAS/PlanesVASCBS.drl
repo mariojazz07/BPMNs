@@ -1798,6 +1798,78 @@ then
 	
 end
 
+/***********************Planes LTE Home********************************/
+rule "PlanesVAS_CBS_921"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "921")
+then
+	  response.setEntry("PLAN_NAME","LTE RESIDENCIAL 10 GB");
+	  response.setEntry("PCC_SERVICE", "HN_POS_LTEDTH_1MB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_922"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "922")
+then
+	  response.setEntry("PLAN_NAME","LTE RESIDENCIAL 18 GB");
+	  response.setEntry("PCC_SERVICE", "HN_POS_LTEDTH_3MB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+rule "PlanesVAS_CBS_923"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "923")
+then
+	  response.setEntry("PLAN_NAME","LTE RESIDENCIAL 23 GB");
+	  response.setEntry("PCC_SERVICE", "HN_POS_LTEDTH_5MB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_925"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "925")
+then
+	  response.setEntry("PLAN_NAME","PLAN ESTANDAR INTERNET 10MB");
+	  response.setEntry("PCC_SERVICE", "HN_TIGO_HIB_2.5GB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+rule "PlanesVAS_CBS_926"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "926")
+then
+	  response.setEntry("PLAN_NAME","PLAN ESTANDAR INTERNET 10MB");
+	  response.setEntry("PCC_SERVICE", "HN_TIGO_HIB_5GB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+
+
+
+rule "PlanesVAS_CBS_927"
+when 
+    f: FactRequest(input["PLAN_CODE"] == "927")
+then
+	  response.setEntry("PLAN_NAME","PLAN ESTANDAR INTERNET 8MB");
+	  response.setEntry("PCC_SERVICE", "HN_TIGO_HIB_6GB");
+	  response.setEntry("CBS_OFFERING", "1234567890");
+	  response.setEntry("SVKEY","7799");
+	
+end
+//
+
 rule "PlanesVAS_CBS_928"
 when 
     f: FactRequest(input["PLAN_CODE"] == "928")

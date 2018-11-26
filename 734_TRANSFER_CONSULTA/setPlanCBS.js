@@ -1,9 +1,13 @@
-var plan = new Object();
-var user = new Object();
+//var plan = new Object();
+//var user = new Object();
 
 if (vSubscriberType != 'PRE') {
     if (!vIsPrimaryPlan) {
         if (typeof (planWallet) != 'undefined') {
+            //
+                var plan = new Object();
+                var user = new Object();
+            //
             activePlanSeq = vPurchaseSeqVAS;
             planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
             tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
@@ -11,7 +15,10 @@ if (vSubscriberType != 'PRE') {
         }
     } else {
         if (typeof (planWallet) != 'undefined') {
-            
+            //
+                var plan = new Object();
+                var user = new Object();
+            //
             planInstances = getSortedItemsPospaid(snatchInstances(planWallet.FreeUnitItemDetail, bundlePlanChildOffers, false, true, false));
             tmpInstances_plan = splitInstancesPlan(planInstances, activePlanSeq);
             plan = setPlanCBS(tmpInstances_plan, planBillCycle);

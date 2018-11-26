@@ -7,7 +7,7 @@ if(vIsPrimary){
 }
 else if (vUpdateService){
 	vOffCbs=vCBSOffering;
-	vMasterSequence=vPurchaseSeqVAS;
+	vMasterSequence=typeof vPurchaseSeqVAS != 'undefined'?vPurchaseSeqVAS:'NA';
 }
 else{
 	if(typeof vCBSOffering!='undefined'){
@@ -20,5 +20,7 @@ else{
 	}
 }
 
+
+LOGGER.info(tLinea+'Llego a ValidaMS'+tLinea);
 
 

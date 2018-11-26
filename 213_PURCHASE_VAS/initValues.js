@@ -99,7 +99,8 @@ if (vExecuteValue) {
       vUpdateService = true;
 
       vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
-      vServiceEndDate = getCbsDate(vEndDateAs400);
+      //vServiceEndDate = getCbsDate(vEndDateAs400);
+      vServiceEndDate=vEndDateAs400;
 
     } else {
       vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
@@ -354,5 +355,5 @@ var tLinea = tSaltoL + '********************************************************
 
 
 LOGGER.info(tLinea + 'vDoSchedule:' + vDoSchedule + tLinea);
-LOGGER.info(tLinea + 'vServiceStartDate:' + vServiceStartDate + tLinea);
+LOGGER.info(tLinea + 'vServiceEndDate:' + vServiceEndDate + tLinea);
 LOGGER.info(tLinea + 'vScheduleDateWarning:' + vScheduleDateWarning + tLinea);

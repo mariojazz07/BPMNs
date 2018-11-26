@@ -16,82 +16,18 @@
     </script>
     <script>
         function working() {
+		
+		vAS400SubType='HIB';
+		vPlanCode='857';
 
-          var DoRemove = false;
-var vSchDay = '';
-var vSchMonth = '';
-var vSchYear = '';
-var vSchHour='';
-var vSchMin='';
-var vSchSec='';
-var vSchTaskState = '';
-var vSchTasksToRemove = new Array();
-var vSchTask = '';
-var vSchCounter = 0;
-var vSchID = '';
-
-
-vSchJSON='{"listSchedule":[{"scheduleId":17368118,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":28,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":19,"minute":52,"second":12,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0},{"scheduleId":17368119,"taskId":13,"scheduleDate":{"year":2018,"month":11,"day":30,"timezone":-360,"hour":12,"minute":0,"second":0,"fractionalSecond":0.000},"recurrent":"0","cronExpr":"0","state":"P","creationDate":{"year":2018,"month":10,"day":24,"timezone":-360,"hour":18,"minute":40,"second":43,"fractionalSecond":0.000},"threshold":0,"request":"","retry":0}]}';
-
-if (typeof vSchJSON != 'undefined') {
-	vSchTask = JSON.parse(vSchJSON);
-	for (var i = 0; i < vSchTask.listSchedule.length; i++) {
-
-		vSchTaskState = vSchTask.listSchedule[i].state;
-		if (vSchTaskState == 'P') {
-			vSchDay = vSchTask.listSchedule[i].creationDate.day;
-			vSchMonth = vSchTask.listSchedule[i].creationDate.month;
-			vSchYear = vSchTask.listSchedule[i].creationDate.year;
-			vSchHour=vSchTask.listSchedule[i].creationDate.hour;
-			vSchMin=vSchTask.listSchedule[i].creationDate.minute;
-			vSchSec=vSchTask.listSchedule[i].creationDate.second;
-			if (!CompareSchDates(vSchYear,vSchMonth,vSchDay,vSchHour,vSchMin,vSchSec)) {
-				vSchTasksToRemove.push(vSchTask.listSchedule[i].scheduleId);
-
-			}
-
+		//vPaqInfo='{"getSubscriberAllInfResponse":{"result":{"resultCode":0,"paras":{"value":"Operation succeeded","key":"errorDescription"},"subscriber":{"attribute":[{"value":50498074080,"key":"USRIDENTIFIER"},{"value":50498074080,"key":"USRMSISDN"},{"value":1,"key":"USRSTATE"},{"value":"","key":"USRHOMESRVZONE"},{"value":1,"key":"USRPAIDTYPE"},{"value":"normal","key":"USRCATEGORY"},{"value":1,"key":"USRSTATION"},{"value":"","key":"USRMASTERIDENTIFIER"},{"value":1,"key":"USRCONTACTMETHOD"},{"value":"","key":"USREMAILADDRESS"},{"value":25,"key":"USRBILLCYCLEDATE"},{"value":"","key":"USRSUBTERMINALTYPE"},{"value":0,"key":"USRCREATETYPE"},{"value":0,"key":"USRMAXOFFLINEDAYS"},{"value":20181120123901,"key":"USRLATESTOFFLINETIME"},{"value":0,"key":"USRSUBNETTYPE"},{"value":0,"key":"USRCUSTOMERATTR"},{"value":"","key":"USREXATTR1"},{"value":"","key":"USREXATTR2"},{"value":"","key":"USREXATTR3"},{"value":"","key":"USREXATTR4"},{"value":"","key":"USREXATTR5"},{"value":"","key":"USREXATTR6"},{"value":"","key":"USREXATTR7"},{"value":"","key":"USREXATTR8"},{"value":"","key":"USREXATTR9"},{"value":"","key":"USREXATTR10"},{"value":"","key":"USRIMSI"},{"value":255,"key":"USRLANGUAGE"},{"value":"","key":"USRSMSMSISDN"},{"value":0,"key":"USRSMSRECEIVEFLAG"},{"value":"","key":"USRSECONDIDENTIFIER"},{"value":"","key":"USRIMEI"},{"value":"","key":"USREXATTRSTR1"},{"value":"","key":"USREXATTRSTR2"},{"value":"","key":"USREXATTRSTR3"},{"value":"","key":"USREXATTR11"},{"value":"","key":"USREXATTRSTR4"},{"value":"","key":"USREXATTRSTR5"},{"value":"","key":"USREXATTRSTR6"},{"value":"","key":"USRBIRTHDAY"},{"value":"","key":"GRPIDENTIFIER"}]},"subscribedService":[{"attribute":[{"value":"Base_Service_OCS_Pos_SY","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181120173017,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":-1,"key":"SRVOVERDUEDATE"},{"value":-1,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":1,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":-1,"key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"Servicio Base Pos Sy T","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"false","key":"SRVISEXPIRED"}]},{"attribute":[{"value":"OCS_APP_FB_POS_SY","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181118114910,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":20361124114909,"key":"SRVOVERDUEDATE"},{"value":20361124114909,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":0,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":65781651,"key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"Servicio Base Pos Sy T","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"App Pospago Facebook","key":"SRVPRODUCTNAME"},{"value":"PL","key":"SRVPRODUCTTYPE"},{"value":"3","key":"SRVPRODUCTTYPEID"},{"value":"false","key":"SRVISEXPIRED"}]},{"attribute":[{"value":"OCS_APP_WA_POS_SY","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181118114910,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":20361124114909,"key":"SRVOVERDUEDATE"},{"value":20361124114909,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":0,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":65781651,"key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"Servicio App Pos Sy T","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"App Pospago Whatsapp","key":"SRVPRODUCTNAME"},{"value":"PL","key":"SRVPRODUCTTYPE"},{"value":"3","key":"SRVPRODUCTTYPEID"},{"value":"false","key":"SRVISEXPIRED"}]}]}}}';
+        vPaqInfo='{"getSubscriberAllInfResponse":{"result":{"subscriberQuota":{"attribute":[{"value":"POS_1GB_WA_AFT Quota","key":"QTANAME"},{"value":"POS_1GB_WA_AFT","key":"SRVNAME"},{"value":1048576,"key":"QTAVALUE"},{"value":1046286,"key":"QTABALANCE"},{"value":2290,"key":"QTACONSUMPTION"},{"value":0,"key":"QTACLASS"},{"value":0,"key":"QTASTATUS"},{"value":0,"key":"QTACUSTOMSTATUS"},{"value":20181118124626,"key":"QTALASTRSTDATETIME"},{"value":20181204000000,"key":"QTARSTDATETIME"},{"value":0,"key":"QTAFLAG"},{"value":0,"key":"QTAUPCONSUMPTION"},{"value":0,"key":"QTADOWNCONSUMPTION"},{"value":"","key":"QTASTARTDATETIME"},{"value":20181118124924,"key":"QTATIMESTAMP"},{"value":-1,"key":"QTACUSTOMINITIALVALUE"},{"value":"","key":"SELFCONSUMPTION"},{"value":"","key":"SELFPREUPLOAD"},{"value":"","key":"SELFPREDOWNLOAD"},{"value":0,"key":"ACCUMULATIONVALUE"},{"value":0,"key":"ACCUMULATIONBALANCE"},{"value":0,"key":"ACCUMULATIONCONSUMPTION"},{"value":-1,"key":"ACCUMULATIONSTARTTIME"},{"value":-1,"key":"ACCUMULATIONENDTIME"},{"value":0,"key":"ACCUMULATIONEXPIREFLAG"},{"value":-1,"key":"PLMNIDENTIFY"},{"value":255,"key":"TIMEZONE"},{"value":"","key":"TOTALTRANSQTABALANCE"},{"value":"","key":"TOTALTRANSQTACONSUMPTION"},{"value":"","key":"MAXSINGLETRANSOUTVALUE"},{"value":"","key":"MINRESERVEDVALUE"},{"value":"","key":"REMAINTRANSOUTTIMESINDAY"},{"value":"","key":"REMAINTRANSOUTTIMESINCYCLE"},{"value":"","key":"AVAILABLETRANSINTIMES"},{"value":"","key":"ALLOCABLEQTAVALUE"},{"value":"","key":"QTADESCRIPTION"},{"value":"","key":"CURCUMTIMES"},{"value":"","key":"ACCUMBVALUE"},{"value":"","key":"QTACUSTOMERATTR"},{"value":"1024.0","key":"QTAVALUE_MB"},{"value":"1021.763671875","key":"QTABALANCE_MB"},{"value":"2.236328125","key":"QTACONSUMPTION_MB"},{"value":"99.78160858154297","key":"QTAPERCENTAGE"}]},"resultCode":0,"paras":{"value":"Operation succeeded","key":"errorDescription"},"subscriber":{"attribute":[{"value":50495190240,"key":"USRIDENTIFIER"},{"value":50495190240,"key":"USRMSISDN"},{"value":1,"key":"USRSTATE"},{"value":"","key":"USRHOMESRVZONE"},{"value":1,"key":"USRPAIDTYPE"},{"value":"Hibrido","key":"USRCATEGORY"},{"value":1,"key":"USRSTATION"},{"value":"","key":"USRMASTERIDENTIFIER"},{"value":1,"key":"USRCONTACTMETHOD"},{"value":"","key":"USREMAILADDRESS"},{"value":4,"key":"USRBILLCYCLEDATE"},{"value":"","key":"USRSUBTERMINALTYPE"},{"value":0,"key":"USRCREATETYPE"},{"value":0,"key":"USRMAXOFFLINEDAYS"},{"value":20181118125021,"key":"USRLATESTOFFLINETIME"},{"value":0,"key":"USRSUBNETTYPE"},{"value":0,"key":"USRCUSTOMERATTR"},{"value":"","key":"USREXATTR1"},{"value":"","key":"USREXATTR2"},{"value":"","key":"USREXATTR3"},{"value":"","key":"USREXATTR4"},{"value":"","key":"USREXATTR5"},{"value":"","key":"USREXATTR6"},{"value":"","key":"USREXATTR7"},{"value":"","key":"USREXATTR8"},{"value":"","key":"USREXATTR9"},{"value":"","key":"USREXATTR10"},{"value":"","key":"USRIMSI"},{"value":255,"key":"USRLANGUAGE"},{"value":"","key":"USRSMSMSISDN"},{"value":0,"key":"USRSMSRECEIVEFLAG"},{"value":"","key":"USRSECONDIDENTIFIER"},{"value":"","key":"USRIMEI"},{"value":"","key":"USREXATTRSTR1"},{"value":"","key":"USREXATTRSTR2"},{"value":"","key":"USREXATTRSTR3"},{"value":"","key":"USREXATTR11"},{"value":"","key":"USREXATTRSTR4"},{"value":"","key":"USREXATTRSTR5"},{"value":"","key":"USREXATTRSTR6"},{"value":"","key":"USRBIRTHDAY"},{"value":"","key":"GRPIDENTIFIER"}]},"subscribedService":[{"attribute":[{"value":"POS_1GB_WA_AFT","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181118124626,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":20181203235959,"key":"SRVOVERDUEDATE"},{"value":20181203235959,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":0,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":"00150837","key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"Plan Internet 1GB","key":"SRVPRODUCTNAME"},{"value":"PL","key":"SRVPRODUCTTYPE"},{"value":"3","key":"SRVPRODUCTTYPEID"},{"value":"false","key":"SRVISEXPIRED"}]},{"attribute":[{"value":"Base_Service_OCS_Pos_SY","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181118124557,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":-1,"key":"SRVOVERDUEDATE"},{"value":-1,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":1,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":-1,"key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"Servicio Base Pos Sy T","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"false","key":"SRVISEXPIRED"}]},{"attribute":[{"value":"OCS_APP_WA_POS_SY","key":"SRVNAME"},{"value":"","key":"SRVPKGNAME"},{"value":1,"key":"SRVUSAGESTATE"},{"value":20181118124152,"key":"SRVSUBSCRIBEDATE"},{"value":-1,"key":"SRVSTARTDATETIME"},{"value":20361104124151,"key":"SRVOVERDUEDATE"},{"value":20361104124151,"key":"SRVENDDATETIME"},{"value":-1,"key":"SRVROAMINGTYPE"},{"value":0,"key":"SUBSCRIBEDTYPE"},{"value":0,"key":"SRVSTATUS"},{"value":"","key":"SRVWORKDAYSTIMESCHEDULE"},{"value":"","key":"SRVRESTDAYSTIMESCHEDULE"},{"value":"","key":"SRVNEXTACTIVETIME"},{"value":128,"key":"SRVCONTACTMETHOD"},{"value":1,"key":"SRVUSEDFLAG"},{"value":"","key":"SRVEXATTRSTR1"},{"value":"","key":"SRVUSRDEFINEDPERIOD1"},{"value":"","key":"SRVUSRDEFINEDPERIOD2"},{"value":"","key":"SRVUSRDEFINEDPERIOD3"},{"value":"","key":"SRVUSRDEFINEDPERIOD4"},{"value":"","key":"SRVUSRDEFINEDPERIOD5"},{"value":"","key":"SRVUSRDEFINEDPERIOD6"},{"value":"","key":"SRVUSRDEFINEDPERIOD7"},{"value":"","key":"SRVUSRDEFINEDPERIOD8"},{"value":"","key":"SRVUSRDEFINEDPERIOD9"},{"value":"","key":"SRVUSRDEFINEDPERIOD10"},{"value":-1,"key":"SRVACTIVATIONSTARTDATE"},{"value":-1,"key":"SRVACTIVATIONENDDATE"},{"value":0,"key":"SRVRESTTIMEVALUE"},{"value":65602118,"key":"REMAINEDVALIDPERIOD"},{"value":0,"key":"ISGROUPSERVICE"},{"value":"Servicio App Pos Sy T","key":"DESCRIPTION"},{"value":"","key":"SRVCUSTOMERATTR"},{"value":"App Pospago Whatsapp","key":"SRVPRODUCTNAME"},{"value":"PL","key":"SRVPRODUCTTYPE"},{"value":"3","key":"SRVPRODUCTTYPEID"},{"value":"false","key":"SRVISEXPIRED"}]}]}}}';
+		//
+		vPccJsonInfo = JSON.parse(vPaqInfo);
+		return JSON.stringify(vPccJsonInfo);
 		}
-	}
-}
-
-
-if (typeof vSchTasksToRemove != 'undefined'){
-	if(vSchTasksToRemove.length != 0) {
-	vSchID = vSchTasksToRemove[vSchCounter];
-	DoRemove=true;
-}
-}
-
-
-
-function CompareSchDates(vYear,vMonth,vDay,vHour,vMin,vSec) {
-	var vSchSysdate=new Date();
-	//var vSchSysdate = parseDateToStringVAS(new Date());
-	var FIVE_MIN=5*60*1000;
-	var vEquals = true;
-	var vSchActualDate = new Date(Number(vYear),Number(vMonth)-1,Number(vDay),Number(vHour),Number(vMin),Number(vSec));
-	var vSubstraction=vSchSysdate-vSchActualDate;
-	if (vSubstraction>FIVE_MIN) {
-		vEquals = false;
-	}
-
-	return vEquals;
-}
-
-// function parseDateToStringVAS(date) {
-// 	var day = padStr(String(date.getDate()), 2, '0', STR_PAD_LEFT);
-// 	var year = date.getFullYear();
-// 	var month = date.getMonth() + 1;
-// 	month = padStr(String(month), 2, '0', STR_PAD_LEFT);
-// 	var format = year + month + day;
-// 	return format;
-// }
-
-
-
-return vSchID;
-            
-        }
+	
+        
     </script>
 
 

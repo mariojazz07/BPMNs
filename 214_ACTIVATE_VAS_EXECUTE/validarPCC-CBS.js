@@ -19,3 +19,6 @@ if(typeof vOfferingPlanVAS != 'undefined' && !vIsPrimary){
 	doCBS=true;
 	vOffCbs=vOfferingPlanVAS;
 }
+
+
+LOGGER.info(tLinea+'vCounter2 antes:'+vCounter2+tLinea);
