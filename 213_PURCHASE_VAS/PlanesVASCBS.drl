@@ -102,6 +102,7 @@ then
 	  response.setEntry("PCC_SERVICE", "NA");
 	  response.setEntry("CBS_OFFERING", "785909914");
 	  response.setEntry("SVKEY","7799");
+	  response.setEntry("FUP","128");
 	
  
 end

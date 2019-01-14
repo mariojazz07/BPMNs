@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-
-
-    <button onclick="myFunction()">Debug</button>
-
-    <p id="demo"></p>
-
-    <script>
-        function myFunction() {
-            var result = working();
-            document.getElementById("demo").innerHTML = result;
-        }
-    </script>
-    <script>
-        function working() {
-
-            var STR_PAD_LEFT = 1;
+var STR_PAD_LEFT = 1;
 var STR_PAD_RIGHT = 2;
 var STR_PAD_BOTH = 3;
 var BPMN_RESPONSE_CODE = '100';
@@ -40,9 +21,6 @@ var vSkipChannels = '30';
 var vUnifyAppsChannels = '30';
 var vUnifyApps = false;
 var vChannelPC = '30';
-
-
-channelId='1';
 
 if(typeof(CHANNELS) != 'undefined'){
     vSkipChannels = CHANNELS;
@@ -171,84 +149,3 @@ function getCbsDate(cbsDate){
 var tSaltoL = '\n';
 
 var tLinea = tSaltoL + '************************************************************************' + tSaltoL ;
-            var PCCAllServices = {Services: new Object(),User:new Object()};
-          json1='{"Unbound":[{"ServiceName":"Base_Service_OCS_Pos_SY","ProductName":"NA","ServiceType":"NA","ServiceTypeId":"NA","ServiceExpired":"false","ServiceStartDate":-1,"ServiceEndDate":-1,"QuotaName":"NA","QuotaValue":"NA","QuotaBalance":"NA","QuotaConsumption":"NA","QuotaValueMb":"NA","QuotaBalanceMb":"NA","QuotaConsumptionMb":"NA","QuotaPercentage":"NA","QuotaStatus":"NA","SubscriberBillCycle":"NA"}],"Plans":[{"ServiceName":"OCS_APP_FB_UNL_POS_SY","ProductName":"App Pospago Facebook UNL","ServiceType":"PL","ServiceTypeId":"3","ServiceExpired":"false","ServiceStartDate":-1,"ServiceEndDate":-1,"QuotaName":"NA","QuotaValue":"NA","QuotaBalance":"NA","QuotaConsumption":"NA","QuotaValueMb":"NA","QuotaBalanceMb":"NA","QuotaConsumptionMb":"NA","QuotaPercentage":"NA","QuotaStatus":"NA","SubscriberBillCycle":"NA"},{"ServiceName":"OCS_APP_WA_UNL_POS_SY","ProductName":"App Pospago Whatsapp UNL","ServiceType":"PL","ServiceTypeId":"3","ServiceExpired":"false","ServiceStartDate":-1,"ServiceEndDate":-1,"QuotaName":"NA","QuotaValue":"NA","QuotaBalance":"NA","QuotaConsumption":"NA","QuotaValueMb":"NA","QuotaBalanceMb":"NA","QuotaConsumptionMb":"NA","QuotaPercentage":"NA","QuotaStatus":"NA","SubscriberBillCycle":"NA"},{"ServiceName":"HN_POS_LTEDTH_1MB","ProductName":"LTE RESIDENCIAL 10 GB","ServiceType":"PL","ServiceTypeId":"3","ServiceExpired":"false","ServiceStartDate":-1,"ServiceEndDate":20361231152558,"QuotaName":"HN_POS_LTEDTH_1MB Quota","QuotaValue":10485760,"QuotaBalance":10485760,"QuotaConsumption":0,"QuotaValueMb":"10240.0","QuotaBalanceMb":"10240.0","QuotaConsumptionMb":"0.0","QuotaPercentage":"100.0","QuotaStatus":0,"SubscriberBillCycle":"NA"}],"User":{"ServiceName":"NA","ProductName":"NA","ServiceType":"NA","ServiceTypeId":"NA","ServiceExpired":"NA","ServiceStartDate":"NA","ServiceEndDate":"NA","QuotaName":"NA","QuotaValue":"NA","QuotaBalance":"NA","QuotaConsumption":"NA","QuotaValueMb":"NA","QuotaBalanceMb":"NA","QuotaConsumptionMb":"NA","QuotaPercentage":"NA","QuotaStatus":"NA","SubscriberBillCycle":31}}';
-          var navObject=JSON.parse(json1);
-
-          console.log(navObject);
-        if (typeof navObject.Plans != 'undefined') {
-
-		PCCAllServices.Services.Plans = setPlanServices(navObject);
-	}
-
-    
-
-function setPlanServices(navObjectPCC) {
-	var PCCPlanItems = navObjectPCC.Plans;
-	var PCCPlans = new Array();
-	var TempPlanItem = new Object();
-	var billCycle = typeof (navObjectPCC.User.SubscriberBillCycle) != 'undefined' ? navObjectPCC.User.SubscriberBillCycle : "-";
-	var TempItem = new Array();
-
-	if(PCCPlanItems instanceof Array){
-	for (var i = 0; i < PCCPlanItems.length; i++) {
-		TempItem = PCCPlanItems[i];
-		TempPlanItem.prname = TempItem.ProductName;
-		TempPlanItem.srvname = TempItem.ServiceName;
-		TempPlanItem.stardate = billCycle != "-" ? getCycleDate(new Number(billCycle)) : billCycle;
-
-		if (typeof TempItem.ServiceEndDate != 'undefined' && TempItem.ServiceEndDate != '-1') {
-			TempPlanItem.enddate = TempItem.ServiceEndDate;
-		} else {
-			TempPlanItem.enddate = "-";
-		}
-		PCCPlans.push(TempPlanItem);
-            TempPlanItem=new Object();
-	}
-	}
-	else{
-		TempItem=PCCPlanItems;
-		TempPlanItem.prname = TempItem.ProductName;
-		TempPlanItem.srvname = TempItem.ServiceName;
-		TempPlanItem.stardate = billCycle != "-" ? getCycleDate(new Number(billCycle)) : billCycle;
-
-		if (typeof TempItem.ServiceEndDate != 'undefined' && TempItem.ServiceEndDate != '-1') {
-			TempPlanItem.enddate = TempItem.ServiceEndDate;
-		} else {
-			TempPlanItem.enddate = "-";
-		}
-		PCCPlans=TempPlanItem;
-	}
-
-	return PCCPlans;
-}
-
-
-function getCycleDate(billingDay) {
-	var vSysDate = new Date();
-	var vNow = new Date(vSysDate.getTime());
-	var addMonth = true;
-	var vMonth = '0';
-	var vAdd = billingDay > 1 ? 2 : 1;
-	if (vNow.getDate() > billingDay) {
-		vNow.setMonth(vNow.getMonth() + vAdd);
-		addMonth = false;
-	}
-	vMonth = addMonth ? String((vNow.getMonth() + 1)) : String(vNow.getMonth());
-	vNow.setDate(billingDay - 1);
-	return padStr(vNow.getFullYear(), 4, '0', STR_PAD_LEFT) + '' + padStr(vMonth, 2, '0', STR_PAD_LEFT) + '' + padStr(String(vNow.getDate()), 2, '0', STR_PAD_LEFT) + '' + padStr(String(23), 2, '0', STR_PAD_LEFT) + '' + padStr(String(59), 2, '0', STR_PAD_LEFT) + '' + padStr(String(59), 2, '0', STR_PAD_LEFT);
-}
-
-return JSON.stringify(PCCAllServices.Services.Plans);
-        }
-        
-    </script>
-
-
-
-
-
-
-</body>
-
-</html>

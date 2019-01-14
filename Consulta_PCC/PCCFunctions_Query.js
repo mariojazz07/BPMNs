@@ -7,6 +7,7 @@ function processJson(strJsonInfo){
     var vTmpObj = new Object();
     if(typeof strJsonInfo != 'undefined'){
         vJsonObj = JSON.parse(strJsonInfo);
+        LOGGER.info(tLinea+'vJsonObj:'+vJsonObj+tLinea);
         if(vJsonObj.getSubscriberAllInfResponse.result.resultCode == 0){
             vSubscriber = vJsonObj.getSubscriberAllInfResponse.result.subscriber;
             if(typeof vJsonObj.getSubscriberAllInfResponse.result.subscribedService != 'undefined'){
@@ -23,13 +24,11 @@ function processJson(strJsonInfo){
             vDataObj.User = joinInfo(undefined, undefined, vSubscriber);
         }
     }
+
     return vDataObj;
 }
-
 function getAttribute(serviceItems, attribute){
-
     var attributeItem = {key: 'NA', value: 'NA'};
-
     if(typeof serviceItems != 'undefined'){
         for(var i = 0; i < serviceItems.attribute.length; i++){
             if(serviceItems.attribute[i].key == attribute){
@@ -40,8 +39,6 @@ function getAttribute(serviceItems, attribute){
     }
     return attributeItem;
 }
-
-
 function getQuota(quotaItems, serviceName){
     var quotaItem = new Array();
     if(typeof(quotaItems) != 'undefined'){
@@ -59,9 +56,6 @@ function getQuota(quotaItems, serviceName){
     }
     return quotaItem;
 }
-
-
-
 function getUniqueQuota(quotaItems){
     var quotaItem;
     if(typeof(quotaItems) != 'undefined'){
@@ -92,6 +86,8 @@ function joinInfo(serviceItem, quotaItem, subscriberItem){
     quotaArray = getQuota(quotaItem, tmpObj.ServiceName);
     itemTmp = getAttribute(serviceItem, 'SRVPRODUCTTYPE');
     tmpObj.ServiceType = tmpObj.ServiceName == 'Default_Service_Local' ? 'DEF' : itemTmp.value;
+
+	//agregar servicios bases
     itemTmp = getAttribute(serviceItem, 'SRVPRODUCTTYPEID');
     tmpObj.ServiceTypeId = itemTmp.value;
     tmpObj.ServiceExpired = getAttribute(serviceItem, 'SRVISEXPIRED').value;
@@ -145,9 +141,6 @@ function joinInfo(serviceItem, quotaItem, subscriberItem){
     }
     return tmpObj;
 }
-
-
-
 function setDataProperties(objItem, dataItem){
     switch(objItem.ServiceType){
         case 'PAQ':
@@ -157,7 +150,10 @@ function setDataProperties(objItem, dataItem){
             dataItem.Subscriptions = objItem;
             break;
         case 'PL':
-            dataItem.Plans = objItem;
+			if(typeof dataItem.Plans=='undefined'){
+				dataItem.Plans=new Array();
+			}
+            dataItem.Plans.push(objItem);
             break;
         case 'APP':
             if(typeof dataItem.Applications == 'undefined'){
@@ -172,7 +168,10 @@ function setDataProperties(objItem, dataItem){
             dataItem.Addons.push(objItem);
             break;
         case 'DEF':
-            dataItem.DefaultService = objItem;
+		if(typeof dataItem.DefaultService =='undefined'){
+			dataItem.DefaultService=new Array();
+		}
+            dataItem.DefaultService.push(objItem);
             break;
         case 'SUB':
             dataItem.User = objItem;

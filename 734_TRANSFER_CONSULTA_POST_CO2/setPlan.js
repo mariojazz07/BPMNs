@@ -2,6 +2,7 @@ var plan = new Object();
 var user = new Object();
 var vHasPCCPlan=false;
 
+
 if(navObject.pccJson.filled){
     if(typeof(navObject.pccJson.obj.Plans) != 'undefined'){
         plan = setPlan(navObject.pccJson.obj.Plans);
