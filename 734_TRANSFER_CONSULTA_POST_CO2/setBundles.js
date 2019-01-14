@@ -17,7 +17,8 @@ if(enrichedOfferings.cmbOfferings.length > 0 && !vSkipBundle){
                 cmbOffers[i].offerName, cmbOffers[i].offerType, 'Cmb', '-', 
                 '-', '-', '-', '-', '-', 'Vigente');
         bundlePackOffers = findChildren(cmbOffers[i].OfferingKey.PurchaseSeq, bndlIdntfr, enrichedOfferings.packOfferings);
-        bundlePackOffers = bundlePackOffers.concat(findChildren(cmbOffers[i].OfferingKey.PurchaseSeq, bndlIdntfr, enrichedOfferings.undefOfferings));
+        bundlePackOffers = bundlePackOffers.
+            concat(findChildren(cmbOffers[i].OfferingKey.PurchaseSeq, bndlIdntfr, enrichedOfferings.undefOfferings));
         bundleAppOffers = findChildren(cmbOffers[i].OfferingKey.PurchaseSeq, bndlIdntfr, enrichedOfferings.appOfferings);
         //LOGGER.info('paquetes:' + bundlePackOffers.join());
         if(cmbOffers[i].isPackage){

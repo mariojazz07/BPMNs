@@ -12,3 +12,4 @@ if(typeof vSubscriberType != 'undefined'){
 }
 
 
+LOGGER.info(tLinea+'vSubscriberType:'+vSubscriberType+tLinea);

@@ -1,12 +1,18 @@
 var actOfferItem = new Object();
 var actOfferId = '0';
+
 var actOfferItemPrimary=new Object();
 var actOfferIdPrimary='0';
+
+
 if(navObject.offeringJson.filled){
+    
     doLoop = forCounter < supplementaryOffers.length;
-        //doLoop=true;
+       //doLoop=true;
+    
     if(doLoop){
         actOfferItem = supplementaryOffers[forCounter];
+
         if(typeof(actOfferItem.OfferingKey) != 'undefined'){
             actOfferId = actOfferItem.OfferingKey.OfferingID;
         }
@@ -19,3 +25,5 @@ if(navObject.offeringJson.filled){
         //enrichedOfferings.addonsOfferings=getSortedItems(enrichedOfferings.addonsOfferings);
     }
 }
+
+
