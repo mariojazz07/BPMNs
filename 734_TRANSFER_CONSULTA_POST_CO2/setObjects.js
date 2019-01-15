@@ -42,6 +42,7 @@ if (navObject.offeringJson.filled) {
     supplementaryOffers = getSupplementaryOfferings("", navObject.offeringJson.obj);
     primaryOffers = getPrimaryOfferings("", navObject.offeringJson.obj);
     planBillCycle = getBillCycleCBS(navObject.offeringJson.obj);
+    
 }
 
 if (navObject.walletJson.filled) {

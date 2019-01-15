@@ -27,7 +27,7 @@ function getBillCycleCBS(jsonObj){
         }
     }
 
-    LOGGER.info(tLinea+'vBillingCycle:'+vBillingCycle+tLinea);
+    
     
     return vBillingCycle;
 
