@@ -1,0 +1,6864 @@
+package PrimaryOffering
+dialect "mvel"
+
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+import java.lang.Integer
+
+global FactResponse response;
+
+rule "Plan11"
+
+    when
+          f: FactRequest (input["PLAN"] == 11)
+        
+    then
+         response.setEntry("OFFERING", "1466568958")
+         response.setEntry("DESCRIPTION", "PLAN BASICO (PERSONAL)") 
+         response.setEntry("PLANSMART", "N")
+end  
+
+rule "Plan10136"
+
+    when
+          f: FactRequest (input["PLAN"] == 10136)
+        
+    then
+         response.setEntry("OFFERING", "1967881473")
+         response.setEntry("DESCRIPTION", "Plan Internet 4G Descubre $22")
+         response.setEntry("PLANSMART", "N") 
+end 
+
+rule "Plan10137"
+
+    when
+          f: FactRequest (input["PLAN"] == 10137)
+        
+    then
+         response.setEntry("OFFERING", "1267881925")
+         response.setEntry("DESCRIPTION", "Plan Internet 4G Familiar $30 ")
+         response.setEntry("PLANSMART", "N") 
+end 
+
+rule "Plan10138"
+
+    when
+          f: FactRequest (input["PLAN"] == 10138)
+        
+    then
+         response.setEntry("OFFERING", "1767881485")
+         response.setEntry("DESCRIPTION", "Plan Internet 4G Profesional $45")
+         response.setEntry("PLANSMART", "N") 
+end 
+
+rule "Plan127"
+
+    when
+          f: FactRequest (input["PLAN"] == 127)
+        
+    then
+         response.setEntry("OFFERING", "567881700")
+         response.setEntry("DESCRIPTION", "PLAN EMPLEADOS (FAMILIARES)")
+         response.setEntry("PLANSMART", "N") 
+end 
+
+rule "Plan130"
+
+    when
+          f: FactRequest (input["PLAN"] == 130)
+        
+    then
+         response.setEntry("OFFERING", "1885284336")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 15")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan131"
+
+    when
+          f: FactRequest (input["PLAN"] == 131)
+        
+    then
+         response.setEntry("OFFERING", "585284547")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 20")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan132"
+
+    when
+          f: FactRequest (input["PLAN"] == 132)
+        
+    then
+         response.setEntry("OFFERING", "1585284756")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 35")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan133"
+
+    when
+          f: FactRequest (input["PLAN"] == 133)
+        
+    then
+         response.setEntry("OFFERING", "1985284914")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 45")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan134"
+
+    when
+          f: FactRequest (input["PLAN"] == 134)
+        
+    then
+         response.setEntry("OFFERING", "1767882126")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 75")
+         response.setEntry("PLANSMART", "N")
+      
+end
+
+
+rule "Plan140"
+
+    when
+          f: FactRequest (input["PLAN"] == 140)
+        
+    then
+         response.setEntry("OFFERING", "595321623")
+         response.setEntry("DESCRIPTION", "PLAN CONATEL-E")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan384"
+
+    when
+          f: FactRequest (input["PLAN"] == 384)
+        
+    then
+         response.setEntry("OFFERING", "1092478576")
+         response.setEntry("DESCRIPTION", "PLAN SIN CONTRATO $39.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan385"
+
+    when
+          f: FactRequest (input["PLAN"] == 385)
+        
+    then
+         response.setEntry("OFFERING", "1885285934")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $35")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan386"
+
+    when
+          f: FactRequest (input["PLAN"] == 386)
+        
+    then
+         response.setEntry("OFFERING", "1685286133")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $40")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan387"
+
+    when
+          f: FactRequest (input["PLAN"] == 387)
+        
+    then
+         response.setEntry("OFFERING", "1085286272")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $60")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan388"
+
+    when
+          f: FactRequest (input["PLAN"] == 388)
+        
+    then
+         response.setEntry("OFFERING", "1285286393")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $70")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan389"
+
+    when
+          f: FactRequest (input["PLAN"] == 389)
+        
+    then
+         response.setEntry("OFFERING", "1267881833")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $100")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan390"
+
+    when
+          f: FactRequest (input["PLAN"] == 390)
+        
+    then
+         response.setEntry("OFFERING", "1067882029")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY $115")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan395"
+
+    when
+          f: FactRequest (input["PLAN"] == 395)
+        
+    then
+         response.setEntry("OFFERING", "1367881927")
+         response.setEntry("DESCRIPTION", "PLAN INDIVIDUAL $55")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan851"
+
+    when
+          f: FactRequest (input["PLAN"] == 851)
+        
+    then
+         response.setEntry("OFFERING", "1985235803")
+         response.setEntry("DESCRIPTION", "Amigos sin limites $19.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan852"
+
+    when
+          f: FactRequest (input["PLAN"] == 852)
+        
+    then
+         response.setEntry("OFFERING", "385278874")
+         response.setEntry("DESCRIPTION", "Amigos sin limites $29.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan853"
+
+    when
+          f: FactRequest (input["PLAN"] == 853)
+        
+    then
+         response.setEntry("OFFERING", "585279250")
+         response.setEntry("DESCRIPTION", "Tigo sin limites $39.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan854"
+
+    when
+          f: FactRequest (input["PLAN"] == 854)
+        
+    then
+         response.setEntry("OFFERING", "1785280545")
+         response.setEntry("DESCRIPTION", "Tigo sin limites $59.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan855"
+
+    when
+          f: FactRequest (input["PLAN"] == 855)
+        
+    then
+         response.setEntry("OFFERING", "1785280787")
+         response.setEntry("DESCRIPTION", "Todo Sin limites $79.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+
+
+rule "Plan856"
+
+    when
+          f: FactRequest (input["PLAN"] == 856)
+        
+    then
+         response.setEntry("OFFERING", "1785281252")
+         response.setEntry("DESCRIPTION", "Todo sin limites $99.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan857"
+
+    when
+          f: FactRequest (input["PLAN"] == 857)
+        
+    then
+         response.setEntry("OFFERING", "1285027635")
+         response.setEntry("DESCRIPTION", "Amigos sin limites $19.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan858"
+
+    when
+          f: FactRequest (input["PLAN"] == 858)
+        
+    then
+         response.setEntry("OFFERING", "1685133547")
+         response.setEntry("DESCRIPTION", "Amigos sin limites $29.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan859"
+
+    when
+          f: FactRequest (input["PLAN"] == 859)
+        
+    then
+         response.setEntry("OFFERING", "1985136265")
+         response.setEntry("DESCRIPTION", "Tigo sin limites $39.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan860"
+
+    when
+          f: FactRequest (input["PLAN"] == 860)
+        
+    then
+         response.setEntry("OFFERING", "985136470")
+         response.setEntry("DESCRIPTION", "Tigo sin limites $59.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan861"
+
+    when
+          f: FactRequest (input["PLAN"] == 861)
+        
+    then
+         response.setEntry("OFFERING", "1585137417")
+         response.setEntry("DESCRIPTION", "Todo sin limites $79.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan862"
+
+    when
+          f: FactRequest (input["PLAN"] == 862)
+        
+    then
+         response.setEntry("OFFERING", "185137693")
+         response.setEntry("DESCRIPTION", "Todo Sin limites $99.99 mixto")
+         response.setEntry("PLANSMART", "N") 
+end
+
+
+
+rule "Plan879"
+
+    when
+          f: FactRequest (input["PLAN"] == 879)
+        
+    then
+         response.setEntry("OFFERING", "1785137893")
+         response.setEntry("DESCRIPTION", "Tigo sin limite (SE) $19.99")
+         response.setEntry("PLANSMART", "N")   
+
+end
+
+rule "Plan880"
+
+    when
+          f: FactRequest (input["PLAN"] == 880)
+        
+    then
+         response.setEntry("OFFERING", "1785138079")        
+		 response.setEntry("DESCRIPTION", "Tigo sin limite (SE) $29.99")
+		 response.setEntry("PLANSMART", "N")   
+end
+
+rule "Plan881"
+
+    when
+          f: FactRequest (input["PLAN"] == 881)
+        
+    then
+         response.setEntry("OFFERING", "585138249")
+         response.setEntry("DESCRIPTION", "Tigo Sin limite mixto (SE) $39.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan882"
+
+    when
+          f: FactRequest (input["PLAN"] == 882)
+        
+    then
+         response.setEntry("OFFERING", "1085138346")
+         response.setEntry("DESCRIPTION", "Todo Sin limite mixto (SE)  $ 45.00")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan405"
+
+    when
+          f: FactRequest (input["PLAN"] == 405)
+        
+    then
+         response.setEntry("OFFERING", "1885286679")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL ESPECIAL 15")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan406"
+
+    when
+          f: FactRequest (input["PLAN"] == 406)
+        
+    then
+         response.setEntry("OFFERING", "1185286920")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL ESPECIAL 20")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan486"
+
+    when
+          f: FactRequest (input["PLAN"] == 486)
+        
+    then
+         response.setEntry("OFFERING", "1685286999")
+         response.setEntry("DESCRIPTION", "PLAN SMART $15")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan480"
+
+    when
+          f: FactRequest (input["PLAN"] == 480)
+        
+    then
+         response.setEntry("OFFERING", "1085223824")
+         response.setEntry("DESCRIPTION", "Plan Mixto 15")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan495"
+
+    when
+          f: FactRequest (input["PLAN"] == 495)
+        
+    then
+         response.setEntry("OFFERING", "385287293")
+         response.setEntry("DESCRIPTION", "PLAN SMART BLACKBERRY ESPECIAL $30")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan51"
+
+    when
+          f: FactRequest (input["PLAN"] == 51)
+        
+    then
+         response.setEntry("OFFERING", "1585283751")
+         response.setEntry("DESCRIPTION", "PLAN PROMOCION")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan56"
+
+    when
+          f: FactRequest (input["PLAN"] == 56)
+        
+    then
+         response.setEntry("OFFERING", "1867856662")
+         response.setEntry("DESCRIPTION", "PLAN TIGO C (EMPLEADOS)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan58"
+
+    when
+          f: FactRequest (input["PLAN"] == 58)
+        
+    then
+         response.setEntry("OFFERING", "1667984229")
+         response.setEntry("DESCRIPTION", "PLAN TIGO A (Empleados)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan60"
+
+    when
+          f: FactRequest (input["PLAN"] == 60)
+        
+    then
+         response.setEntry("OFFERING", "1867882032")
+         response.setEntry("DESCRIPTION", "PLAN TIGO E (EMPLEADOS)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan62"
+
+    when
+          f: FactRequest (input["PLAN"] == 62)
+        
+    then
+         response.setEntry("OFFERING", "1167985322")
+         response.setEntry("DESCRIPTION", "PLAN GERENTES (NEW)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan65"
+
+    when
+          f: FactRequest (input["PLAN"] == 65)
+        
+    then
+         response.setEntry("OFFERING", "1767881468")
+         response.setEntry("DESCRIPTION", "PLAN TELEFONOS DE PRUEBA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan69"
+
+    when
+          f: FactRequest (input["PLAN"] == 69)
+        
+    then
+         response.setEntry("OFFERING", "1367857098")
+         response.setEntry("DESCRIPTION", "PLAN TIGO B (EMPLEADOS)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan724"
+
+    when
+          f: FactRequest (input["PLAN"] == 724)
+        
+    then
+         response.setEntry("OFFERING", "792385945")
+         response.setEntry("DESCRIPTION", "PLAN SMART SIN CONTRATO $15")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan730"
+
+    when
+          f: FactRequest (input["PLAN"] == 730)
+        
+    then
+         response.setEntry("OFFERING", "1492813704")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $79.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan731"
+
+    when
+          f: FactRequest (input["PLAN"] == 731)
+        
+    then
+         response.setEntry("OFFERING", "1492814038")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $99.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan732"
+
+    when
+          f: FactRequest (input["PLAN"] == 732)
+        
+    then
+         response.setEntry("OFFERING", "1892814386")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $120")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan1958"
+
+    when
+          f: FactRequest (input["PLAN"] == 1958)
+        
+    then
+         response.setEntry("OFFERING", "1771473140")
+         response.setEntry("DESCRIPTION", "COS_SEMILLA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan2058"
+
+    when
+          f: FactRequest (input["PLAN"] == 2058)
+        
+    then
+         response.setEntry("OFFERING", "1571471133")
+         response.setEntry("DESCRIPTION", "HIBRIDCORP")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan2338"
+
+    when
+          f: FactRequest (input["PLAN"] == 2338)
+        
+    then
+         response.setEntry("OFFERING", "1571471083")
+         response.setEntry("DESCRIPTION", "CIN_VPN")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan426"
+
+    when
+          f: FactRequest (input["PLAN"] == 426)
+        
+    then
+         response.setEntry("OFFERING", "1168570943")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan435"
+
+    when
+          f: FactRequest (input["PLAN"] == 435)
+        
+    then
+         response.setEntry("OFFERING", "1268571910")
+         response.setEntry("DESCRIPTION", "NEWCOM PLAN 395 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan437"
+
+    when
+          f: FactRequest (input["PLAN"] == 437)
+        
+    then
+         response.setEntry("OFFERING", "1368571950")
+         response.setEntry("DESCRIPTION", "NEWCOM PLAN 479 HOME/BUSINESS") 
+
+end
+
+rule "Plan472"
+
+    when
+          f: FactRequest (input["PLAN"] == 472)
+        
+    then
+         response.setEntry("OFFERING", "1868572696")
+         response.setEntry("DESCRIPTION", "FIJO CORPORATIVO 1000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan474"
+
+    when
+          f: FactRequest (input["PLAN"] == 474)
+        
+    then
+         response.setEntry("OFFERING", "1268572293")
+         response.setEntry("DESCRIPTION", "FIJO CORPORATIVO 2000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan475"
+
+    when
+          f: FactRequest (input["PLAN"] == 475)
+        
+    then
+         response.setEntry("OFFERING", "1268572293")
+         response.setEntry("DESCRIPTION", "PLAN MASIVO 5000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan477"
+
+    when
+          f: FactRequest (input["PLAN"] == 477)
+        
+    then
+         response.setEntry("OFFERING", "768572295")
+         response.setEntry("DESCRIPTION", "PLAN MASIVO 15000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan484"
+
+    when
+          f: FactRequest (input["PLAN"] == 484)
+        
+    then
+         response.setEntry("OFFERING", "168571003")
+         response.setEntry("DESCRIPTION", "PLAN DEMO BCIE")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan512"
+
+    when
+          f: FactRequest (input["PLAN"] == 512)
+        
+    then
+         response.setEntry("OFFERING", "1968571929")
+         response.setEntry("DESCRIPTION", "PLAN TIGO VOLUME")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan514"
+
+    when
+          f: FactRequest (input["PLAN"] == 514)
+        
+    then
+         response.setEntry("OFFERING", "968572633")
+         response.setEntry("DESCRIPTION", "PLAN TIGO PREMIER")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan516"
+
+    when
+          f: FactRequest (input["PLAN"] == 516)
+        
+    then
+         response.setEntry("OFFERING", "1468570938")
+         response.setEntry("DESCRIPTION", "PLAN 800 - CORPORATIVO")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan517"
+
+    when
+          f: FactRequest (input["PLAN"] == 517)
+        
+    then
+         response.setEntry("OFFERING", "568570915")
+         response.setEntry("DESCRIPTION", "PLAN 800 - CALL CENTER")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan667"
+
+    when
+          f: FactRequest (input["PLAN"] == 667)
+        
+    then
+         response.setEntry("OFFERING", "1368570972")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ3) CRE")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan714"
+
+    when
+          f: FactRequest (input["PLAN"] == 714)
+        
+    then
+         response.setEntry("OFFERING", "168572301")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ5) OCE")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan715"
+
+    when
+          f: FactRequest (input["PLAN"] == 715)
+        
+    then
+         response.setEntry("OFFERING", "1868572275")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ5) RECR")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan719"
+
+    when
+          f: FactRequest (input["PLAN"] == 719)
+        
+    then
+         response.setEntry("OFFERING", "1768572471")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ6) GMG")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan723"
+
+    when
+          f: FactRequest (input["PLAN"] == 723)
+        
+    then
+         response.setEntry("OFFERING", "1168570912")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ9) CRE")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan755"
+
+    when
+          f: FactRequest (input["PLAN"] == 755)
+        
+    then
+         response.setEntry("OFFERING", "1268570933")
+         response.setEntry("DESCRIPTION", "PLAN GESTOR FIJA CI MA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan756"
+
+    when
+          f: FactRequest (input["PLAN"] == 756)
+        
+    then
+         response.setEntry("OFFERING", "168570985")
+         response.setEntry("DESCRIPTION", "PLAN GESTOR FIJA CI MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan757"
+
+    when
+          f: FactRequest (input["PLAN"] == 757)
+        
+    then
+         response.setEntry("OFFERING", "1192563602")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $120")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan758"
+
+    when
+          f: FactRequest (input["PLAN"] == 758)
+        
+    then
+         response.setEntry("OFFERING", "992816986")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $15.00")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan759"
+
+    when
+          f: FactRequest (input["PLAN"] == 759)
+        
+    then
+         response.setEntry("OFFERING", "792818083")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $19.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan760"
+
+    when
+          f: FactRequest (input["PLAN"] == 760)
+        
+    then
+         response.setEntry("OFFERING", "192818464")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $29.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan761"
+
+    when
+          f: FactRequest (input["PLAN"] == 761)
+        
+    then
+         response.setEntry("OFFERING", "1992818884")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $39.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan762"
+
+    when
+          f: FactRequest (input["PLAN"] == 762)
+        
+    then
+         response.setEntry("OFFERING", "192819121")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $59.99")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan766"
+
+    when
+          f: FactRequest (input["PLAN"] == 766)
+        
+    then
+         response.setEntry("OFFERING", "1268571955")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (ESPÑ13) LRCH")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan778"
+
+    when
+          f: FactRequest (input["PLAN"] == 778)
+        
+    then
+         response.setEntry("OFFERING", "1468571014")
+         response.setEntry("DESCRIPTION", "TF CORTE SUPREMA DE JUSTICIA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan913"
+
+    when
+          f: FactRequest (input["PLAN"] == 913)
+        
+    then
+         response.setEntry("OFFERING", "708189925")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS (ESPÑ21) - COBRANZAS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "PlanP13"
+
+    when
+          f: FactRequest (input["PLAN"] == "P13")
+        
+    then
+         response.setEntry("OFFERING", "1408209849")
+         response.setEntry("DESCRIPTION", "PLAN ESPECIAL  - TIGO BUSINESS CLI MOVIX")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+
+rule "Plan179"
+
+    when
+          f: FactRequest (input["PLAN"] == 179)
+        
+    then
+         response.setEntry("OFFERING", "1497408235")
+         response.setEntry("DESCRIPTION", "PLAN 4550A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan196"
+
+    when
+          f: FactRequest (input["PLAN"] == 196)
+        
+    then
+         response.setEntry("OFFERING", "1297408235")
+         response.setEntry("DESCRIPTION", "PLAN CONATEL")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan264"
+
+    when
+          f: FactRequest (input["PLAN"] == 264)
+        
+    then
+         response.setEntry("OFFERING", "1586474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138G_264")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan312"
+
+    when
+          f: FactRequest (input["PLAN"]== 312)
+        
+    then
+         response.setEntry("OFFERING", "1297407871")
+         response.setEntry("DESCRIPTION", "PLAN GERENTES GRUPO MIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan313"
+
+    when
+          f: FactRequest (input["PLAN"] == 313)
+        
+    then
+         response.setEntry("OFFERING", "197407870")
+         response.setEntry("DESCRIPTION", "PLAN JEFES DE AREA GRUPO MIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan314"
+
+    when
+          f: FactRequest (input["PLAN"] == 314)
+        
+    then
+         response.setEntry("OFFERING", "1697407870")
+         response.setEntry("DESCRIPTION", "PLAN SUPERVISORES GRUPO MIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan315"
+
+    when
+          f: FactRequest (input["PLAN"] == 315)
+        
+    then
+         response.setEntry("OFFERING", "997407870")
+         response.setEntry("DESCRIPTION", "PLAN TECNICOS/SISTEMAS GRUPO MIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan316"
+
+    when
+          f: FactRequest (input["PLAN"] == 316)
+        
+    then
+         response.setEntry("OFFERING", "597407871")
+         response.setEntry("DESCRIPTION", "PLAN OTROS EMPLEADOS GRUPO MIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan330"
+
+    when
+          f: FactRequest (input["PLAN"] == 330)
+        
+    then
+         response.setEntry("OFFERING", "1197408263")
+         response.setEntry("DESCRIPTION", "PLAN TIGO D (EMPLEADOS)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan346"
+
+    when
+          f: FactRequest (input["PLAN"] == 346)
+        
+    then
+         response.setEntry("OFFERING", "397407871")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1400 A")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan713"
+
+    when
+          f: FactRequest (input["PLAN"] == 713)
+        
+    then
+         response.setEntry("OFFERING", "1286474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138G_713")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan768"
+
+    when
+          f: FactRequest (input["PLAN"] == 768)
+        
+    then
+         response.setEntry("OFFERING", "1486474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800L")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan817"
+
+    when
+          f: FactRequest (input["PLAN"] == 817)
+        
+    then
+         response.setEntry("OFFERING", "1986474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 20000B")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan820"
+
+    when
+          f: FactRequest (input["PLAN"] == 820)
+        
+    then
+         response.setEntry("OFFERING", "397407869")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 13000 B")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan833"
+
+    when
+          f: FactRequest (input["PLAN"] == 833)
+        
+    then
+         response.setEntry("OFFERING", "1686474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000E")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan839"
+
+    when
+          f: FactRequest (input["PLAN"] == 839)
+        
+    then
+         response.setEntry("OFFERING", "1097408235")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6500 B")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan840"
+
+    when
+          f: FactRequest (input["PLAN"] == 840)
+        
+    then
+         response.setEntry("OFFERING", "1786474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO VIP SECR DE SEGURIDAD")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan842"
+
+    when
+          f: FactRequest (input["PLAN"]== 842)
+        
+    then
+         response.setEntry("OFFERING", "997408274")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO $4000")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan865"
+
+    when
+          f: FactRequest (input["PLAN"] == 865)
+        
+    then
+         response.setEntry("OFFERING", "1797408124")
+         response.setEntry("DESCRIPTION", "EMPRESA")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan866"
+
+    when
+          f: FactRequest (input["PLAN"] == 866)
+        
+    then
+         response.setEntry("OFFERING", "597408124")
+         response.setEntry("DESCRIPTION", "EMPRESA SIN LIMITE")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan867"
+
+    when
+         f: FactRequest (input["PLAN"] == 867)
+        
+    then
+         response.setEntry("OFFERING", "1097407871")
+         response.setEntry("DESCRIPTION", "EMPRESA SIN LIMITE PLUS")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan868"
+
+    when
+          f: FactRequest (input["PLAN"] == 868)
+        
+    then
+         response.setEntry("OFFERING", "1697408189")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+
+
+rule "Plan869"
+
+    when
+          f: FactRequest (input["PLAN"] == 869)
+        
+    then
+         response.setEntry("OFFERING", "1997408189")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE PLUS")
+         response.setEntry("PLANSMART", "N")  
+
+end
+
+rule "Plan870"
+
+    when
+          f: FactRequest (input["PLAN"] == 870)
+        
+    then
+         response.setEntry("OFFERING", "1297408189")
+         response.setEntry("DESCRIPTION", "TODO SIN LIMITE")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan871"
+
+    when
+          f: FactRequest (input["PLAN"] == 871)
+        
+    then
+         response.setEntry("OFFERING", "1297408124")
+         response.setEntry("DESCRIPTION", "TODO SIN LIMITE PLUS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan91"
+
+    when
+          f: FactRequest (input["PLAN"] == 91)
+        
+    then
+         response.setEntry("OFFERING", "1397407869")
+         response.setEntry("DESCRIPTION", "PLAN ESPECIAL CONATEL 2")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan141"
+
+    when
+          f: FactRequest (input["PLAN"] == 141)
+        
+    then
+         response.setEntry("OFFERING", "1186474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 550")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan142"
+
+    when
+          f: FactRequest (input["PLAN"] == 142)
+        
+    then
+         response.setEntry("OFFERING", "1686474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 144")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan144"
+
+    when
+          f: FactRequest (input["PLAN"] == 144)
+        
+    then
+         response.setEntry("OFFERING", "1186474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 450")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan145"
+
+    when
+          f: FactRequest (input["PLAN"] == 145)
+        
+    then
+         response.setEntry("OFFERING", "986474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 580")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan146"
+
+    when
+          f: FactRequest (input["PLAN"] == 146)
+        
+    then
+         response.setEntry("OFFERING", "1173894679")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2800")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan152"
+
+    when
+          f: FactRequest (input["PLAN"] == 152)
+        
+    then
+         response.setEntry("OFFERING", "773910994")
+         response.setEntry("DESCRIPTION", "PLAN JOINT TASK FORCE BRAVO 2590")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan153"
+
+    when
+          f: FactRequest (input["PLAN"] == 153)
+        
+    then
+         response.setEntry("OFFERING", "1686474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan161"
+
+    when
+          f: FactRequest (input["PLAN"] == 161)
+        
+    then
+         response.setEntry("OFFERING", "1086474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 96")      
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan162"
+
+    when
+          f: FactRequest (input["PLAN"] == 162)
+        
+    then
+         response.setEntry("OFFERING", "1086474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 203")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan164"
+
+    when
+           f: FactRequest (input["PLAN"] == 164)
+        
+    then
+         response.setEntry("OFFERING", "1186474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 200")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan165"
+
+    when
+          f: FactRequest (input["PLAN"] == 165)
+        
+    then
+         response.setEntry("OFFERING", "973894349")
+         response.setEntry("DESCRIPTION", "Plan Corporativo 1540")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+
+rule "Plan174"
+
+    when
+          f: FactRequest (input["PLAN"] == 174)
+        
+    then
+         response.setEntry("OFFERING", "1673894397")
+         response.setEntry("DESCRIPTION", "Plan Corporativo 2700")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan194"
+
+    when
+          f: FactRequest (input["PLAN"]== 194)
+        
+    then
+         response.setEntry("OFFERING", "1473894629")
+         response.setEntry("DESCRIPTION", "Plan Corporativo 8500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan197"
+
+    when
+          f: FactRequest (input["PLAN"] == 197)
+        
+    then
+         response.setEntry("OFFERING", "186474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3250")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan198"
+
+    when
+          f: FactRequest (input["PLAN"] == 198)
+        
+    then
+         response.setEntry("OFFERING", "386474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1008E")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan199"
+
+    when
+          f: FactRequest (input["PLAN"] == 199)
+        
+    then
+         response.setEntry("OFFERING", "1486474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 280")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan202"
+
+    when
+          f: FactRequest (input["PLAN"] == 202)
+        
+    then
+         response.setEntry("OFFERING", "1373894338")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 7000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan215"
+
+    when
+          f: FactRequest (input["PLAN"] == 215)
+        
+    then
+         response.setEntry("OFFERING", "1673911690")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000 A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan217"
+
+    when
+          f: FactRequest (input["PLAN"] == 217)
+        
+    then
+         response.setEntry("OFFERING", "1786474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1008D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan218"
+
+    when
+          f: FactRequest (input["PLAN"] == 218)
+        
+    then
+         response.setEntry("OFFERING", "186474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138F")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan220"
+
+    when
+          f: FactRequest (input["PLAN"] == 220)
+        
+    then
+         response.setEntry("OFFERING", "1386474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 658B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan230"
+
+    when
+          f: FactRequest (input["PLAN"] == 230)
+        
+    then
+         response.setEntry("OFFERING", "1373911021")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 15000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan231"
+
+    when
+          f: FactRequest (input["PLAN"] == 231)
+        
+    then
+         response.setEntry("OFFERING", "1873909576")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan232"
+
+    when
+          f: FactRequest (input["PLAN"] == 232)
+        
+    then
+         response.setEntry("OFFERING", "1586474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3600")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan235"
+
+    when
+          f: FactRequest (input["PLAN"] == 235)
+        
+    then
+         response.setEntry("OFFERING", "995308674")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 750")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan237"
+
+    when
+          f: FactRequest (input["PLAN"] == 237)
+        
+    then
+         response.setEntry("OFFERING", "1086474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 750A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan238"
+
+    when
+          f: FactRequest (input["PLAN"] == 238)
+        
+    then
+         response.setEntry("OFFERING", "1073909596")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 12000A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan239"
+
+    when
+          f: FactRequest (input["PLAN"] == 239)
+        
+    then
+         response.setEntry("OFFERING", "1673909561")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 13000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan240"
+
+    when
+          f: FactRequest (input["PLAN"] == 240)
+        
+    then
+         response.setEntry("OFFERING", "186474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 758C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan242"
+
+    when
+          f: FactRequest (input["PLAN"] == 242)
+        
+    then
+         response.setEntry("OFFERING", "773894690")
+         response.setEntry("DESCRIPTION", "PLAN 3000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan243"
+
+    when
+          f: FactRequest (input["PLAN"] == 243)
+        
+    then
+         response.setEntry("OFFERING", "1086474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2250")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan246"
+
+    when
+          f: FactRequest (input["PLAN"] == 246)
+        
+    then
+         response.setEntry("OFFERING", "1886474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2210F")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan247"
+
+    when
+          f: FactRequest (input["PLAN"] == 247)
+        
+    then
+         response.setEntry("OFFERING", "1773894645")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan248"
+
+    when
+          f: FactRequest (input["PLAN"] == 248)
+        
+    then
+         response.setEntry("OFFERING", "186474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 25000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan249"
+
+    when
+          f: FactRequest (input["PLAN"] == 249)
+        
+    then
+         response.setEntry("OFFERING", "1786474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 126")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan250"
+
+    when
+          f: FactRequest (input["PLAN"] == 250)
+        
+    then
+         response.setEntry("OFFERING", "1986474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 179")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan251"
+
+    when
+          f: FactRequest (input["PLAN"] == 251)
+        
+    then
+         response.setEntry("OFFERING", "1886474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 253")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan252"
+
+    when
+          f: FactRequest (input["PLAN"] == 252)
+        
+    then
+         response.setEntry("OFFERING", "1286474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 373")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan253"
+
+    when
+          f: FactRequest (input["PLAN"] == 253)
+        
+    then
+         response.setEntry("OFFERING", "1686474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 554")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan254"
+
+    when
+          f: FactRequest (input["PLAN"] == 254)
+        
+    then
+         response.setEntry("OFFERING", "1686474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 758")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan255"
+
+    when
+          f: FactRequest (input["PLAN"] == 255)
+        
+    then
+         response.setEntry("OFFERING", "1273894747")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 758A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan256"
+
+    when
+          f: FactRequest (input["PLAN"] == 256)
+        
+    then
+         response.setEntry("OFFERING", "386474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 758B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan258"
+
+    when
+          f: FactRequest (input["PLAN"] == 258)
+        
+    then
+         response.setEntry("OFFERING", "1973894361")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan259"
+
+    when
+          f: FactRequest (input["PLAN"] == 259)
+        
+    then
+         response.setEntry("OFFERING", "1386474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan261"
+
+    when
+          f: FactRequest (input["PLAN"] == 261)
+        
+    then
+         response.setEntry("OFFERING", "1973894428")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan262"
+
+    when
+          f: FactRequest (input["PLAN"] == 262)
+        
+    then
+         response.setEntry("OFFERING", "1186474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138E")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan263"
+
+    when
+          f: FactRequest (input["PLAN"] == 263)
+        
+    then
+         response.setEntry("OFFERING", "1386474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan266"
+
+    when
+          f: FactRequest (input["PLAN"] == 266)
+        
+    then
+         response.setEntry("OFFERING", "1573894698")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan268"
+
+    when
+          f: FactRequest (input["PLAN"] == 268)
+        
+    then
+         response.setEntry("OFFERING", "1773909651")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan269"
+
+    when
+          f: FactRequest (input["PLAN"] == 269)
+        
+    then
+         response.setEntry("OFFERING", "1186474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan270"
+
+    when
+          f: FactRequest (input["PLAN"] == 270)
+        
+    then
+         response.setEntry("OFFERING", "1486474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan271"
+
+    when
+          f: FactRequest (input["PLAN"] == 271)
+        
+    then
+         response.setEntry("OFFERING", "1973910979")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2590A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan272"
+
+    when
+          f: FactRequest (input["PLAN"] == 272)
+        
+    then
+         response.setEntry("OFFERING", "1686474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan273"
+
+    when
+          f: FactRequest (input["PLAN"] == 273)
+        
+    then
+         response.setEntry("OFFERING", "1586474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 5000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan276"
+
+    when
+          f: FactRequest (input["PLAN"] == 276)
+        
+    then
+         response.setEntry("OFFERING", "973894364")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3400")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan277"
+
+    when
+          f: FactRequest (input["PLAN"] == 277)
+        
+    then
+         response.setEntry("OFFERING", "1786474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3300")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan278"
+
+    when
+          f: FactRequest (input["PLAN"] == 278)
+        
+    then
+         response.setEntry("OFFERING", "1073894367")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3690A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan280"
+
+    when
+          f: FactRequest (input["PLAN"] == 280)
+        
+    then
+         response.setEntry("OFFERING", "1873910976")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3850")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan281"
+
+    when
+          f: FactRequest (input["PLAN"] == 281)
+        
+    then
+         response.setEntry("OFFERING", "1986474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6000_281")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan284"
+
+    when
+          f: FactRequest (input["PLAN"] == 284)
+        
+    then
+         response.setEntry("OFFERING", "186474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan285"
+
+    when
+          f: FactRequest (input["PLAN"] == 285)
+        
+    then
+         response.setEntry("OFFERING", "1786474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6000_285")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan288"
+
+    when
+          f: FactRequest (input["PLAN"] == 288)
+        
+    then
+         response.setEntry("OFFERING", "1073911012")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800K")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan292"
+
+    when
+          f: FactRequest (input["PLAN"] == 292)
+        
+    then
+         response.setEntry("OFFERING", "1273894662")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6000A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan297"
+
+    when
+          f: FactRequest (input["PLAN"] == 297)
+        
+    then
+         response.setEntry("OFFERING", "973909634")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 9500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan300"
+
+    when
+          f: FactRequest (input["PLAN"] == 300)
+        
+    then
+         response.setEntry("OFFERING", "1373894410")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 14000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan301"
+
+    when
+          f: FactRequest (input["PLAN"] == 301)
+        
+    then
+         response.setEntry("OFFERING", "1573894383")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 14000A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan303"
+
+    when
+          f: FactRequest (input["PLAN"] == 303)
+        
+    then
+         response.setEntry("OFFERING", "1373894687")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3400")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan305"
+
+    when
+          f: FactRequest (input["PLAN"] == 305)
+        
+    then
+         response.setEntry("OFFERING", "1973909628")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3200")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan306"
+
+    when
+          f: FactRequest (input["PLAN"] == 306)
+        
+    then
+         response.setEntry("OFFERING", "1973909628")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 5000B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan307"
+
+    when
+          f: FactRequest (input["PLAN"] == 307)
+        
+    then
+         response.setEntry("OFFERING", "1173912058")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 11000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan308"
+
+    when
+          f: FactRequest (input["PLAN"] == 308)
+        
+    then
+         response.setEntry("OFFERING", "1473909567")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan309"
+
+    when
+          f: FactRequest (input["PLAN"] == 309)
+        
+    then
+         response.setEntry("OFFERING", "1086474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan310"
+
+    when
+          f: FactRequest (input["PLAN"] == 310)
+        
+    then
+         response.setEntry("OFFERING", "1995308291")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 7500C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan311"
+
+    when
+          f: FactRequest (input["PLAN"] == 311)
+        
+    then
+         response.setEntry("OFFERING", "573910973")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 9500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan317"
+
+    when
+          f: FactRequest (input["PLAN"] == 317)
+        
+    then
+         response.setEntry("OFFERING", "786474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760E")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan318"
+
+    when
+          f: FactRequest (input["PLAN"] == 318)
+        
+    then
+         response.setEntry("OFFERING", "1986474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 6790A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan319"
+
+    when
+          f: FactRequest (input["PLAN"] == 319)
+        
+    then
+         response.setEntry("OFFERING", "1286474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2520A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan320"
+
+    when
+          f: FactRequest (input["PLAN"] == 320)
+        
+    then
+         response.setEntry("OFFERING", "586474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138H")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan321"
+
+    when
+          f: FactRequest (input["PLAN"] == 321)
+        
+    then
+         response.setEntry("OFFERING", "986474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2360A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan322"
+
+    when
+          f: FactRequest (input["PLAN"] == 322)
+        
+    then
+         response.setEntry("OFFERING", "1273910988")
+         response.setEntry("DESCRIPTION", "PLAN 6000H")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan323"
+
+    when
+          f: FactRequest (input["PLAN"] == 323)
+        
+    then
+         response.setEntry("OFFERING", "1873911685")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3600A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan325"
+
+    when
+          f: FactRequest (input["PLAN"] == 325)
+        
+    then
+         response.setEntry("OFFERING", "785628467")
+         response.setEntry("DESCRIPTION", "PLAN SMART MI GENTE 80")
+         response.setEntry("SUPOFFERING", "1485649277")
+         response.setEntry("PLANSMART", "S") 
+
+end
+
+rule "Plan326"
+
+    when
+          f: FactRequest (input["PLAN"] == 326)
+        
+    then
+         response.setEntry("OFFERING", "1685654174")
+         response.setEntry("DESCRIPTION", "PLAN SMART MI GENTE 96")
+         response.setEntry("SUPOFFERING", "1785654593")
+         response.setEntry("PLANSMART", "S")   
+
+end
+
+rule "Plan327"
+
+    when
+          f: FactRequest (input["PLAN"] == 327)
+        
+    then
+         response.setEntry("OFFERING", "1785654834")
+         response.setEntry("DESCRIPTION", "PLAN MI GENTE 126") 
+		 response.setEntry("SUPOFFERING", "1485717091")
+		 response.setEntry("PLANSMART", "S") 
+end
+
+rule "Plan328"
+
+    when
+          f: FactRequest (input["PLAN"] == 328)
+        
+    then
+         response.setEntry("OFFERING", "1085715613")
+         response.setEntry("DESCRIPTION", "PLAN MI GENTE 179")
+         response.setEntry("SUPOFFERING", "385718080")
+         response.setEntry("PLANSMART", "S")  
+
+end
+
+rule "Plan329"
+
+    when
+          f: FactRequest (input["PLAN"] == 329)
+        
+    then
+         response.setEntry("OFFERING", "1685715937")
+         response.setEntry("DESCRIPTION", "PLAN MI GENTE 253")
+         response.setEntry("SUPOFFERING", "1185718266")
+         response.setEntry("PLANSMART", "S") 
+
+end
+
+rule "Plan331"
+
+    when
+          f: FactRequest (input["PLAN"] == 331)
+        
+    then
+         response.setEntry("OFFERING", "1273909564")
+         response.setEntry("DESCRIPTION", "PLAN 35000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan340"
+
+    when
+          f: FactRequest (input["PLAN"] == 340)
+        
+    then
+         response.setEntry("OFFERING", "1586474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 150")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan341"
+
+    when
+          f: FactRequest (input["PLAN"] == 341)
+        
+    then
+         response.setEntry("OFFERING", "773894332")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 10000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan344"
+
+    when
+          f: FactRequest (input["PLAN"] == 344)
+        
+    then
+         response.setEntry("OFFERING", "1186474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2000_344")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan345"
+
+    when
+          f: FactRequest (input["PLAN"] == 345)
+        
+    then
+         response.setEntry("OFFERING", "1973912289")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan350"
+
+    when
+          f: FactRequest (input["PLAN"] == 350)
+        
+    then
+         response.setEntry("OFFERING", "986474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 350")        
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan351"
+
+    when
+          f: FactRequest (input["PLAN"] == 351)
+        
+    then
+         response.setEntry("OFFERING", "173909625")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 15000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan352"
+
+    when
+          f: FactRequest (input["PLAN"] == 352)
+        
+    then
+         response.setEntry("OFFERING", "1673894413")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan354"
+
+    when
+          f: FactRequest (input["PLAN"] == 354)
+        
+    then
+         response.setEntry("OFFERING", "1986474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 500 (TIGO-CREDOMATIC)")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan360"
+
+    when
+          f: FactRequest (input["PLAN"] == 360)
+        
+    then
+         response.setEntry("OFFERING", "1473910991")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4550 A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan361"
+
+    when
+          f: FactRequest (input["PLAN"] == 361)
+        
+    then
+         response.setEntry("OFFERING", "386474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3600 B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan363"
+
+    when
+          f: FactRequest (input["PLAN"] == 363)
+        
+    then
+         response.setEntry("OFFERING", "173894422")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan364"
+
+    when
+          f: FactRequest (input["PLAN"] == 364)
+        
+    then
+         response.setEntry("OFFERING", "1086474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 600")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan365"
+
+    when
+          f: FactRequest (input["PLAN"] == 365)
+        
+    then
+         response.setEntry("OFFERING", "386474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2520")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan366"
+
+    when
+          f: FactRequest (input["PLAN"] == 366)
+        
+    then
+         response.setEntry("OFFERING", "1686474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 18000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan367"
+
+    when
+          f: FactRequest (input["PLAN"] == 367)
+        
+    then
+         response.setEntry("OFFERING", "1386474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2000_367")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan368"
+
+    when
+          f: FactRequest (input["PLAN"] == 368)
+        
+    then
+         response.setEntry("OFFERING", "786474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 11000")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan372"
+
+    when
+          f: FactRequest (input["PLAN"] == 372)
+        
+    then
+         response.setEntry("OFFERING", "1073911018")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 25000 B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan411"
+
+    when
+          f: FactRequest (input["PLAN"] == 411)
+        
+    then
+         response.setEntry("OFFERING", "1185716107")
+         response.setEntry("DESCRIPTION", "PLAN MI GENTE 50")
+         response.setEntry("SUPOFFERING", "585718967")
+         response.setEntry("PLANSMART", "S") 
+
+end
+
+rule "Plan412"
+
+    when
+          f: FactRequest (input["PLAN"] == 412)
+        
+    then
+         response.setEntry("OFFERING", "1685716591")
+         response.setEntry("DESCRIPTION", "PLAN MI GENTE 70")
+         response.setEntry("SUPOFFERING", "785738479")
+         response.setEntry("PLANSMART", "S") 
+
+end
+
+rule "Plan500"
+
+    when
+          f: FactRequest (input["PLAN"] == 500)
+        
+    then
+         response.setEntry("OFFERING", "1886474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1138B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan501"
+
+    when
+          f: FactRequest (input["PLAN"] == 501)
+        
+    then
+         response.setEntry("OFFERING", "1086474053")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 5")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+
+end
+
+rule "Plan520"
+
+    when
+          f: FactRequest (input["PLAN"] == 520)
+        
+    then
+         response.setEntry("OFFERING", "1373910967")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan521"
+
+    when
+          f: FactRequest (input["PLAN"] == 521)
+        
+    then
+         response.setEntry("OFFERING", "586474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2520B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan522"
+
+    when
+          f: FactRequest (input["PLAN"] == 522)
+        
+    then
+         response.setEntry("OFFERING", "1186474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 758D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan527"
+
+    when
+          f: FactRequest (input["PLAN"] == 527)
+        
+    then
+         response.setEntry("OFFERING", "986474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2300")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan528"
+
+    when
+          f: FactRequest (input["PLAN"] == 528)
+        
+    then
+         response.setEntry("OFFERING", "586474807")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1500B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan529"
+
+    when
+          f: FactRequest (input["PLAN"] == 529)
+        
+    then
+         response.setEntry("OFFERING", "1086474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3000B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan530"
+
+    when
+          f: FactRequest (input["PLAN"] == 530)
+        
+    then
+         response.setEntry("OFFERING", "1586474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3000C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan536"
+
+    when
+          f: FactRequest (input["PLAN"] == 536)
+        
+    then
+         response.setEntry("OFFERING", "573894720")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 16000B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan652"
+
+    when
+          f: FactRequest (input["PLAN"] == 652)
+        
+    then
+         response.setEntry("OFFERING", "1786474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1008F")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan676"
+
+    when
+          f: FactRequest (input["PLAN"] == 676)
+        
+    then
+         response.setEntry("OFFERING", "1386474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2380")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan677"
+
+    when
+          f: FactRequest (input["PLAN"] == 677)
+        
+    then
+         response.setEntry("OFFERING", "1286474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 225")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan678"
+
+    when
+          f: FactRequest (input["PLAN"] == 678)
+        
+    then
+         response.setEntry("OFFERING", "1886474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan679"
+
+    when
+          f: FactRequest (input["PLAN"] == 679)
+        
+    then
+         response.setEntry("OFFERING", "586474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 3200 A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan680"
+
+    when
+          f: FactRequest (input["PLAN"] == 680)
+        
+    then
+         response.setEntry("OFFERING", "1286474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1500C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan700"
+
+    when
+          f: FactRequest (input["PLAN"] == 700)
+        
+    then
+         response.setEntry("OFFERING", "986474809")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760F")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan721"
+
+    when
+          f: FactRequest (input["PLAN"] == 721)
+        
+    then
+         response.setEntry("OFFERING", "1486474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1760G")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan722"
+
+    when
+          f: FactRequest (input["PLAN"] == 722)
+        
+    then
+         response.setEntry("OFFERING", "986474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4000D")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan769"
+
+    when
+          f: FactRequest (input["PLAN"] == 769)
+        
+    then
+         response.setEntry("OFFERING", "1486474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 750B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan801"
+
+    when
+          f: FactRequest (input["PLAN"] == 801)
+        
+    then
+         response.setEntry("OFFERING", "973909590")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8800")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan802"
+
+    when
+          f: FactRequest (input["PLAN"] == 802)
+        
+    then
+         response.setEntry("OFFERING", "1873894676")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 13000 A")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan812"
+
+    when
+          f: FactRequest (input["PLAN"] == 812)
+        
+    then
+         response.setEntry("OFFERING", "1486474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2000B")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan813"
+
+    when
+          f: FactRequest (input["PLAN"] == 813)
+        
+    then
+         response.setEntry("OFFERING", "786474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 7000C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan814"
+
+    when
+          f: FactRequest (input["PLAN"] == 814)
+        
+    then
+         response.setEntry("OFFERING", "1586474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 50000C")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan362"
+
+    when
+          f: FactRequest (input["PLAN"] == 362)
+        
+    then
+         response.setEntry("OFFERING", "1586156961")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATE SMS") 
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N")
+		
+end
+
+rule "Plan496"
+
+    when
+          f: FactRequest (input["PLAN"] == 496)
+        
+    then
+         response.setEntry("OFFERING", "1595499057")
+         response.setEntry("DESCRIPTION", "PLAN  GPS SOLUCIONES")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan519"
+
+    when
+          f: FactRequest (input["PLAN"] == 519)
+        
+    then
+         response.setEntry("OFFERING", "385908156")
+         response.setEntry("DESCRIPTION", "PLAN ASTERISCO COBRO REVERTIDO") 
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan537"
+
+    when
+          f: FactRequest (input["PLAN"] == 537)
+        
+    then
+         response.setEntry("OFFERING", "1785560580")
+         response.setEntry("DESCRIPTION", "PLAN DOFORM")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan538"
+
+    when
+          f: FactRequest (input["PLAN"] == 538)
+        
+    then
+         response.setEntry("OFFERING", "1992996597")
+         response.setEntry("DESCRIPTION", "PLAN USSD CORPORATE") 
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan29"
+
+    when
+          f: FactRequest (input["PLAN"] == 29)
+        
+    then
+         response.setEntry("OFFERING", "1698012282")
+         response.setEntry("DESCRIPTION", "Corporate USSD 500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan30"
+
+    when
+          f: FactRequest (input["PLAN"] == 30)
+        
+    then
+         response.setEntry("OFFERING", "1171471180")
+         response.setEntry("DESCRIPTION", "PLAN CONATEL")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan31"
+
+    when
+          f: FactRequest (input["PLAN"] == 31)
+        
+    then
+         response.setEntry("OFFERING", "786474053")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $12 VIP")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan32"
+
+    when
+          f: FactRequest (input["PLAN"] == 32)
+        
+    then
+         response.setEntry("OFFERING", "1586474053")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $19.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan33"
+
+    when
+          f: FactRequest (input["PLAN"] == 33)
+        
+    then
+         response.setEntry("OFFERING", "1186474054")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $29.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan779"
+
+    when
+          f: FactRequest (input["PLAN"] == 779)
+        
+    then
+         response.setEntry("OFFERING", "995933043")
+         response.setEntry("DESCRIPTION", "PLAN FLEET MANAGEMENT") 
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan821"
+
+    when
+          f: FactRequest (input["PLAN"] == 821)
+        
+    then
+         response.setEntry("OFFERING", "593055939")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 2500")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N")
+          
+
+end
+
+rule "Plan822"
+
+    when
+          f: FactRequest (input["PLAN"] == 822)
+        
+    then
+         response.setEntry("OFFERING", "1393057115")
+         response.setEntry("DESCRIPTION", "Plan SMS Empresas 5000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+         
+end
+
+rule "Plan823"
+
+    when
+          f: FactRequest (input["PLAN"] == 823)
+        
+    then
+         response.setEntry("OFFERING", "1693057489")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 10000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+         
+end
+
+rule "Plan824"
+
+    when
+          f: FactRequest (input["PLAN"] == 824)
+        
+    then
+         response.setEntry("OFFERING", "11793057881")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 15000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+      
+end
+
+rule "Plan825"
+
+    when
+          f: FactRequest (input["PLAN"] == 825)
+        
+    then
+         response.setEntry("OFFERING", "1993058907")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 25000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+        
+end
+
+rule "Plan826"
+
+    when
+          f: FactRequest (input["PLAN"] == 826)
+        
+    then
+         response.setEntry("OFFERING", "1893059163")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 50000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+         
+end
+
+rule "Plan827"
+
+    when
+          f: FactRequest (input["PLAN"] == 827)
+        
+    then
+         response.setEntry("OFFERING", "1293059655")
+         response.setEntry("DESCRIPTION", "Plan SMS Empresas 75000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan828"
+
+    when
+          f: FactRequest (input["PLAN"] == 828)
+        
+    then
+         response.setEntry("OFFERING", "993059924")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 100000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+      
+end
+
+rule "Plan829"
+
+    when
+          f: FactRequest (input["PLAN"] == 829)
+        
+    then
+         response.setEntry("OFFERING", "1093060192")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 200000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+         
+end
+
+rule "Plan830"
+
+    when
+          f: FactRequest (input["PLAN"] == 830)
+        
+    then
+         response.setEntry("OFFERING", "1893060467")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 300000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan831"
+
+    when
+          f: FactRequest (input["PLAN"] == 831)
+        
+    then
+         response.setEntry("OFFERING", "1993060785")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 400000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan832"
+
+    when
+          f: FactRequest (input["PLAN"] == 832)
+        
+    then
+         response.setEntry("OFFERING", "993061044")
+         response.setEntry("DESCRIPTION", "PLAN SMS EMPRESAS 500000")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan688"
+
+    when
+          f: FactRequest (input["PLAN"] == 688)
+        
+    then
+         response.setEntry("OFFERING", "792997028")
+         response.setEntry("DESCRIPTION", "Corporate SMS Tarifa Plana")
+         response.setEntry("CREATESUB", "N")
+         response.setEntry("PLANSMART", "N") 
+        
+end
+
+rule "Plan588"
+
+    when
+          f: FactRequest (input["PLAN"] == 588)
+        
+    then
+         response.setEntry("OFFERING", "1272175937")
+         response.setEntry("DESCRIPTION", "I256A")
+         response.setEntry("PLANSMART", "N") 
+        
+end
+
+rule "Plan589"
+
+    when
+          f: FactRequest (input["PLAN"] == 589)
+        
+    then
+         response.setEntry("OFFERING", "772172344")
+         response.setEntry("DESCRIPTION", "I256S")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan592"
+
+    when
+          f: FactRequest (input["PLAN"] == 592)
+        
+    then
+         response.setEntry("OFFERING", "1572168867")
+         response.setEntry("DESCRIPTION", "IP1MA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan593"
+
+    when
+          f: FactRequest (input["PLAN"] == 593)
+        
+    then
+         response.setEntry("OFFERING", "972168949")
+         response.setEntry("DESCRIPTION", "IP1MS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan599"
+
+    when
+          f: FactRequest (input["PLAN"] == 599)
+        
+    then
+         response.setEntry("OFFERING", "172172333")
+         response.setEntry("DESCRIPTION", "IA128")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan602"
+
+    when
+          f: FactRequest (input["PLAN"] == 602)
+        
+    then
+         response.setEntry("OFFERING", "1172176640")
+         response.setEntry("DESCRIPTION", "CI1MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan603"
+
+    when
+          f: FactRequest (input["PLAN"] == 603)
+        
+    then
+         response.setEntry("OFFERING", "972172374")
+         response.setEntry("DESCRIPTION", "CI2MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan607"
+
+    when
+          f: FactRequest (input["PLAN"] == 607)
+        
+    then
+         response.setEntry("OFFERING", "572168899")
+         response.setEntry("DESCRIPTION", "IRATM")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan608"
+
+    when
+          f: FactRequest (input["PLAN"] == 608)
+        
+    then
+         response.setEntry("OFFERING", "772177248")
+         response.setEntry("DESCRIPTION", "IRMWF")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan609"
+
+    when
+          f: FactRequest (input["PLAN"] == 609)
+        
+    then
+         response.setEntry("OFFERING", "1872175912")
+         response.setEntry("DESCRIPTION", "IR128")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan611"
+
+    when
+          f: FactRequest (input["PLAN"] == 611)
+        
+    then
+         response.setEntry("OFFERING", "1972176634")
+         response.setEntry("DESCRIPTION", "DN512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan612"
+
+    when
+          f: FactRequest (input["PLAN"] == 612)
+        
+    then
+         response.setEntry("OFFERING", "1872175923")
+         response.setEntry("DESCRIPTION", "DN1MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan613"
+
+    when
+          f: FactRequest (input["PLAN"] == 613)
+        
+    then
+         response.setEntry("OFFERING", "1472172431")
+         response.setEntry("DESCRIPTION", "DN2MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan614"
+
+    when
+          f: FactRequest (input["PLAN"] == 614)
+        
+    then
+         response.setEntry("OFFERING", "1772168925")
+         response.setEntry("DESCRIPTION", "DN3MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan615"
+
+    when
+          f: FactRequest (input["PLAN"] == 615)
+        
+    then
+         response.setEntry("OFFERING", "1972172388")
+         response.setEntry("DESCRIPTION", "DN5MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan617"
+
+    when
+          f: FactRequest (input["PLAN"] == 617)
+        
+    then
+         response.setEntry("OFFERING", "972177710")
+         response.setEntry("DESCRIPTION", "NI75M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan618"
+
+    when
+          f: FactRequest (input["PLAN"] == 618)
+        
+    then
+         response.setEntry("OFFERING", "1672172423")
+         response.setEntry("DESCRIPTION", "NI10M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan619"
+
+    when
+          f: FactRequest (input["PLAN"] == 619)
+        
+    then
+         response.setEntry("OFFERING", "1872172409")
+         response.setEntry("DESCRIPTION", "NI512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan620"
+
+    when
+          f: FactRequest (input["PLAN"] == 620)
+        
+    then
+         response.setEntry("OFFERING", "1972172396")
+         response.setEntry("DESCRIPTION", "NI1MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan621"
+
+    when
+          f: FactRequest (input["PLAN"] == 621)
+        
+    then
+         response.setEntry("OFFERING", "972172420")
+         response.setEntry("DESCRIPTION", "NI2MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan622"
+
+    when
+          f: FactRequest (input["PLAN"] == 622)
+        
+    then
+         response.setEntry("OFFERING", "1872172385")
+         response.setEntry("DESCRIPTION", "NI3MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan623"
+
+    when
+          f: FactRequest (input["PLAN"] == 623)
+        
+    then
+         response.setEntry("OFFERING", "372168965")
+         response.setEntry("DESCRIPTION", "NI5MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan625"
+
+    when
+          f: FactRequest (input["PLAN"] == 625)
+        
+    then
+         response.setEntry("OFFERING", "972172393")
+         response.setEntry("DESCRIPTION", "DT512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan628"
+
+    when
+          f: FactRequest (input["PLAN"] == 628)
+        
+    then
+         response.setEntry("OFFERING", "972168765")
+         response.setEntry("DESCRIPTION", "CO512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan633"
+
+    when
+          f: FactRequest (input["PLAN"] == 633)
+        
+    then
+         response.setEntry("OFFERING", "1972168796")
+         response.setEntry("DESCRIPTION", "DN75M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan634"
+
+    when
+          f: FactRequest (input["PLAN"] == 634)
+        
+    then
+         response.setEntry("OFFERING", "172168962")
+         response.setEntry("DESCRIPTION", "DN10M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan635"
+
+    when
+          f: FactRequest (input["PLAN"] == 635)
+        
+    then
+         response.setEntry("OFFERING", "1672168889")
+         response.setEntry("DESCRIPTION", "DW128")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan644"
+
+    when
+          f: FactRequest (input["PLAN"] == 644)
+        
+    then
+         response.setEntry("OFFERING", "572172428")
+         response.setEntry("DESCRIPTION", "TP115")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan646"
+
+    when
+          f: FactRequest (input["PLAN"] == 646)
+        
+    then
+         response.setEntry("OFFERING", "1772172336")
+         response.setEntry("DESCRIPTION", "TP500")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan649"
+
+    when
+          f: FactRequest (input["PLAN"] == 649)
+        
+    then
+         response.setEntry("OFFERING", "772168938")
+         response.setEntry("DESCRIPTION", "TP006")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan650"
+
+    when
+          f: FactRequest (input["PLAN"] == 650)
+        
+    then
+         response.setEntry("OFFERING", "1272175914")
+         response.setEntry("DESCRIPTION", "TP250")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan672"
+
+    when
+          f: FactRequest (input["PLAN"] == 672)
+        
+    then
+         response.setEntry("OFFERING", "1572175929")
+         response.setEntry("DESCRIPTION", "NI15M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan673"
+
+    when
+          f: FactRequest (input["PLAN"] == 673)
+        
+    then
+         response.setEntry("OFFERING", "1372172412")
+         response.setEntry("DESCRIPTION", "NI20M")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan7010"
+
+    when
+          f: FactRequest (input["PLAN"] == 701)
+        
+    then
+         response.setEntry("OFFERING", "572168818")
+         response.setEntry("DESCRIPTION", "TP350")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan703"
+
+    when
+          f: FactRequest (input["PLAN"] == 703)
+        
+    then
+         response.setEntry("OFFERING", "1772168779")
+         response.setEntry("DESCRIPTION", "TP120")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan704"
+
+    when
+          f: FactRequest (input["PLAN"] == 704)
+        
+    then
+         response.setEntry("OFFERING", "1072168771")
+         response.setEntry("DESCRIPTION", "TP180")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan781"
+
+    when
+          f: FactRequest (input["PLAN"] == 781)
+        
+    then
+         response.setEntry("OFFERING", "1172168919")
+         response.setEntry("DESCRIPTION", "DTAVA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan782"
+
+    when
+          f: FactRequest (input["PLAN"] == 782)
+        
+    then
+         response.setEntry("OFFERING", "1672168853")
+         response.setEntry("DESCRIPTION", "DTBAS")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan541"
+
+    when
+          f: FactRequest (input["PLAN"] == 541)
+        
+    then
+         response.setEntry("OFFERING", "1096441488")
+         response.setEntry("DESCRIPTION", "BASIC")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan582"
+
+    when
+          f: FactRequest (input["PLAN"] == 582)
+        
+    then
+         response.setEntry("OFFERING", "1196445901")
+         response.setEntry("DESCRIPTION", "IN256")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan585"
+
+    when
+          f: FactRequest (input["PLAN"] == 585)
+        
+    then
+         response.setEntry("OFFERING", "596443009")
+         response.setEntry("DESCRIPTION", "IN2MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan586"
+
+    when
+          f: FactRequest (input["PLAN"] == 586)
+        
+    then
+         response.setEntry("OFFERING", "1896455585")
+         response.setEntry("DESCRIPTION", "IN3MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan605"
+
+    when
+          f: FactRequest (input["PLAN"] == 605)
+        
+    then
+         response.setEntry("OFFERING", "1996456568")
+         response.setEntry("DESCRIPTION", "IN4MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan610"
+
+    when
+          f: FactRequest (input["PLAN"] == 610)
+        
+    then
+         response.setEntry("OFFERING", "1996456727")
+         response.setEntry("DESCRIPTION", "DN256")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan626"
+
+    when
+          f: FactRequest (input["PLAN"] == 626)
+        
+    then
+         response.setEntry("OFFERING", "196457252")
+         response.setEntry("DESCRIPTION", "DW512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan627"
+
+    when
+          f: FactRequest (input["PLAN"] == 627)
+        
+    then
+         response.setEntry("OFFERING", "1596455942")
+         response.setEntry("DESCRIPTION", "DW1MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan630"
+
+    when
+          f: FactRequest (input["PLAN"] == 630)
+        
+    then
+         response.setEntry("OFFERING", "796457139")
+         response.setEntry("DESCRIPTION", "DW256")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan631"
+
+    when
+          f: FactRequest (input["PLAN"] == 631)
+        
+    then
+         response.setEntry("OFFERING", "1796456402")
+         response.setEntry("DESCRIPTION", "DW3MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan636"
+
+    when
+          f: FactRequest (input["PLAN"] == 636)
+        
+    then
+         response.setEntry("OFFERING", "1896456221")
+         response.setEntry("DESCRIPTION", "DW2MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan637"
+
+    when
+          f: FactRequest (input["PLAN"] == 637)
+        
+    then
+         response.setEntry("OFFERING", "1396456926")
+         response.setEntry("DESCRIPTION", "DW5MB")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan639"
+
+    when
+          f: FactRequest (input["PLAN"] == 639)
+        
+    then
+         response.setEntry("OFFERING", "1396455736")
+         response.setEntry("DESCRIPTION", "IN512")
+         response.setEntry("PLANSMART", "N")
+          
+
+end
+
+rule "Plan701"
+
+    when
+          f: FactRequest (input["PLAN"] == 701)
+        
+    then
+         response.setEntry("OFFERING", "1396455736")
+         response.setEntry("DESCRIPTION", "IN512")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan804"
+
+    when
+          f: FactRequest (input["PLAN"] == 804)
+        
+    then
+         response.setEntry("OFFERING", "1698010334")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS AZTECA Ñ 2")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan805"
+
+    when
+          f: FactRequest (input["PLAN"] == 805)
+        
+    then
+         response.setEntry("OFFERING", "1198010230")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS AZTECA Ñ 3")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan806"
+
+    when
+          f: FactRequest (input["PLAN"] == 806)
+        
+    then
+         response.setEntry("OFFERING", "198010231")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS AZTECA Ñ 4")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan808"
+
+    when
+          f: FactRequest (input["PLAN"] == 808)
+        
+    then
+         response.setEntry("OFFERING", "1998010315")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS EKT Ñ 2")
+         response.setEntry("PLANSMART", "N")
+          
+
+end
+
+rule "Plan809"
+
+    when
+          f: FactRequest (input["PLAN"] == 809)
+        
+    then
+         response.setEntry("OFFERING", "798010345")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS EKT Ñ 3")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan810"
+
+    when
+          f: FactRequest (input["PLAN"] == 810)
+        
+    then
+         response.setEntry("OFFERING", "1798010231")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS EKT Ñ 4")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan816"
+
+    when
+          f: FactRequest (input["PLAN"] == 816)
+        
+    then
+         response.setEntry("OFFERING", "598010357")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (ESPÑ15) GEA")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan845"
+
+    when
+          f: FactRequest (input["PLAN"] == 845)
+        
+    then
+         response.setEntry("OFFERING", "398010282")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (ESPÑ18) PYMES 1")
+         response.setEntry("PLANSMART", "N") 
+
+end
+
+rule "Plan894"
+
+    when
+          f: FactRequest (input["PLAN"] == 894)
+        
+    then
+         response.setEntry("OFFERING", "1498010230")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (PBTF1) PYMES 1")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan895"
+
+    when
+          f: FactRequest (input["PLAN"] == 895)
+        
+    then
+         response.setEntry("OFFERING", "998010230")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (PBTF2) PYMES 2")
+         response.setEntry("PLANSMART", "N")          
+
+end
+
+rule "Plan896"
+
+    when
+          f: FactRequest (input["PLAN"] == 896)
+        
+    then
+         response.setEntry("OFFERING", "398010283")
+         response.setEntry("DESCRIPTION", "PLAN TIGO BUSINESS (PBTF3)")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan899"
+
+    when
+          f: FactRequest (input["PLAN"] == 899)
+        
+    then
+         response.setEntry("OFFERING", "998010334")
+         response.setEntry("DESCRIPTION", "PLAN ESPECIAL CREDOMATIC #1")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan849"
+
+    when
+          f: FactRequest (input["PLAN"] == 849)
+        
+    then
+         response.setEntry("OFFERING", "1095495876")
+         response.setEntry("DESCRIPTION", "CONATEL LTE")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "P57"
+
+    when
+          f: FactRequest (input["PLAN"] == 'P57')
+        
+    then
+         response.setEntry("OFFERING", "1208297705")
+         response.setEntry("DESCRIPTION", "Datos Mall's Lady Lee ")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "P55"
+
+    when
+          f: FactRequest (input["PLAN"] == 'P55')
+        
+    then
+         response.setEntry("OFFERING", "1508298590")
+         response.setEntry("DESCRIPTION", "Internet Mall's Lady Lee")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "787"
+
+    when
+          f: FactRequest (input["PLAN"] == 787)
+        
+    then
+         response.setEntry("OFFERING", "1908422574")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATE SMS2")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan93"
+
+    when
+          f: FactRequest (input["PLAN"] == 93)
+        
+    then
+         
+         response.setEntry("OFFERING", "000000")
+         response.setEntry("CREATESUB", "N") 
+         response.setEntry("DESCRIPTION", "PLAN CORPORATE SMS $10.00")
+         response.setEntry("PLANSMART", "N")
+end
+
+
+rule "Plan976"
+
+    when
+          f: FactRequest (input["PLAN"] == 976)
+        
+    then         
+         
+         response.setEntry("OFFERING", "1286474809") 
+         response.setEntry("DESCRIPTION", "Sin Limite $29.99 Especial")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan978"
+
+    when
+          f: FactRequest (input["PLAN"] == 978)
+        
+    then         
+         
+         response.setEntry("OFFERING", "386474807")  
+         response.setEntry("DESCRIPTION", "Sin Limite $59.99 Especial")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan969"
+
+    when
+          f: FactRequest (input["PLAN"] == 969)
+        
+    then         
+         
+         response.setEntry("OFFERING", "0000") 
+         response.setEntry("DESCRIPTION", "Todo Sin Limite + Roaming")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan981"
+
+    when
+          f: FactRequest (input["PLAN"] == 981)
+        
+    then         
+        
+         response.setEntry("OFFERING", "1086474054") 
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $12 Especial")
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan790"
+
+    when
+          f: FactRequest (input["PLAN"] == 790)
+        
+    then
+         response.setEntry("OFFERING", "1685233466")
+         response.setEntry("DESCRIPTION", "PLAN MIXTO 15")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan793"
+
+    when
+          f: FactRequest (input["PLAN"] == 793)
+        
+    then
+         response.setEntry("OFFERING", "1085234186")
+         response.setEntry("DESCRIPTION", "PLAN MIXTO 12")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan967"
+
+    when
+          f: FactRequest (input["PLAN"] == 967)
+        
+    then
+         response.setEntry("OFFERING", "785138898")
+         response.setEntry("DESCRIPTION", "TIGO BAC SIN LIMITE MIXTO (SE) $45.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan353"
+
+    when
+          f: FactRequest (input["PLAN"] == 353)
+        
+    then
+         response.setEntry("OFFERING", "185138487")
+         response.setEntry("DESCRIPTION", "Chip Postpago (SE) $19.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan403"
+
+    when
+          f: FactRequest (input["PLAN"] == 403)
+        
+    then
+         response.setEntry("OFFERING", "185138626")
+         response.setEntry("DESCRIPTION", "Plan Postpago $10.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan22"
+
+    when
+          f: FactRequest (input["PLAN"] == 22)
+        
+    then
+         response.setEntry("OFFERING", "1285283124")
+         response.setEntry("DESCRIPTION", "Plan Empleado Smart")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan23"
+
+    when
+          f: FactRequest (input["PLAN"] == 23)
+        
+    then
+         response.setEntry("OFFERING", "1385568825")
+         response.setEntry("DESCRIPTION", "Plan Empleado Fulleado")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan46"
+
+    when
+          f: FactRequest (input["PLAN"] == 46)
+        
+    then
+         response.setEntry("OFFERING", "385569745")
+         response.setEntry("DESCRIPTION", "PLAN COMERCIALIZACION GPRS")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan151"
+
+    when
+          f: FactRequest (input["PLAN"] == 151)
+        
+    then
+         response.setEntry("OFFERING", "585285157")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 10")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan375"
+
+    when
+          f: FactRequest (input["PLAN"] == 375)
+        
+    then
+         response.setEntry("OFFERING", "1885285388")
+         response.setEntry("DESCRIPTION", "PLAN TODO INCLUIDO $15")
+         response.setEntry("PLANSMART", "N")          		
+end
+
+rule "Plan938"
+
+    when
+          f: FactRequest (input["PLAN"] == 938)
+        
+    then
+         response.setEntry("OFFERING", "1085282750")
+         response.setEntry("DESCRIPTION", "Sin Limites VIP $59.99 (A)")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan819"
+
+    when
+          f: FactRequest (input["PLAN"] == 819)
+        
+    then
+         response.setEntry("OFFERING", "1496515232")
+         response.setEntry("DESCRIPTION", "GOOGLE APPS/PRODUCTO CORPORATIVO NAVEGA")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("GOOGLEAPP", "S") 
+end
+
+rule "Plan988"
+
+    when
+          f: FactRequest (input["PLAN"] == 988)
+        
+    then
+         response.setEntry("OFFERING", "1886474054")
+         response.setEntry("DESCRIPTION", "Hibrido Corporativo Especial $5.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan811"
+
+    when
+          f: FactRequest (input["PLAN"] == 811)
+        
+    then
+         response.setEntry("OFFERING", "1886474053")
+         response.setEntry("DESCRIPTION", "Plan BYOD Sin Contrato $14.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan914"
+
+    when
+          f: FactRequest (input["PLAN"] == 914)
+        
+    then
+         response.setEntry("OFFERING", "786474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 10000B")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan229"
+
+    when
+          f: FactRequest (input["PLAN"] == 229)
+        
+    then
+         response.setEntry("OFFERING", "786474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1200A")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan143"
+
+    when
+          f: FactRequest (input["PLAN"] == 143)
+        
+    then
+         response.setEntry("OFFERING", "1586474812")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 150F")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan961"
+
+    when
+          f: FactRequest (input["PLAN"] == 961)
+        
+    then
+         response.setEntry("OFFERING", "1386474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 1800 AD")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan962"
+
+    when
+          f: FactRequest (input["PLAN"] == 962)
+        
+    then
+         response.setEntry("OFFERING", "1886474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 2700 AD")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan959"
+
+    when
+          f: FactRequest (input["PLAN"] == 959)
+        
+    then
+         response.setEntry("OFFERING", "1086474808")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 350 A")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan946"
+
+    when
+          f: FactRequest (input["PLAN"] == 946)
+        
+    then
+         response.setEntry("OFFERING", "586474806")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 4500B")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan937"
+
+    when
+          f: FactRequest (input["PLAN"] == 937)
+        
+    then
+         response.setEntry("OFFERING", "1286474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 7000D")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan934"
+
+    when
+          f: FactRequest (input["PLAN"] == 934)
+        
+    then
+         response.setEntry("OFFERING", "986474813")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 8500A")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan960"
+
+    when
+          f: FactRequest (input["PLAN"] == 960)
+        
+    then
+         response.setEntry("OFFERING", "786474811")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO 900 A")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan775"
+
+    when
+          f: FactRequest (input["PLAN"] == 775)
+        
+    then
+         response.setEntry("OFFERING", "786474810")
+         response.setEntry("DESCRIPTION", "PLAN CORPORATIVO PRUEBAS PORT OUT")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan534"
+
+    when
+          f: FactRequest (input["PLAN"] == 534)
+        
+    then
+         response.setEntry("OFFERING", "1986474054")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 0")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan535"
+
+    when
+          f: FactRequest (input["PLAN"] == 535)
+        
+    then
+         response.setEntry("OFFERING", "1586474054")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 1")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S")  
+end
+
+rule "Plan467"
+
+    when
+          f: FactRequest (input["PLAN"] == 467)
+        
+    then
+         response.setEntry("OFFERING", "1686474053")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 10")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan502"
+
+    when
+          f: FactRequest (input["PLAN"] == 502)
+        
+    then
+         response.setEntry("OFFERING", "1786474053")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 15")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan651"
+
+    when
+          f: FactRequest (input["PLAN"] == 651)
+        
+    then
+         response.setEntry("OFFERING", "986474053")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 5 PN")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan533"
+
+    when
+          f: FactRequest (input["PLAN"] == 533)
+        
+    then
+         response.setEntry("OFFERING", "186474052")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO 5B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S")  
+end
+
+rule "Plan518"
+
+    when
+          f: FactRequest (input["PLAN"] == 518)
+        
+    then
+         response.setEntry("OFFERING", "1686474054")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO CORPORATIVO FUERZA DE VENTA")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan116"
+
+    when
+          f: FactRequest (input["PLAN"] == 116)
+        
+    then
+         response.setEntry("OFFERING", "186474054")
+         response.setEntry("DESCRIPTION", "Plan Hibrido Especial USD10")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan118"
+
+    when
+          f: FactRequest (input["PLAN"] == 118)
+        
+    then
+         response.setEntry("OFFERING", "1086474052")
+         response.setEntry("DESCRIPTION", "Plan Hibrido Especial USD15")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan503"
+
+    when
+          f: FactRequest (input["PLAN"] == 503)
+        
+    then
+         response.setEntry("OFFERING", "586474054")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO SEGURIDAD ELECTRONICA")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan504"
+
+    when
+          f: FactRequest (input["PLAN"] == 504)
+        
+    then
+         response.setEntry("OFFERING", "386474052")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO SERVICIO 4G WIFI")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("HIB10", "S") 
+end
+
+rule "Plan990"
+
+    when
+          f: FactRequest (input["PLAN"] == 990)
+        
+    then
+         response.setEntry("OFFERING", "1986474055")
+         response.setEntry("DESCRIPTION", "Plan Huawei Hib $14")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan991"
+
+    when
+          f: FactRequest (input["PLAN"] == 991)
+        
+    then
+         response.setEntry("OFFERING", "1386474053")
+         response.setEntry("DESCRIPTION", "Plan Huawei Hib $16")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan992"
+
+    when
+          f: FactRequest (input["PLAN"] == 992)
+        
+    then
+         response.setEntry("OFFERING", "1486474055")
+         response.setEntry("DESCRIPTION", "Plan Huawei Hib $24")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan993"
+
+    when
+          f: FactRequest (input["PLAN"] == 993)
+        
+    then
+         response.setEntry("OFFERING", "1786474054")
+         response.setEntry("DESCRIPTION", "Plan Huawei Hib $26")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan21"
+
+    when
+          f: FactRequest (input["PLAN"] == 21)
+        
+    then
+         response.setEntry("OFFERING", "786474054")
+         response.setEntry("DESCRIPTION", "PLAN PROYECTO SEDIS HIB $10.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan949"
+
+    when
+          f: FactRequest (input["PLAN"] == 949)
+        
+    then
+         response.setEntry("OFFERING", "586474052")
+         response.setEntry("DESCRIPTION", "Plan Proyecto SEDIS HIB $8.50")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan493"
+
+    when
+          f: FactRequest (input["PLAN"] == 493)
+        
+    then
+         response.setEntry("OFFERING", "1486474809")
+         response.setEntry("DESCRIPTION", "SIN LIMITE ESP ALUCOM $12.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan39"
+
+    when
+          f: FactRequest (input["PLAN"] == 39)
+        
+    then
+         response.setEntry("OFFERING", "1486474054")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $120 ESPECIAL")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan38"
+
+    when
+          f: FactRequest (input["PLAN"] == 38)
+        
+    then
+         response.setEntry("OFFERING", "1286474054")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $120 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan982"
+
+    when
+          f: FactRequest (input["PLAN"] == 982)
+        
+    then
+         response.setEntry("OFFERING", "386474053")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $19.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan983"
+
+    when
+          f: FactRequest (input["PLAN"] == 983)
+        
+    then
+         response.setEntry("OFFERING", "986474055")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $29.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan984"
+
+    when
+          f: FactRequest (input["PLAN"] == 984)
+        
+    then
+         response.setEntry("OFFERING", "1486474053")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $39.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan34"
+
+    when
+          f: FactRequest (input["PLAN"] == 34)
+        
+    then
+         response.setEntry("OFFERING", "986474054")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $39.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan985"
+
+    when
+          f: FactRequest (input["PLAN"] == 985)
+        
+    then
+         response.setEntry("OFFERING", "1286474052")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $59.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan35"
+
+    when
+          f: FactRequest (input["PLAN"] == 35)
+        
+    then
+         response.setEntry("OFFERING", "1386474052")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $59.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan986"
+
+    when
+          f: FactRequest (input["PLAN"] == 986)
+        
+    then
+         response.setEntry("OFFERING", "1286474053")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $79.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan36"
+
+    when
+          f: FactRequest (input["PLAN"] == 36)
+        
+    then
+         response.setEntry("OFFERING", "1786474052")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $79.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan987"
+
+    when
+          f: FactRequest (input["PLAN"] == 987)
+        
+    then
+         response.setEntry("OFFERING", "986474052")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib $99.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan37"
+
+    when
+          f: FactRequest (input["PLAN"] == 37)
+        
+    then
+         response.setEntry("OFFERING", "1186474053")
+         response.setEntry("DESCRIPTION", "SIN LIMITE HIB $99.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan974"
+
+    when
+          f: FactRequest (input["PLAN"] == 974)
+        
+    then
+         response.setEntry("OFFERING", "1586474811")
+         response.setEntry("DESCRIPTION", "Sin Limite $12 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan12"
+
+    when
+          f: FactRequest (input["PLAN"] == 12)
+        
+    then
+         response.setEntry("OFFERING", "186474808")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $12 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan20"
+
+    when
+          f: FactRequest (input["PLAN"] == 20)
+        
+    then
+         response.setEntry("OFFERING", "986474807")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $120 ESPECIAL")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan19"
+
+    when
+          f: FactRequest (input["PLAN"] == 19)
+        
+    then
+         response.setEntry("OFFERING", "1886474812")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $120 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan975"
+
+    when
+          f: FactRequest (input["PLAN"] == 975)
+        
+    then
+         response.setEntry("OFFERING", "186474812")
+         response.setEntry("DESCRIPTION", "Sin Limite $19.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan13"
+
+    when
+          f: FactRequest (input["PLAN"] == 13)
+        
+    then
+         response.setEntry("OFFERING", "1786474810")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $19.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan14"
+
+    when
+          f: FactRequest (input["PLAN"] == 14)
+        
+    then
+         response.setEntry("OFFERING", "1886474810")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $29.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan977"
+
+    when
+          f: FactRequest (input["PLAN"] == 977)
+        
+    then
+         response.setEntry("OFFERING", "386474810")
+         response.setEntry("DESCRIPTION", "Sin Limite $39.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan15"
+
+    when
+          f: FactRequest (input["PLAN"] == 15)
+        
+    then
+         response.setEntry("OFFERING", "1286474812")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $39.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan16"
+
+    when
+          f: FactRequest (input["PLAN"] == 16)
+        
+    then
+         response.setEntry("OFFERING", "586474810")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $59.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan979"
+
+    when
+          f: FactRequest (input["PLAN"] == 979)
+        
+    then
+         response.setEntry("OFFERING", "586474811")
+         response.setEntry("DESCRIPTION", "Sin Limite $79.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan17"
+
+    when
+          f: FactRequest (input["PLAN"] == 17)
+        
+    then
+         response.setEntry("OFFERING", "1886474808")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $79.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan980"
+
+    when
+          f: FactRequest (input["PLAN"] == 980)
+        
+    then
+         response.setEntry("OFFERING", "186474807")
+         response.setEntry("DESCRIPTION", "Sin Limite $99.99 Especial")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan18"
+
+    when
+          f: FactRequest (input["PLAN"] == 18)
+        
+    then
+         response.setEntry("OFFERING", "1986474810")
+         response.setEntry("DESCRIPTION", "SIN LIMITE $99.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan491"
+
+    when
+          f: FactRequest (input["PLAN"] == 491)
+        
+    then
+         response.setEntry("OFFERING", "1386474808")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE ALUCOM $12.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan492"
+
+    when
+          f: FactRequest (input["PLAN"] == 492)
+        
+    then
+         response.setEntry("OFFERING", "1986474806")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE ALUCOM $19.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan490"
+
+    when
+          f: FactRequest (input["PLAN"] == 490)
+        
+    then
+         response.setEntry("OFFERING", "386474809")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE ALUCOM $5.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan49"
+
+    when
+          f: FactRequest (input["PLAN"] == 49)
+        
+    then
+         response.setEntry("OFFERING", "1486474811")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE DYNAMIC $25.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan50"
+
+    when
+          f: FactRequest (input["PLAN"] == 50)
+        
+    then
+         response.setEntry("OFFERING", "1386474810")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE DYNAMIC $40.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan928"
+
+    when
+          f: FactRequest (input["PLAN"] == 928)
+        
+    then
+         response.setEntry("OFFERING", "1686474052")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE HIBRIDO (SEC) $19.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan40"
+
+    when
+          f: FactRequest (input["PLAN"] == 40)
+        
+    then
+         response.setEntry("OFFERING", "1286474055")
+         response.setEntry("DESCRIPTION", "Tigo Sin Limite Hibrido (SEC) $19.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan929"
+
+    when
+          f: FactRequest (input["PLAN"] == 929)
+        
+    then
+         response.setEntry("OFFERING", "1986474053")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE HIBRIDO (SEC) $29.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan41"
+
+    when
+          f: FactRequest (input["PLAN"] == 41)
+        
+    then
+         response.setEntry("OFFERING", "1886474055")
+         response.setEntry("DESCRIPTION", "Tigo Sin Limite Hibrido (SEC) $29.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan930"
+
+    when
+          f: FactRequest (input["PLAN"] == 930)
+        
+    then
+         response.setEntry("OFFERING", "1386474054")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITE HIBRIDO (SEC) $39.99")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan42"
+
+    when
+          f: FactRequest (input["PLAN"] == 42)
+        
+    then
+         response.setEntry("OFFERING", "586474053")
+         response.setEntry("DESCRIPTION", "Tigo Sin Limite Hibrido (SEC) $39.99 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan43"
+
+    when
+          f: FactRequest (input["PLAN"] == 43)
+        
+    then
+         response.setEntry("OFFERING", "186474053")
+         response.setEntry("DESCRIPTION", "Tigo Sin Limite Hibrido (SEC) $45.00 VIP")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan931"
+
+    when
+          f: FactRequest (input["PLAN"] == 931)
+        
+    then
+         response.setEntry("OFFERING", "386474054")
+         response.setEntry("DESCRIPTION", "TODO SIN LIMITE HIBRIDO (SEC) $45.00")
+         response.setEntry("PLANSMART", "N") 
+end
+
+rule "Plan115"
+
+    when
+          f: FactRequest (input["PLAN"] == 115)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan168"
+
+    when
+          f: FactRequest (input["PLAN"] == 168)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "FIJO CORPORATIVO 450")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan190"
+
+    when
+          f: FactRequest (input["PLAN"] == 190)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 150 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan205"
+
+    when
+          f: FactRequest (input["PLAN"] == 205)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "PLAN NAVEGA")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan233"
+
+    when
+          f: FactRequest (input["PLAN"] == 233)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 210 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan333"
+
+    when
+          f: FactRequest (input["PLAN"] == 333)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 5 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan334"
+
+    when
+          f: FactRequest (input["PLAN"] == 334)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 20 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan335"
+
+    when
+          f: FactRequest (input["PLAN"] == 335)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 350 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan336"
+
+    when
+          f: FactRequest (input["PLAN"] == 336)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 100 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan337"
+
+    when
+          f: FactRequest (input["PLAN"] == 337)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan339"
+
+    when
+          f: FactRequest (input["PLAN"] == 339)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan358"
+
+    when
+          f: FactRequest (input["PLAN"] == 358)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan359"
+
+    when
+          f: FactRequest (input["PLAN"] == 359)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 C")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan394"
+
+    when
+          f: FactRequest (input["PLAN"] == 394)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 20 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan413"
+
+    when
+          f: FactRequest (input["PLAN"] == 413)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 5 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan414"
+
+    when
+          f: FactRequest (input["PLAN"] == 414)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 1 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan415"
+
+    when
+          f: FactRequest (input["PLAN"] == 415)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 2 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan416"
+
+    when
+          f: FactRequest (input["PLAN"] == 416)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 3 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan417"
+
+    when
+          f: FactRequest (input["PLAN"] == 417)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 4 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan418"
+
+    when
+          f: FactRequest (input["PLAN"] == 418)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 5 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan419"
+
+    when
+          f: FactRequest (input["PLAN"] == 419)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 6 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan420"
+
+    when
+          f: FactRequest (input["PLAN"] == 420)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "PLAN COMBO INTERNET Y TEL. HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan421"
+
+    when
+          f: FactRequest (input["PLAN"] == 421)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "BUSINESS LINE 7 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan422"
+
+    when
+          f: FactRequest (input["PLAN"] == 422)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 50 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan427"
+
+    when
+          f: FactRequest (input["PLAN"] == 427)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 95 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan428"
+
+    when
+          f: FactRequest (input["PLAN"] == 428)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 145 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan429"
+
+    when
+          f: FactRequest (input["PLAN"] == 429)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 550 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan431"
+
+    when
+          f: FactRequest (input["PLAN"] == 431)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 30 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan432"
+
+    when
+          f: FactRequest (input["PLAN"] == 432)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 50 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan433"
+
+    when
+          f: FactRequest (input["PLAN"] == 433)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 145 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan438"
+
+    when
+          f: FactRequest (input["PLAN"] == 438)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 480 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan439"
+
+    when
+          f: FactRequest (input["PLAN"] == 439)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 821.94 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan442"
+
+    when
+          f: FactRequest (input["PLAN"] == 442)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 D")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan449"
+
+    when
+          f: FactRequest (input["PLAN"] == 449)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 15 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan452"
+
+    when
+          f: FactRequest (input["PLAN"] == 452)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 E")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan453"
+
+    when
+          f: FactRequest (input["PLAN"] == 453)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 F")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan456"
+
+    when
+          f: FactRequest (input["PLAN"] == 456)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 G")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan460"
+
+    when
+          f: FactRequest (input["PLAN"] == 460)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 H")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan461"
+
+    when
+          f: FactRequest (input["PLAN"] == 461)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "LOTN A2 HOME/BUSINESS")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan462"
+
+    when
+          f: FactRequest (input["PLAN"] == 462)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 I")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan463"
+
+    when
+          f: FactRequest (input["PLAN"] == 463)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 J")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan464"
+
+    when
+          f: FactRequest (input["PLAN"] == 464)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 K")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan468"
+
+    when
+          f: FactRequest (input["PLAN"] == 468)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 50 C")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan469"
+
+    when
+          f: FactRequest (input["PLAN"] == 469)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 100 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan470"
+
+    when
+          f: FactRequest (input["PLAN"] == 470)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 200 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan471"
+
+    when
+          f: FactRequest (input["PLAN"] == 471)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 C")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan473"
+
+    when
+          f: FactRequest (input["PLAN"] == 473)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "FIJO CORPORATIVO 1500")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan476"
+
+    when
+          f: FactRequest (input["PLAN"] == 476)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 10000 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan479"
+
+    when
+          f: FactRequest (input["PLAN"] == 479)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 25 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan499"
+
+    when
+          f: FactRequest (input["PLAN"] == 499)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "TIGO HEALTH")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan507"
+
+    when
+          f: FactRequest (input["PLAN"] == 507)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 30 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan508"
+
+    when
+          f: FactRequest (input["PLAN"] == 508)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 50 D")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan509"
+
+    when
+          f: FactRequest (input["PLAN"] == 509)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 100 C")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan510"
+
+    when
+          f: FactRequest (input["PLAN"] == 510)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 200 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan511"
+
+    when
+          f: FactRequest (input["PLAN"] == 511)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan513"
+
+    when
+          f: FactRequest (input["PLAN"] == 513)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 5000 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan515"
+
+    when
+          f: FactRequest (input["PLAN"] == 515)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC Plan 800")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan653"
+
+    when
+          f: FactRequest (input["PLAN"] == 653)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 3 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan654"
+
+    when
+          f: FactRequest (input["PLAN"] == 654)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 10 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan655"
+
+    when
+          f: FactRequest (input["PLAN"] == 655)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 30 C")
+         response.setEntry("PLANSMART", "N")         
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan656"
+
+    when
+          f: FactRequest (input["PLAN"] == 656)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 60 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan657"
+
+    when
+          f: FactRequest (input["PLAN"] == 657)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 100 D")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan658"
+
+    when
+          f: FactRequest (input["PLAN"] == 658)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 200 C")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan659"
+
+    when
+          f: FactRequest (input["PLAN"] == 659)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 400 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan660"
+
+    when
+          f: FactRequest (input["PLAN"] == 660)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 600 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan661"
+
+    when
+          f: FactRequest (input["PLAN"] == 661)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 800 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan662"
+
+    when
+          f: FactRequest (input["PLAN"] == 662)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan663"
+
+    when
+          f: FactRequest (input["PLAN"] == 663)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1500 A")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan664"
+
+    when
+          f: FactRequest (input["PLAN"] == 664)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 2000 B")
+         response.setEntry("PLANSMART", "N")
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan665"
+
+    when
+          f: FactRequest (input["PLAN"] == 665)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC Free")
+         response.setEntry("PLANSMART", "N")         
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan666"
+
+    when
+          f: FactRequest (input["PLAN"] == 666)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 D")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan668"
+
+    when
+          f: FactRequest (input["PLAN"] == 668)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1500 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan669"
+
+    when
+          f: FactRequest (input["PLAN"] == 669)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 L")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan698"
+
+    when
+          f: FactRequest (input["PLAN"] == 698)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 M")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan699"
+
+    when
+          f: FactRequest (input["PLAN"] == 699)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 C")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan716"
+
+    when
+          f: FactRequest (input["PLAN"] == 716)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 N")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan733"
+
+    when
+          f: FactRequest (input["PLAN"] == 733)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 8000 A")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan788"
+
+    when
+          f: FactRequest (input["PLAN"] == 788)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 O")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan803"
+
+    when
+          f: FactRequest (input["PLAN"] == 803)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 24500 A")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan807"
+
+    when
+          f: FactRequest (input["PLAN"] == 807)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 10500 A")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan834"
+
+    when
+          f: FactRequest (input["PLAN"] == 834)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 4000 A")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan835"
+
+    when
+          f: FactRequest (input["PLAN"] == 835)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 2000 C")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan836"
+
+    when
+          f: FactRequest (input["PLAN"] == 836)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 150 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan837"
+
+    when
+          f: FactRequest (input["PLAN"] == 837)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 2000 D")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan838"
+
+    when
+          f: FactRequest (input["PLAN"] == 838)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 350 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan841"
+
+    when
+          f: FactRequest (input["PLAN"] == 841)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 P")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan844"
+
+    when
+          f: FactRequest (input["PLAN"] == 844)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 Q")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan846"
+
+    when
+          f: FactRequest (input["PLAN"] == 846)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "TIGO BUSINESS TFC 0 (FICOHSA)")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan847"
+
+    when
+          f: FactRequest (input["PLAN"] == 847)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 10 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan863"
+
+    when
+          f: FactRequest (input["PLAN"] == 863)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 10000 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan864"
+
+    when
+          f: FactRequest (input["PLAN"] == 864)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 E")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan883"
+
+    when
+          f: FactRequest (input["PLAN"] == 883)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC Especial Interno Tigo Money")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan900"
+
+    when
+          f: FactRequest (input["PLAN"] == 900)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 4000 B")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan901"
+
+    when
+          f: FactRequest (input["PLAN"] == 901)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 D")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan916"
+
+    when
+          f: FactRequest (input["PLAN"] == 916)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 0 U")
+         response.setEntry("PLANSMART", "N")     
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan920"
+
+    when
+          f: FactRequest (input["PLAN"] == 920)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 5750 A")
+         response.setEntry("PLANSMART", "N")             
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan947"
+
+    when
+          f: FactRequest (input["PLAN"] == 947)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 500 F")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan948"
+
+    when
+          f: FactRequest (input["PLAN"] == 948)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 50 E")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan951"
+
+    when
+          f: FactRequest (input["PLAN"] == 951)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 E")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan994"
+
+    when
+          f: FactRequest (input["PLAN"] == 994)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 4400 A")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan995"
+
+    when
+          f: FactRequest (input["PLAN"] == 995)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 2350 A")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan996"
+
+    when
+          f: FactRequest (input["PLAN"] == 996)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 2000 E")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan997"
+
+    when
+          f: FactRequest (input["PLAN"] == 997)
+        
+    then
+         response.setEntry("OFFERING", "387113024")
+         response.setEntry("DESCRIPTION", "Tigo Business TFC 1000 F")
+         response.setEntry("PLANSMART", "N")            
+         response.setEntry("FIJO", "S") 
+end
+
+rule "Plan53"
+
+    when
+          f: FactRequest (input["PLAN"] == 53)
+        
+    then
+         response.setEntry("OFFERING", "771471051")
+         response.setEntry("DESCRIPTION", "PLAN PRE-PAGO") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan404"
+
+    when
+          f: FactRequest (input["PLAN"] == 404)
+        
+    then
+         response.setEntry("OFFERING", "1794631383")
+         response.setEntry("DESCRIPTION", "Plan Sin Contrato $15.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan383"
+
+    when
+          f: FactRequest (input["PLAN"] == 383)
+        
+    then
+         response.setEntry("OFFERING", "192478269")
+         response.setEntry("DESCRIPTION", "PLAN SIN CONTRATO $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan382"
+
+    when
+          f: FactRequest (input["PLAN"] == 382)
+        
+    then
+         response.setEntry("OFFERING", "192478145")
+         response.setEntry("DESCRIPTION", "PLAN SIN CONTRATO $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan378"
+
+    when
+          f: FactRequest (input["PLAN"] == 378)
+        
+    then
+         response.setEntry("OFFERING", "992477938")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE MIXTO $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan377"
+
+    when
+          f: FactRequest (input["PLAN"] == 377)
+        
+    then
+         response.setEntry("OFFERING", "1592477642")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE MIXTO $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan376"
+
+    when
+          f: FactRequest (input["PLAN"] == 376)
+        
+    then
+         response.setEntry("OFFERING", "1992477233")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE MIXTO $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan381"
+
+    when
+          f: FactRequest (input["PLAN"] == 381)
+        
+    then
+         response.setEntry("OFFERING", "1192389734")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE  $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan380"
+
+    when
+          f: FactRequest (input["PLAN"] == 380)
+        
+    then
+         response.setEntry("OFFERING", "1892389517")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE  $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan379"
+
+    when
+          f: FactRequest (input["PLAN"] == 379)
+        
+    then
+         response.setEntry("OFFERING", "1292388124")
+         response.setEntry("DESCRIPTION", "PLAN CON SMARTPHONE  $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan121"
+
+    when
+          f: FactRequest (input["PLAN"] == 121)
+        
+    then
+         response.setEntry("OFFERING", "1792387893")
+         response.setEntry("DESCRIPTION", "PLAN TOP DISTRIBUIDORES") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan122"
+
+    when
+          f: FactRequest (input["PLAN"] == 122)
+        
+    then
+         response.setEntry("OFFERING", "192386504")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL VIP BASICO") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan73"
+
+    when
+          f: FactRequest (input["PLAN"] == 73)
+        
+    then
+         response.setEntry("OFFERING", "1292385547")
+         response.setEntry("DESCRIPTION", "PLAN DISTRIBUIDORES") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan796"
+
+    when
+          f: FactRequest (input["PLAN"] == 796)
+        
+    then
+         response.setEntry("OFFERING", "1892371353")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO 10") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan797"
+
+    when
+          f: FactRequest (input["PLAN"] == 797)
+        
+    then
+         response.setEntry("OFFERING", "1492370749")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO 13") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan84"
+
+    when
+          f: FactRequest (input["PLAN"] == 84)
+        
+    then
+         response.setEntry("OFFERING", "1092385235")
+         response.setEntry("DESCRIPTION", "PLAN HIBRIDO 13") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan87"
+
+    when
+          f: FactRequest (input["PLAN"] == 87)
+        
+    then
+         response.setEntry("OFFERING", "1792384987")
+         response.setEntry("DESCRIPTION", "PLAN PROMOCION II") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan97"
+
+    when
+          f: FactRequest (input["PLAN"] == 97)
+        
+    then
+         response.setEntry("OFFERING", "1092382269")
+         response.setEntry("DESCRIPTION", "PLAN MOVIL 5") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan227"
+
+    when
+          f: FactRequest (input["PLAN"] == 227)
+        
+    then
+         response.setEntry("OFFERING", "1895321966")
+         response.setEntry("DESCRIPTION", "ORGANISMOS ESPECIALES") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan911"
+
+    when
+          f: FactRequest (input["PLAN"] == 911)
+        
+    then
+         response.setEntry("OFFERING", "1195388469")
+         response.setEntry("DESCRIPTION", "TIGO SIN LIMITES $59.99 (PRUEBAS PA)") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan343"
+
+    when
+          f: FactRequest (input["PLAN"] == 343)
+        
+    then
+         response.setEntry("OFFERING", "1695305350")
+         response.setEntry("DESCRIPTION", "PLAN 16000") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan777"
+
+    when
+          f: FactRequest (input["PLAN"] == 777)
+        
+    then
+         response.setEntry("OFFERING", "1392821069")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp Prime  $45.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan776"
+
+    when
+          f: FactRequest (input["PLAN"] == 776)
+        
+    then
+         response.setEntry("OFFERING", "392820898")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp Prime $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan774"
+
+    when
+          f: FactRequest (input["PLAN"] == 774)
+        
+    then
+         response.setEntry("OFFERING", "1892820660")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp Prime $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan773"
+
+    when
+          f: FactRequest (input["PLAN"] == 773)
+        
+    then
+         response.setEntry("OFFERING", "792820158")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp Prime $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan772"
+
+    when
+          f: FactRequest (input["PLAN"] == 772)
+        
+    then
+         response.setEntry("OFFERING", "1292819630")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $120") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan771"
+
+    when
+          f: FactRequest (input["PLAN"] == 771)
+        
+    then
+         response.setEntry("OFFERING", "592819507")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $99.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan770"
+
+    when
+          f: FactRequest (input["PLAN"] == 770)
+        
+    then
+         response.setEntry("OFFERING", "1792819282")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp Prime $79.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan744"
+
+    when
+          f: FactRequest (input["PLAN"] == 744)
+        
+    then
+         response.setEntry("OFFERING", "1292563487")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $99.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan743"
+
+    when
+          f: FactRequest (input["PLAN"] == 743)
+        
+    then
+         response.setEntry("OFFERING", "992563383")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $79.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan742"
+
+    when
+          f: FactRequest (input["PLAN"] == 742)
+        
+    then
+         response.setEntry("OFFERING", "392563309")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan740"
+
+    when
+          f: FactRequest (input["PLAN"] == 740)
+        
+    then
+         response.setEntry("OFFERING", "1792563146")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan739"
+
+    when
+          f: FactRequest (input["PLAN"] == 739)
+        
+    then
+         response.setEntry("OFFERING", "1892562995")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan737"
+
+    when
+          f: FactRequest (input["PLAN"] == 737)
+        
+    then
+         response.setEntry("OFFERING", "1392562875")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan736"
+
+    when
+          f: FactRequest (input["PLAN"] == 736)
+        
+    then
+         response.setEntry("OFFERING", "1792562615")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp Prime $15.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan447"
+
+    when
+          f: FactRequest (input["PLAN"] == 447)
+        
+    then
+         response.setEntry("OFFERING", "1092816437")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp  $45.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan446"
+
+    when
+          f: FactRequest (input["PLAN"] == 446)
+        
+    then
+         response.setEntry("OFFERING", "1492816118")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan445"
+
+    when
+          f: FactRequest (input["PLAN"] == 445)
+        
+    then
+         response.setEntry("OFFERING", "392815577")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan444"
+
+    when
+          f: FactRequest (input["PLAN"] == 444)
+        
+    then
+         response.setEntry("OFFERING", "992814772")
+         response.setEntry("DESCRIPTION", "Sin Limite (SEC) Hib Corp $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan729"
+
+    when
+          f: FactRequest (input["PLAN"] == 729)
+        
+    then
+         response.setEntry("OFFERING", "192813483")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan728"
+
+    when
+          f: FactRequest (input["PLAN"] == 728)
+        
+    then
+         response.setEntry("OFFERING", "1292813080")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan727"
+
+    when
+          f: FactRequest (input["PLAN"] == 727)
+        
+    then
+         response.setEntry("OFFERING", "1492803802")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan726"
+
+    when
+          f: FactRequest (input["PLAN"] == 726)
+        
+    then
+         response.setEntry("OFFERING", "592802137")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan725"
+
+    when
+          f: FactRequest (input["PLAN"] == 725)
+        
+    then
+         response.setEntry("OFFERING", "192800385")
+         response.setEntry("DESCRIPTION", "Sin Limite Hib Corp $15.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan82"
+
+    when
+          f: FactRequest (input["PLAN"] == 82)
+        
+    then
+         response.setEntry("OFFERING", "992558724")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $120") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan81"
+
+    when
+          f: FactRequest (input["PLAN"] == 81)
+        
+    then
+         response.setEntry("OFFERING", "1992558184")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $99.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan80"
+
+    when
+          f: FactRequest (input["PLAN"] == 80)
+        
+    then
+         response.setEntry("OFFERING", "1992557499")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $79.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan79"
+
+    when
+          f: FactRequest (input["PLAN"] == 79)
+        
+    then
+         response.setEntry("OFFERING", "792556506")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan78"
+
+    when
+          f: FactRequest (input["PLAN"] == 78)
+        
+    then
+         response.setEntry("OFFERING", "1792555286")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan77"
+
+    when
+          f: FactRequest (input["PLAN"] == 77)
+        
+    then
+         response.setEntry("OFFERING", "1592544672")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan76"
+
+    when
+          f: FactRequest (input["PLAN"] == 76)
+        
+    then
+         response.setEntry("OFFERING", "192543456")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan75"
+
+    when
+          f: FactRequest (input["PLAN"] == 75)
+        
+    then
+         response.setEntry("OFFERING", "1892540490")
+         response.setEntry("DESCRIPTION", "Sin Limite Corp $15.00") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan392"
+
+    when
+          f: FactRequest (input["PLAN"] == 392)
+        
+    then
+         response.setEntry("OFFERING", "1195498910")
+         response.setEntry("DESCRIPTION", "PLAN DATA SOLUCIONES") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan799"
+
+    when
+          f: FactRequest (input["PLAN"] == 799)
+        
+    then
+         response.setEntry("OFFERING", "1296616118")
+         response.setEntry("DESCRIPTION", "PLAN MIXTO $5") 
+         response.setEntry("PLANSMART", "N")
+end
+
+
+/************Planes 2019 *******************************/
+rule "Plan101"
+
+    when
+          f: FactRequest (input["PLAN"] == 101)
+        
+    then
+         response.setEntry("OFFERING", "706211014")
+         response.setEntry("DESCRIPTION", "Plan $39.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+
+rule "Plan102"
+
+    when
+          f: FactRequest (input["PLAN"] == 102)
+        
+    then
+         response.setEntry("OFFERING", "306211169")
+         response.setEntry("DESCRIPTION", "Plan $59.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan103"
+
+    when
+          f: FactRequest (input["PLAN"] == 103)
+        
+    then
+         response.setEntry("OFFERING", "706211265")
+         response.setEntry("DESCRIPTION", "Plan $89.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan104"
+
+    when
+          f: FactRequest (input["PLAN"] == 104)
+        
+    then
+         response.setEntry("OFFERING", "1106209744")
+         response.setEntry("DESCRIPTION", "Plan $19.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan105"
+
+    when
+          f: FactRequest (input["PLAN"] == 105)
+        
+    then
+         response.setEntry("OFFERING", "1006210566")
+         response.setEntry("DESCRIPTION", "Plan $24.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+rule "Plan106"
+
+    when
+          f: FactRequest (input["PLAN"] == 106)
+        
+    then
+         response.setEntry("OFFERING", "1806210682")
+         response.setEntry("DESCRIPTION", "Plan $29.99") 
+         response.setEntry("PLANSMART", "N")
+end
+
+
+
+/*******************************************************/
