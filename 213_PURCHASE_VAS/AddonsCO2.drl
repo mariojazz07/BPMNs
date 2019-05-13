@@ -1,0 +1,523 @@
+package hn.com.tigo.josm.rule.addonsCO2
+dialect "mvel"
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+global FactResponse response;
+//**********************************Inicio Planes Internet**********************************
+rule "Addon_500MB_1_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("104","9001467","ADD_500MB"))
+then
+    response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon 500MB");
+        response.setEntry("BASE_ADDON", "ADD_500MB");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN");
+        response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+        response.setEntry("DISALLOWED_PLANS_VAS", "0");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_Data_Add");
+        response.setEntry("QUOTE", "524288000");
+        response.setEntry("OFFERING", "1385564240");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Mas Internet de 500MB se ha activado, este cobro de $4.75 (mas ISV) se hara en tu factura. El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_1GB_1_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("105","9001468","ADD_1GB"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon 1GB");
+        response.setEntry("BASE_ADDON", "ADD_1GB");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN");
+  response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+        response.setEntry("DISALLOWED_PLANS_VAS", "0");
+  response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "1073741824");
+        response.setEntry("OFFERING", "1285565174");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Mas Internet de 1GB se ha activado, este cobro de $7.60 (mas ISV) se hara en tu factura. El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_2GB_1_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("106","9001469", "ADD_2GB"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon 2GB");
+        response.setEntry("BASE_ADDON", "ADD_2GB");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN");
+  response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+        response.setEntry("DISALLOWED_PLANS_VAS", "0");
+  response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "2684354560");
+        response.setEntry("OFFERING", "1185565359");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Mas Internet de 2.5GB se ha activado, este cobro de $14.50 (mas ISV) se hara en tu factura. El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_5GB_1_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("426","9001526", "ADD_5GB"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon 5GB");
+        response.setEntry("BASE_ADDON", "ADD_5GB");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN");
+  response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+        response.setEntry("DISALLOWED_PLANS_VAS", "0");
+  response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "5368709120");
+        response.setEntry("OFFERING", "1985565468");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Mas Internet de 5GB se ha activado, este cobro de $24.00 (mas ISV) se hara en tu factura. El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_SMRTAPPS_1"
+when 
+    f: FactRequest(input["PRODUCT_ID"] == "ADD_SMART_APPS")
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon Smart Apps");
+        response.setEntry("BASE_ADDON", "ADD_SMART_APPS");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+end
+rule "Addon_RET_1GB"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ( "512", "9001470"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon Retencion 1GB");
+        response.setEntry("BASE_ADDON", "ADD_1GB_RET");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIB20");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "1073741824");
+        response.setEntry("OFFERING", "1792823211");        
+        response.setEntry("ADD_MONTH_EXPIRATION", "3");
+    response.setEntry("SEND_SMS", "0");
+    response.setEntry("SMS_EXITO", "Mas Internet de 1GB se ha activado.  El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_RET_2GB"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("513", "9001471"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon Retencion 2GB");
+        response.setEntry("BASE_ADDON", "ADD_2GB_RET");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIB20");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "2684354560");
+        response.setEntry("OFFERING", "1792823563");
+        response.setEntry("ADD_MONTH_EXPIRATION", "3");
+    response.setEntry("SEND_SMS", "0");
+    response.setEntry("SMS_EXITO", "Mas Internet de 2GB se ha activado.  El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+  
+end
+rule "Addon_RET_3GB"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("514", "9001472"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Addon Retencion 3GB");
+        response.setEntry("BASE_ADDON", "ADD_3GB_RET");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIB20");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "3221225472");
+        response.setEntry("OFFERING", "992823871");
+        response.setEntry("ADD_MONTH_EXPIRATION", "3");
+    response.setEntry("SEND_SMS", "0");
+    response.setEntry("SMS_EXITO", "Mas Internet de 3GB se ha activado.  El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_PROMO_2.5GB_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in  ("1314","9001607", "ADD_2.5GB_PROMO"))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Mas Internet Promo 2.5GB");
+        response.setEntry("BASE_ADDON", "ADD_2.5GB_PROMO");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIB20");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,118,121,122,127,151,162,21,249,251,31,32,33,34,35,36,37,38,39,312,313,314,315,316,325,326,327,328,329,353,392,40,42,403,405,406,41,43,411,412,444,445,446,447,46,467,501,502,503,504,51,518,53,533,534,535,56,58,60,62,651,69,725,726,727,728,729,730,731,732,758,759,760,761,762,770,771,772,773,774,776,777,790,791,792,793,794,795,796,797,798,799,84,811,848,849,857,858,859,860,861,862,87,872,879,880,881,882,884,97,923,928,929,930,931,938,943,949,967,97,981,982,983,984,985,986,987,988,990,991,992,993,988");
+        response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "2684354560");
+        response.setEntry("OFFERING", "592478987");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Internet Promo de 2.5GB se ha activado, este cobro de $9.00 se hara en tu factura. El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+  
+end
+rule "Addon_PROMO_1GB_prod"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("1315","9001606","ADD_1GB_PROMO" ))
+then
+        response.setEntry("SUCCESS", "OK");
+        response.setEntry("PRODUCT_NAME", "Mas Internet Promo 1GB");
+        response.setEntry("BASE_ADDON", "ADD_1GB_PROMO");
+        response.setEntry("ALLOWED_TYPES", "POS,HIB,HIB20");
+  response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,118,121,122,127,151,162,21,249,251,31,32,33,34,35,37,36,38,39,312,313,314,315,316,325,326,327,328,329,353,392,40,42,43,403,405,406,41,411,412,444,445,446,447,46,467,501,502,503,504,51,53,518,524,533,534,535,56,58,60,62,651,69,84,725,726,727,728,729,730,731,732,758,759,760,761,762,770,771,772,773,774,776,777,790,791,792,793,794,795,796,797,798,799,811,848,849,857,858,859,860,681,862,87,872,879,880,881,882,884,923,928,929,930,931,938,943,949,967,97,981,982,983,984,985,986,987,988,990,991,992,993");
+  response.setEntry("DISALLOWED_PLANS_VAS", "0");
+        response.setEntry("ADDON_LIMIT", "3");
+        response.setEntry("TYPE", "GNR");
+        response.setEntry("WALLET", "C_DataAdd");
+        response.setEntry("QUOTE", "1073741824");
+        response.setEntry("OFFERING", "792478882");
+        response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Internet Promo de 1GB se ha activado, este cobro de $4.50 se hara en tu factura.El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Internet Promo no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+
+//'''''''''''''''''''''Inicio de cambios Jose Mario 20190115-----------
+rule "Addon_Promo_CrossSelling"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001986", "ADD_PROMO_CS"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "Addon Promo Cross Selling");
+    response.setEntry("BASE_ADDON", "ADD_PROMO_CS");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_DataAdd");
+    response.setEntry("QUOTE", "1073741824");
+    response.setEntry("OFFERING", "1305086372");                         
+                response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Mas Internet de 1GB se ha activado.  El paquete vence en tu fecha de corte. Puedes continuar navegando.");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+end
+rule "Addon_350MB_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001946", "ADD_350MB_EP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "350MB PACK");
+    response.setEntry("BASE_ADDON", "ADD_350MB_EP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "367001600");
+    response.setEntry("OFFERING", "1205069940");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 350MB se ha activado, este cobro de $2.50 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_500MB_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001947", "ADD_500MB_EP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "500MB PACK");
+    response.setEntry("BASE_ADDON", "ADD_500MB_EP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "524288000");
+    response.setEntry("OFFERING", "1105080820");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 500MB se ha activado, este cobro de $3.50 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_1GB_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001948", "ADD_1GB_EP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "1GB PACK");
+    response.setEntry("BASE_ADDON", "ADD_1GB_EP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "1073741824");
+    response.setEntry("OFFERING", "1805081201");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 1GB se ha activado, este cobro de $6.50 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_1.5GB_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001949", "ADD_1.5GB_EP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "1.5GB PACK");
+    response.setEntry("BASE_ADDON", "ADD_1.5GB_EP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "1610612736");
+    response.setEntry("OFFERING", "305081578");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 1.5GB se ha activado, este cobro de $10.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_2GB_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001950", "ADD_2GB_EP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "2GB PACK");
+    response.setEntry("BASE_ADDON", "ADD_2GB_EP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "2147483648");
+    response.setEntry("OFFERING", "1105082113");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 2GB se ha activado, este cobro de $12.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_1GB_SP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001951", "ADD_1GB_SP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "1GB SP PACK");
+    response.setEntry("BASE_ADDON", "ADD_1GB_SP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "1073741824");
+    response.setEntry("OFFERING", "1105082541");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 1GB se ha activado, este cobro de $3.50 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_2GB_SP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001952", "ADD_2GB_SP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "2GB SP PACK");
+    response.setEntry("BASE_ADDON", "ADD_2GB_SP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "2147483648");
+    response.setEntry("OFFERING", "105083233");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 2GB se ha activado, este cobro de $6.50 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_3GB_SP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001953", "ADD_3GB_SP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "3GB SP PACK");
+    response.setEntry("BASE_ADDON", "ADD_3GB_SP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "3221225472");
+    response.setEntry("OFFERING", "1605084071");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 3GB se ha activado, este cobro de $10.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_4GB_SP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001966", "ADD_4GB_SP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "4GB SP PACK");
+    response.setEntry("BASE_ADDON", "ADD_4GB_SP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "4294967296");
+    response.setEntry("OFFERING", "1905085016");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 4GB se ha activado, este cobro de $12.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_5GB_SP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001967", "ADD_5GB_SP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "5GB SP PACK");
+    response.setEntry("BASE_ADDON", "ADD_5GB_SP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "5368709120");
+    response.setEntry("OFFERING", "705085322");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 5GB se ha activado, este cobro de $15.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_6GB_EMP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001968", "ADD_6GB_EMP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "6GB EMP PACK");
+    response.setEntry("BASE_ADDON", "ADD_6GB_EMP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "6442450944");
+    response.setEntry("OFFERING", "1605085655");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 6GB se ha activado, este cobro de $8.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+rule "Addon_12GB_EMP_PACK"
+when 
+    f: FactRequest(input["PRODUCT_ID"] in ("9001969", "ADD_12GB_EMP"))
+then
+    response.setEntry("SUCCESS", "OK");
+    response.setEntry("PRODUCT_NAME", "12GB EMP PACK");
+    response.setEntry("BASE_ADDON", "ADD_12GB_EMP");
+    response.setEntry("ALLOWED_TYPES", "POS,HIB,HIC,HIB20,CIN,TOD,TOC,NRM,CO1,CO2");
+    response.setEntry("DISALLOWED_PLANS_VOZ", "104,105,106,107,108,109,110,111,112,113,116,117,118,21,31,32,33,34,35,36,37,38,39,353,382,383,384,40,41,42,43,403,404,444,445,446,447,467,496,497,501,518,502,503,504,53,533,534,535,651,725,726,727,728,729,730,731,732,739,758,759,760,761,762,765,770,771,772,773,774,776,777,811,849,879,880,881,882,928,929,930,931,949,981,982,983,984,985,986,987,988,990,991,992,993");
+    response.setEntry("DISALLOWED_PLANS_VAS", "0");
+    response.setEntry("ADDON_LIMIT", "3");
+    response.setEntry("TYPE", "GNR");
+    response.setEntry("WALLET", "C_Data_Add");
+    response.setEntry("QUOTE", "12884901888");
+    response.setEntry("OFFERING", "1405086082");
+    response.setEntry("ADD_MONTH_EXPIRATION", "0");
+    response.setEntry("SEND_SMS", "1");
+    response.setEntry("SMS_EXITO", "Paquete de Internet de 12GB se ha activado, este cobro de $12.00 se hara en tu factura y vence en tu fecha de corte, por eso y muchas cosas mas ¡Tigo me llega!");
+    response.setEntry("SMS_ERROR_VAS", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR_VOZ", "Estimado cliente este servicio no esta disponible, haz clic aqui https://goo.gl/QM7EuK y conoce la oferta de planes sin limites.");
+    response.setEntry("SMS_ERROR_LIMITE", "Mas internet no pudo ser activado. Descarga gratis Mi Tigo app bit.ly/21rrECX para chatear con un agente, visita nuestras agencias o consulta llamando al *611");
+    response.setEntry("SMS_ERROR", "Estimado cliente tu paquete no pudo ser activado, comunicate con nosotros atraves de Mi Tigo https://goo.gl/n5tLat o nuestras redes sociales.");
+end
+//-------------------Fin de cambios Jose Mario 20190115''''''''''''''''''''
