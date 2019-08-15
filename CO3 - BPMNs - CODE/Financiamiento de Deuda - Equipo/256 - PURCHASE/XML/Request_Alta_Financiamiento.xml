@@ -1,0 +1,48 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:purchaseProduct>         <!--Optional:-->
+         <v1:simpleOrderRequest>
+            <channelId>1</channelId>
+            <subscriberId>77777703</subscriberId>
+            <productId>9002332</productId>
+            <quantity>1</quantity>            <!--Optional:-->
+            <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
+            <comment>Financiamiento de Deuda</comment>
+            <additionalParameters>
+               <parameter>
+                  <key>SUBPRIMARY_IDENTITY</key>
+                  <value>77777703</value>
+               </parameter>
+               <parameter>
+                  <key>ACCOUNT</key>
+                  <value>1-aacc77777703</value>
+               </parameter>
+               <parameter>
+                  <key>INVOICES_No</key>
+                  <value>231231231,231231232,231231233</value>
+               </parameter>
+               <parameter>
+                  <key>AMOUNTS</key>
+                  <value>20,25,30</value>
+               </parameter>
+               <parameter>
+                  <key>TYPE</key>
+                  <value>DEUDA</value>
+               </parameter>
+
+               <parameter>
+                  <key>INSTALLMENTS</key>
+                  <value>4</value>
+               </parameter>
+               <parameter>
+                  <key>INITIAL_PAYMENT_DATE</key>
+                  <value>20190801</value>
+               </parameter>
+
+            </additionalParameters>
+            <!--Optional:-->
+         </v1:simpleOrderRequest>
+      </v1:purchaseProduct>
+   </soapenv:Body>
+</soapenv:Envelope>

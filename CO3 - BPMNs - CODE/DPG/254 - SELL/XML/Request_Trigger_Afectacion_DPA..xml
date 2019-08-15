@@ -1,0 +1,65 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:sellProduct>
+         <!--Optional:-->
+         <v1:simpleOrderRequest>
+            <channelId>1</channelId>
+            <subscriberId>77777703</subscriberId>
+            <productId>9002333</productId>
+            <quantity>1</quantity>
+            <!--Optional:-->
+            <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
+            <comment>Afectacion_DPG</comment>
+            <additionalParameters>
+               <parameter>
+                  <key>eventType</key>
+                  <value>AFECTACION_DPG</value>
+               </parameter>
+
+               <parameter>
+                  <key>eventname</key>
+                  <value>Low balance 0</value>
+               </parameter>
+               <parameter>
+                  <key>SubscriberPrimaryID</key>
+                  <value>77777703</value>
+               </parameter>
+               <parameter>
+                  <key>AccountCode</key>
+                  <value>acc12345</value>
+               </parameter>
+               <parameter>
+                  <key>RegisterCustKey</key>
+                  <value>1</value>
+               </parameter>
+               <parameter>
+                  <key>subaccount_ID</key>
+                  <value>123</value>
+               </parameter>
+                <parameter>
+                  <key>subaccount</key>
+                  <value>C_MAIN_BILLING_ACCOUNT</value>
+               </parameter>
+                <parameter>
+                  <key>Account Code</key>
+                  <value>code</value>
+               </parameter>
+                <parameter>
+                  <key>EffectiveTime</key>
+                  <value>20191111115959</value>
+               </parameter>
+                <parameter>
+                  <key>Expiration Time</key>
+                  <value>20191111115959</value>
+               </parameter>
+                <parameter>
+                  <key>Type</key>
+                  <value>DPA</value>
+               </parameter>
+            </additionalParameters>
+            <!--Optional:-->
+         </v1:simpleOrderRequest>
+      </v1:sellProduct>
+   </soapenv:Body>
+</soapenv:Envelope>

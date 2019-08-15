@@ -1,0 +1,36 @@
+{
+	"InvoiceDetail": {
+		"InvoiceID": "",
+		"ServiceCategory": "",
+		"ChargeCode": "",
+		"ChargeAmount": "",
+		"OfferingID": "",
+		"Quantity": "",
+		"TAXAmount": "",
+		"TaxList": [
+			{
+				"TaxCode": "",
+				"TaxAmt": "",
+				"CurrencyID": ""
+			},
+			{
+				"TaxCode": "",
+				"TaxAmt": "",
+				"CurrencyID": ""
+			}
+		],
+		"OpenAmount": "",
+		"CurrencyID": "",
+		"Status": "",
+		"DiscountAmount": "",
+		"OpenTAXAmount": "",
+		"AdditionalProperty": [
+			{
+				"Code": "value"
+			},
+			{
+				"Code": "value"
+			}
+		]
+	}
+}

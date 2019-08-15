@@ -1,0 +1,56 @@
+{
+    "JSON_RESPONSE": {
+      "Installments": [
+        {
+          "Name": "Financiamiento de Equipo Iphone",
+          "Type": "Equipo",
+          "Offering": "4839248200",
+          "Amount": "10",
+          "Install_total": "12",
+          "Total_amount" : "120",
+          "Processed": [
+            {
+              "InstallNumber": "1",
+              "Date": "20190524",
+              "Status": "closed"
+            },
+            {
+              "InstallNumber": "2",
+              "Date": "20190524",
+              "Status": "closed"
+            },
+            {
+              "InstallNumber": "3",
+              "Date": "20190524",
+              "Status": "closed"
+            }
+          ]
+        },
+        {
+          "Name": "Financiamiento de Equipo Iphone",
+          "Type": "Deuda",
+          "Offering": "4839248200",
+          "Amount": "10",
+          "Install_total": "12",
+          "Total_amount" : "120",
+          "Processed": [
+            {
+              "InstallNumber": "1",
+              "Date": "20190524",
+              "Status": "closed"
+            },
+            {
+              "InstallNumber": "2",
+              "Date": "20190524",
+              "Status": "closed"
+            },
+            {
+              "InstallNumber": "3",
+              "Date": "20190524",
+              "Status": "closed"
+            }
+          ]
+        }
+      ]
+    }
+  }

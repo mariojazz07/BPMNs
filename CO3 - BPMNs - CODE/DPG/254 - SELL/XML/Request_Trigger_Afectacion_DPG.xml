@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v1:sellProduct>
+         <!--Optional:-->
+         <v1:simpleOrderRequest>
+            <channelId>1</channelId>
+            <subscriberId>77777703</subscriberId>
+            <productId>9002333</productId>
+            <quantity>1</quantity>
+            <!--Optional:-->
+            <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
+            <comment>Afectacion_DPG</comment>
+            <additionalParameters>
+               <parameter>
+                  <key>eventType</key>
+                  <value>AFECTACION_DPG</value>
+               </parameter>
+
+               <parameter>
+                  <key>eventname</key>
+                  <value>status</value>
+               </parameter>
+               <parameter>
+                  <key>oldStatus</key>
+                  <value>12</value>
+               </parameter>
+               <parameter>
+                  <key>newStatus</key>
+                  <value>11</value>
+               </parameter>
+               <parameter>
+                  <key>OpType</key>
+                  <value>1</value>
+               </parameter>
+               <parameter>
+                  <key>Type</key>
+                  <value>DPG</value>
+               </parameter>
+            </additionalParameters>
+            <!--Optional:-->
+         </v1:simpleOrderRequest>
+      </v1:sellProduct>
+   </soapenv:Body>
+</soapenv:Envelope>

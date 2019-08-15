@@ -1,0 +1,68 @@
+{
+    "atributeList": [
+        {
+            "name": "CUENTA",
+            "value": "1-cc234567890"
+        },
+        {
+            "name": "OFFERING_DEUDA",
+            "value": "1234567890"
+        },
+        {
+            "name": "SEQUENCE_DEUDA",
+            "value": "AC123"
+        },
+        {
+            "name": "MONTO_DEUDA",
+            "value": "100"
+        },
+        {
+            "name": "CUOTAS_DEUDA",
+            "value": "12"
+        },
+        {
+            "name": "FECHA_INICIO_DEUDA",
+            "value": "20190501"
+        },
+        {
+            "name": "FECHA_FIN_DEUDA",
+            "value": "20200501"
+        },
+        {
+            "name": "STATUS_DEUDA",
+            "value": "VIGENTE"
+        },
+        {
+            "name": "NAME_EQUIPO",
+            "value": "IPHONE XS 64GB"
+        },
+        {
+            "name": "OFFERING_EQUIPO",
+            "value": "1234567890"
+        },
+        {
+            "name": "SEQUENCE_EQUIPO",
+            "value": "AC123"
+        },
+        {
+            "name": "MONTO_EQUIPO",
+            "value": "100"
+        },
+        {
+            "name": "CUOTAS_EQUIPO",
+            "value": "12"
+        },
+        {
+            "name": "FECHA_INICIO_EQUIPO",
+            "value": "20190501"
+        },
+        {
+            "name": "FECHA_FIN_EQUIPO",
+            "value": "20190501"
+        },
+        {
+            "name": "STATUS_EQUIPO",
+            "value": "VIGENTE"
+        }
+    ]
+}

@@ -1,27 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-
-
-    <button onclick="myFunction()">Debug</button>
-
-    <p id="demo"></p>
-
-    <script>
-        function myFunction() {
-            var result = working();
-            document.getElementById("demo").innerHTML = result;
-        }
-    </script>
-    <script>
-        function working() {
-            
-
-vJsonResponse='{"resultHeader":{"version":"1","resultCode":"0","msgLanguageCode":"2002","resultDesc":"Operation successfully."},"queryInvoiceDetailResult":{"invoiceDetail":[{"invoiceID":870013,"serviceCategory":"A","chargeCode":"C_ADJUSTMENT_CHARGE_CODE","chargeAmount":500000000,"taxAmount":75000000,"openAmount":368000000,"currencyID":1153,"quantity":"0","status":"O","discountAmt":0,"taxList":[{"taxCode":"1415761303512379760","taxAmt":75000000,"currencyId":1153}],"openTaxAmount":55200000}],"totalRowNum":1,"beginRowNum":0,"fetchRowNum":0}}';
-var subscriberId='77777703';
-
-
 //var vJsonResult = getJSON(vJsonResponse);
 var vJsonResult = JSON.parse(vJsonResponse);
 var vTmpObject = new Object();
@@ -38,7 +14,6 @@ vTmpObject.ChargeAmount = vTmpJson.chargeAmount;
 vTmpObject.OfferingID = vTmpJson.taxAmount;
 vTmpObject.Quantity = vTmpJson.quantity;
 vTmpObject.TAXAmount =vTmpJson.taxAmount;
-
 
 
 vTmpTaxArray=vTmpJson.taxList;
@@ -78,18 +53,3 @@ if (vTmpJson.AdditionalProperty instanceof Array) {
 
 //
 vInvoiceDetail.InvoiceDetail=vTmpObject;
-
-
-return JSON.stringify(vInvoiceDetail);
-                    }
-        
-    </script>
-
-
-
-
-
-
-</body>
-
-</html>
