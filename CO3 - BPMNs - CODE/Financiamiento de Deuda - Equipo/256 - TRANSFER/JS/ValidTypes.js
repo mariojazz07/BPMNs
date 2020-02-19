@@ -1,7 +1,7 @@
 var MSFinancial = JsonMS;
 LOGGER.info(tLinea+MSFinancial+tLinea);
 
-var vDeudaInitDate = getMSAttributes('FECHA_INICIO_EQUIPO', MSFinancial);
+var vDeudaInitDate = getMSAttributes('FECHA_INICIO_DEUDA', MSFinancial);
 var vEquipoInitDate = getMSAttributes('FECHA_INICIO_EQUIPO', MSFinancial);
 var vDeudaEndDate = getMSAttributes('FECHA_FIN_DEUDA', MSFinancial);
 var vEquipoEndDate = getMSAttributes('FECHA_FIN_EQUIPO', MSFinancial);
@@ -12,8 +12,9 @@ var vSeqEquipo = getMSAttributes('SEQUENCE_EQUIPO', MSFinancial);
 var vSysdate = new Date();
 var vDeudaVigente = false;
 var vEquipoVigente = false;
-//var vJson={Installments:[]};
+//var vJson={Installments:new Object()};
 var vJson = {};
+var vInstallArray=new Array();
 
 if (typeof vDeudaInitDate != 'undefined') {
     vDeudaInitDate = getFinancialDate(vDeudaInitDate);

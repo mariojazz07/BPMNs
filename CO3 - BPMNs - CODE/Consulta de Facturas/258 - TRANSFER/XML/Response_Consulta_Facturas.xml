@@ -1,18 +1,18 @@
-<Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
-   <Header>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Header>
       <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdHABF3ZWJsb2dpYy5hcHAuSk9TTQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMC4zAAA=</WorkContext>
-   </Header>
-   <Body>
-      <transferProductResponse xmlns:ns3="http://tigo.com/josm/gateway/services/order/OrderResponseDetail/V1" xmlns:ns0="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+   </S:Header>
+   <S:Body>
+      <ns0:transferProductResponse xmlns:ns3="http://tigo.com/josm/gateway/services/order/OrderResponseDetail/V1" xmlns:ns0="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
          <simpleOrderResponse>
-            <transactionID>065ab03c-5c23-4eb1-8202-89207e40bdd3</transactionID>
+            <transactionID>3fc11db1-4c7d-44ff-bf47-fea6e378eca0</transactionID>
             <code>0</code>
             <message>Operation Successful</message>
             <orderResponseDetail>
-               <productId>522</productId>
-               <responseCode>0</responseCode>
-               <responseDescription>Operation successful</responseDescription>
-               <parameters>
+               <ns3:productId>9002366</ns3:productId>
+               <ns3:responseCode>0</ns3:responseCode>
+               <ns3:responseDescription>Operation successful</ns3:responseDescription>
+               <ns3:parameters>
                   <parameter>
                      <name>BPMN_RESPONSE_CODE</name>
                      <value>0</value>
@@ -22,12 +22,12 @@
                      <value>Operation Successful</value>
                   </parameter>
                   <parameter>
-                     <name>JSON_INVOICES</name>
-                     <value>{"Invoices":{"InvoiceInfo":[{"PrimaryIdentity":"72147060","AccountKey":"acctpos72147060","InvoiceType":"7","InvoiceNo":"10554962","BillCycleID":"20190401","InvoiceAmount":"17250000","TAXAmount":"2250000","OpenAmount":"15000000","InvoiceDate":"20190411153354","DueDate":"20190517000000","Status":"O","OpenTaxAmount":"1231231","C_INSURANCE_AMT_ADD":"0.00","C_OTHERSPECIAL_AMT_ADD":"0.00"},{"PrimaryIdentity":"72147060","AccountKey":"acctpos72147060","InvoiceType":"7","InvoiceNo":"10554962","BillCycleID":"20190401","InvoiceAmount":"17250000","TAXAmount":"2250000","OpenAmount":"15000000","InvoiceDate":"20190411153354","DueDate":"20190517000000","Status":"O","OpenTaxAmount":"1231231","C_INSURANCE_AMT_ADD":"0.00","C_OTHERSPECIAL_AMT_ADD":"0.00"}]}}</value>
+                     <name>JSON_RESPONSE</name>
+                     <value>{"Invoices":{"InvoiceInfo":[{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"8","TransType":"DER","InvoiceID":"484040","InvoiceNo":"20190819000000247037","BillCycleID":"20190801","InvoiceAmount":"7000000","TAXAmount":"0","OpenAmount":"0","InvoiceDate":"20190819161519","DueDate":"20190918000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"8","TransType":"DER","InvoiceID":"484039","InvoiceNo":"20190819000000247036","BillCycleID":"20190801","InvoiceAmount":"10000000","TAXAmount":"0","OpenAmount":"0","InvoiceDate":"20190819160739","DueDate":"20190918000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"8","TransType":"DER","InvoiceID":"484038","InvoiceNo":"20190819000000247035","BillCycleID":"20190801","InvoiceAmount":"8000000","TAXAmount":"0","OpenAmount":"0","InvoiceDate":"20190819155415","DueDate":"20190918000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"C","TransType":"DNT","InvoiceID":"463024","InvoiceNo":"20190604000000230011","BillCycleID":"20190601","InvoiceAmount":"200000000","TAXAmount":"30000000","OpenAmount":"0","InvoiceDate":"20190604163830","DueDate":"20190722000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"Z","TransType":"BLL","InvoiceID":"463023","InvoiceNo":"U0000111","BillCycleID":"20190601","InvoiceAmount":"10000000","TAXAmount":"1500000","OpenAmount":"0","InvoiceDate":"20190603090116","DueDate":"20190603000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"C","TransType":"DNT","InvoiceID":"458010","InvoiceNo":"20190226000000224006","BillCycleID":"20190201","InvoiceAmount":"25000000","TAXAmount":"3750000","OpenAmount":"0","InvoiceDate":"20190226145945","DueDate":"20190226000000","Status":"C","OpenTaxAmount":"0"},{"PrimaryIdentity":"77777703","AccountKey":"acctpos72147060","InvoiceType":"Z","TransType":"BLL","InvoiceID":"460002","InvoiceNo":"U0000084","BillCycleID":"20190201","InvoiceAmount":"10000","TAXAmount":"0","OpenAmount":"0","InvoiceDate":"20190204232509","DueDate":"20190205000000","Status":"C","OpenTaxAmount":"0"}]}}</value>
                   </parameter>
-               </parameters>
+               </ns3:parameters>
             </orderResponseDetail>
          </simpleOrderResponse>
-      </transferProductResponse>
-   </Body>
-</Envelope>
+      </ns0:transferProductResponse>
+   </S:Body>
+</S:Envelope>

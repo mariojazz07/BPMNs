@@ -1,0 +1,30 @@
+{
+  "ID_FACTURA": "0000-0000-0000"
+}
+
+
+//JSON_RESPONSE
+
+{
+  "CUENTA": "1-F123123", ///agregado para sharepoint
+  "ID_FACTURA": "4234823942",
+  "ID_FACTURA_CBS":"6578",//NEW
+  "FECHA_FACTURA": "20191216",
+  "MONTO_TOTAL": "$100.0",
+  "MONTO_PENDIENTE":"$5",//NEW
+  "IMPUESTO": "$15.00",
+  "FACTURA_DETALLE": {
+    "SERVICIOS": [
+      {
+        "SERVICIO": "PLAN $20.0 5G",
+        "VALOR": "$20.00",
+        "ISV": "$3.00"
+      },
+      {
+        "SERVICIO": "ADDONS 5G",
+        "VALOR": "$10.00",
+        "ISV": "$5.00"
+      }
+    ]
+  }
+}

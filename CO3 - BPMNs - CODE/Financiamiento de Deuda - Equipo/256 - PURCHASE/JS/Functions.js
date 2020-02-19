@@ -14,38 +14,69 @@ function getFinancialDate(InstallDate) {
 
 function getTimeCBS(vIsEffective, vEffectiveDate, vIsExpire, vInstallmentNumbers) {
     var vDate = new Date();
-
     if (vIsEffective) {
         if (vEffectiveDate != '') {
             vEffectiveDate = vEffectiveDate + '000000';
         }
-
         vDate = vEffectiveDate;
-
     } else if (vIsExpire) {
-        var TmpDate = new Date(getFinancialDate(vEffectiveDate));
+        var vTmpDate = new Date(getFinancialDate(vEffectiveDate + '000000'));
         var TmpMonth = parseInt(vInstallmentNumbers) + 1;
-        TmpDate.setMonth(TmpDate.getMonth() + TmpMonth);
+        var vTempM = vTmpDate.getMonth() + 1;
+        vTmpDate.setMonth(vTempM + TmpMonth);
         var vYear = vTmpDate.getFullYear();
         var vMonth = (vTmpDate.getMonth()) < 10 ? '0' + (vTmpDate.getMonth()) : (vTmpDate.getMonth());
-        var vDay = (vTmpDate.getDate()) < 10 ? '0' + vTmpDate.getDate() : vTmpDate.getDate();
-        var vFullDate = vYear + vMonth + vDay + '000000';
+        var NumberOfDays = getDaysInMonth(vMonth, vYear);
+        //var vDay = (vTmpDate.getDate()) < 10 ? '0' + vTmpDate.getDate() : vTmpDate.getDate();
+        var vDay = NumberOfDays;
+        var vFullDate = vYear.toString() + vMonth.toString() + vDay.toString() + '000000';
         vDate = vFullDate;
     }
-
     return vDate;
+}
+
+function getDaysInMonth(month, year) {
+    // Here January is 1 based
+    //Day 0 is the last day in the previous month
+    return new Date(year, month, 0).getDate();
+    // Here January is 0 based
+    // return new Date(year, month+1, 0).getDate();
 }
 
 function getDesc4Value(vIsDeuda, vIsEquipo, vDeuda) {
     var vDesc = '';
-
     if (vIsDeuda) {
         vDesc = 'FINANCIAMIENTO DEUDA;MONTO:' + vDeuda + ';';
     } else if (vIsEquipo) {
         vDesc = 'FINANCIAMIENTO EQUIPO;MONTO:' + vDeuda + ';';
     }
+    return vDesc;
+}
+
+function getExtAppPlanValue(vIsDeuda, vIsEquipo, vDeuda) {
+    var vExt = '';
+    if (vIsDeuda) {
+        vExt = 'FINANCIAMIENTO DEUDA;MONTO:' + vDeuda + ';';
+    } else if (vIsEquipo) {
+        vExt = 'FINANCIAMIENTO EQUIPO;MONTO:' + vDeuda + ';';
+    }
+    return vExt;
+}
+
+function fillDecimals(number, length) {
+    var str = number + "";
+    var dot = str.lastIndexOf('.');
+    var isDecimal = dot != -1;
+    var integer = isDecimal ? str.substr(0, dot) : str;
+    var decimals = isDecimal ? str.substr(dot + 1) : "";
+    decimals = pad(decimals, length, 0);
+    return integer + decimals;
+}
+
+function pad(input, length, padding) {
+    var str = input + "";
+    return (length <= str.length) ? str : pad(str + padding, length, padding);
 }
 
 var tSaltoL = '\n';
-
 var tLinea = tSaltoL + '************************************************************************' + tSaltoL;

@@ -210,7 +210,8 @@ function parseDateToStringCBS2(date, billday) {
   //var day = padStr(String(date.getDate()), 2, "0", STR_PAD_LEFT);
   date.setDate(billday);
   var day = padStr(String(date.getDate()), 2, "0", STR_PAD_LEFT);
-  var year = date.getFullYear() + 18;
+  //var year = date.getFullYear() + 18;
+  var year='2036';
   var month = date.getMonth() + 1;
   month = padStr(String(month), 2, "0", STR_PAD_LEFT);
   var hours = padStr(String(date.getHours()), 2, "0", STR_PAD_LEFT);
@@ -238,7 +239,8 @@ function parseDateToStringAS(Fecha) {
 //Fecha con anio 2036
 function parseDateToStringAS2(Fecha) {
   var strDate = " ";
-  var year = Fecha.getFullYear() + 18;
+  //var year = Fecha.getFullYear() + 18;
+  var year='2036';
   var month = Fecha.getMonth() + 1;
   var day = Fecha.getDate();
   strDate =

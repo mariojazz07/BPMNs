@@ -67,3 +67,6 @@ if(typeof vMappedProduct != 'undefined'){
         vProductId = vMappedProduct;
     }
 }
+
+LOGGER.info(tLinea+'vSubscriberType:'+vSubscriberType +tLinea);
+LOGGER.info(tLinea+'validPlan:'+validPlan +tLinea);

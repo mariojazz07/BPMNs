@@ -1,0 +1,17 @@
+{
+    "Account": "478327492",
+    "Dispute": [
+        {
+            "InvoiceId": "31237198",
+            "InvoiceAmount": "$20",
+            "DisputeDate": "20200119",
+            "DealDisputeDate": "20200131"
+        },
+        {
+            "InvoiceId": "31237198",
+            "InvoiceAmount": "$20",
+            "DisputeDate": "20200119",
+            "DealDisputeDate": "20200131"
+        }
+    ]
+}

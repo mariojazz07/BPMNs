@@ -1,0 +1,1957 @@
+package hn.com.tigo.josm.rule.getReasonCode
+dialect "mvel"
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+global FactResponse response;
+//**********************************Inicio Planes Internet**********************************
+rule "NC1"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por usuario" || input["MOTIVO"] == "AJUSTEFACT_150058",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC1");
+
+end
+
+rule "NC2"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por sistema"|| input["MOTIVO"] == "AJUSTEFACT_150059",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC2");
+
+end
+
+
+rule "NC3"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuenta de la tercera edad"|| input["MOTIVO"] == "AJUSTEFACT_150060",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC3");
+
+end
+
+rule "NC4"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150061",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC4");
+
+end
+
+rule "NC5"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por penalización"|| input["MOTIVO"] == "AJUSTEFACT_150062",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC5");
+
+end
+
+rule "NC6"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala venta" || input["MOTIVO"] == "AJUSTEFACT_150063" ,input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC6");
+    response.setEntry("REASON_NAME", "Mala venta");
+
+end
+
+rule "NC7"
+when 
+    f: FactRequest(input["MOTIVO"] == "Activación de servicios no solicitados por cliente"|| input["MOTIVO"] == "AJUSTEFACT_150064",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC7");
+
+end
+rule "NC8"
+when 
+    f: FactRequest(input["MOTIVO"] == "cancelación o negociación no aplicada a tiempo"|| input["MOTIVO"] == "AJUSTEFACT_150065",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC8");
+
+end
+rule "NC9"
+when 
+    f: FactRequest(input["MOTIVO"] == "Anulación de factura"|| input["MOTIVO"] == "AJUSTEFACT_150066",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC9");
+
+end
+rule "NC10"
+when 
+    f: FactRequest(input["MOTIVO"] == "Refacturación"|| input["MOTIVO"] == "AJUSTEFACT_150067",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC10");
+
+end
+rule "NC11"
+when 
+    f: FactRequest(input["MOTIVO"] == "Falta de definición del producto"|| input["MOTIVO"] == "AJUSTEFACT_150068",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC11");
+
+end
+rule "NC12"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error en configuración del producto"|| input["MOTIVO"] == "AJUSTEFACT_150069",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC12");
+
+end
+rule "NC13"
+when 
+    f: FactRequest(input["MOTIVO"] == "Promociones y descuentos mal aplicados"|| input["MOTIVO"] == "AJUSTEFACT_150070",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC13");
+
+end
+rule "NC14"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retención de impuesto sobre la venta"||  input["MOTIVO"] == "AJUSTEFACT_150071",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC14");
+
+end
+rule "NC15"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reteanción de impuesto sobre la renta"|| input["MOTIVO"] == "AJUSTEFACT_150072",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC15");
+
+end
+rule "NC16"
+when 
+    f: FactRequest(input["MOTIVO"] == "Exento de impuesto"||  input["MOTIVO"] == "AJUSTEFACT_150073",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC16");
+
+end
+rule "NC17"
+when 
+    f: FactRequest(input["MOTIVO"] == "Impuesto agente retenedor de gobierno"||  input["MOTIVO"] == "AJUSTEFACT_150074",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC17");
+
+end
+rule "NC18"
+when 
+    f: FactRequest(input["MOTIVO"] == "Crédito por prorrateo de desconexión"|| input["MOTIVO"] == "AJUSTEFACT_150075",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC18");
+
+end
+rule "NC19"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150076",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC19");
+
+end
+rule "NC20"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo con desperfecto de fabrica"|| input["MOTIVO"] == "AJUSTEFACT_150077",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC20");
+
+end
+rule "NC21"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo"||  input["MOTIVO"] == "AJUSTEFACT_150078",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC21");
+
+end
+rule "NC22"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error por facturación de equipo"||  input["MOTIVO"] == "AJUSTEFACT_150079",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC22");
+
+end
+rule "NC23"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo no retirado"||  input["MOTIVO"] == "AJUSTEFACT_150080",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC23");
+
+end
+rule "NC24"
+when 
+    f: FactRequest(input["MOTIVO"] == "Consumo de actividades de trabajo"|| input["MOTIVO"] == "AJUSTEFACT_150081",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC24");
+
+end
+rule "NC25"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios", input["TYPE"] =='NC'|| input["MOTIVO"] == "AJUSTEFACT_150082",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC25");
+
+end
+rule "NC26"
+when 
+    f: FactRequest(input["MOTIVO"] == "Rechazo por seguro celular"||  input["MOTIVO"] == "AJUSTEFACT_150083",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC26");
+
+end
+rule "NC27"
+when 
+    f: FactRequest(input["MOTIVO"] == "Roaming"||  input["MOTIVO"] == "AJUSTEFACT_150084",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC27");
+
+end
+rule "NC28"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversión distribuidores y Otros"||  input["MOTIVO"] == "AJUSTEFACT_150085",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC28");
+
+end
+rule "NC29"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por Simcard"||  input["MOTIVO"] == "AJUSTEFACT_150086",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC29");
+
+end
+rule "NC30"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por publicidad y mercadeo"|| input["MOTIVO"] == "AJUSTEFACT_150087",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC30");
+
+end
+rule "NC31"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por tarjetas"||  input["MOTIVO"] == "AJUSTEFACT_150088",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC31");
+
+end
+rule "NC32"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por teléfonos"||  input["MOTIVO"] == "AJUSTEFACT_150089",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC32");
+
+end
+rule "NC33"
+when 
+    f: FactRequest(input["MOTIVO"] == "Interconexión"||  input["MOTIVO"] == "AJUSTEFACT_150090",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC33");
+
+end
+rule "NC34"
+when 
+    f: FactRequest(input["MOTIVO"] == "Días sin señal"||  input["MOTIVO"] == "AJUSTEFACT_150091",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC34");
+
+end
+rule "NC35"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargos moratorios"||  input["MOTIVO"] == "AJUSTEFACT_150092",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC35");
+
+end
+rule "NC36"
+when 
+    f: FactRequest(input["MOTIVO"] == "Incumplimiento de nivel de servicio"||  input["MOTIVO"] == "AJUSTEFACT_150093",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC36");
+
+end
+rule "NC37"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago mal aplicado de comisiones"||  input["MOTIVO"] == "AJUSTEFACT_150094",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC37");
+
+end
+rule "NC38"
+when 
+    f: FactRequest(input["MOTIVO"] == "Precio mal aplicado"||  input["MOTIVO"] == "AJUSTEFACT_150095",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC38");
+
+end
+rule "NC39"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesion por piloto"|| input["MOTIVO"] == "AJUSTEFACT_150096",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC39");
+
+end
+rule "NC40"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de deposito en garantia"||  input["MOTIVO"] == "AJUSTEFACT_150097",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC40");
+
+end
+rule "NC41"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo en prestamo"||  input["MOTIVO"] == "AJUSTEFACT_150098",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC41");
+
+end
+rule "NC42"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reposición de tarjeta"||  input["MOTIVO"] == "AJUSTEFACT_150099",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC42");
+
+end
+rule "NC43"
+when 
+    f: FactRequest(input["MOTIVO"] == "Complemento de Plan"||  input["MOTIVO"] == "AJUSTEFACT_150100",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC43");
+
+end
+rule "NC44"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de multa por llamadas falsas aplicadas al 911"|| input["MOTIVO"] == "AJUSTEFACT_150101",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC44");
+
+end
+rule "NC45"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala experiencia"||  input["MOTIVO"] == "AJUSTEFACT_150102",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC45");
+
+end
+rule "NC46"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesion"||  input["MOTIVO"] == "AJUSTEFACT_150103",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC46");
+
+end
+rule "NC47"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por usuario mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150104",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC47");
+
+end
+
+rule "NC48"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por sistema mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150105",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC48");
+
+end
+rule "NC49"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuenta de la tercera edad mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150106",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC49");
+
+end
+rule "NC50"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago de equipo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150107",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC50");
+
+end
+rule "NC51"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por penalización mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150108",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC51");
+
+end
+rule "NC52"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala venta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150109",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC52");
+
+end
+rule "NC53"
+when 
+    f: FactRequest(input["MOTIVO"] == "Activación de servicios no solicitados por cliente mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150110",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC53");
+
+end
+rule "NC54"
+when 
+    f: FactRequest(input["MOTIVO"] == "cancelacion o negociacion no aplicada a tiempo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150111",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC54");
+
+end
+rule "NC55"
+when 
+    f: FactRequest(input["MOTIVO"] == "Anulacion de factura mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150112",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC55");
+
+end
+
+rule "NC56"
+when 
+    f: FactRequest(input["MOTIVO"] == "Refacturacion mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150113",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC56");
+
+end
+
+rule "NC57"
+when 
+    f: FactRequest(input["MOTIVO"] == "Falta de definicion del producto mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150114",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC57");
+
+end
+rule "NC58"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error en configuracion del producto mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150115",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC58");
+
+end
+rule "NC59"
+when 
+    f: FactRequest(input["MOTIVO"] == "Promociones y descuentos mal aplicados mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150116",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC59");
+
+end
+rule "NC60"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retencion de impuesto sobre la venta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150117",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC60");
+
+end
+rule "NC61"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retencion de impuesto sobre la renta mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150118",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC61");
+
+end
+rule "NC62"
+when 
+    f: FactRequest(input["MOTIVO"] == "Exento de impuesto mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150119",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC62");
+
+end
+rule "NC63"
+when 
+    f: FactRequest(input["MOTIVO"] == "Impuesto agente retenedor de gobierno mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150120",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC63");
+
+end
+rule "NC64"
+when 
+    f: FactRequest(input["MOTIVO"] == "Credito por prorrateo de desconexion mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150121",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC64");
+
+end
+rule "NC65"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo de equipo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150122",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC65");
+
+end
+rule "NC66"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolucion de equipo con desperfecto de fabrica mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150123",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC66");
+
+end
+rule "NC67"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolucion de equipo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150124",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC67");
+
+end
+rule "NC68"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error por facturacion de equipo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150125",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC68");
+
+end
+rule "NC69"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo no retirado mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150126",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC69");
+
+end
+rule "NC70"
+when 
+    f: FactRequest(input["MOTIVO"] == "Consumo de actividades de trabajo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150127",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC70");
+
+end
+rule "NC71"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150128",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC71");
+
+end
+rule "NC72"
+when 
+    f: FactRequest(input["MOTIVO"] == "Rechazo por seguro celular mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150129",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC72");
+
+end
+rule "NC73"
+when 
+    f: FactRequest(input["MOTIVO"] == "Roaming mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150130",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC73");
+
+end
+rule "NC74"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversion distribuidores y Otros mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150131",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC74");
+
+end
+rule "NC75"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por Simcard mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150132",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC75");
+
+end
+rule "NC76"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por publicidad y mercadeo mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150133",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC76");
+
+end
+rule "NC77"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por tarjetas mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150134",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC77");
+
+end
+rule "NC78"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por telefonos mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150135",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC78");
+
+end
+rule "NC79"
+when 
+    f: FactRequest(input["MOTIVO"] == "Interconexion mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150136",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC79");
+
+end
+rule "NC80"
+when 
+    f: FactRequest(input["MOTIVO"] == "Dias sin señal mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150137",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC80");
+
+end
+rule "NC81"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargos moratorios mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150138",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC81");
+
+end
+rule "NC82"
+when 
+    f: FactRequest(input["MOTIVO"] == "Incumplimiento de nivel de servicio mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150139",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC82");
+
+end
+rule "NC83"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago mal aplicado de comisiones mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150140",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC83");
+
+end
+rule "NC84"
+when 
+    f: FactRequest(input["MOTIVO"] == "Precio mal aplicado mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150141",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC84");
+
+end
+rule "NC85"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesion por piloto mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150142",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC85");
+
+end
+rule "NC86"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de deposito en garantia mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150143",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC86");
+
+end
+rule "NC87"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo en prestamo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150144",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC87");
+
+end
+rule "NC88"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reposicion de tarjeta mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150145",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC88");
+
+end
+rule "NC89"
+when 
+    f: FactRequest(input["MOTIVO"] == "Complemento de Plan mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150146",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC89");
+
+end
+rule "NC90"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolucion de multa por llamadas falsas aplicadas al 911 mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150147",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC90");
+
+end
+rule "NC91"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala experiencia mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150148",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC91");
+
+end
+rule "NC92"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesion mas 90"||  input["MOTIVO"] == "AJUSTEFACT_150149",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "NC92");
+
+end
+
+rule "NC93"
+when 
+    f: FactRequest(input["MOTIVO"] == "Indemnización",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "DRINV060N001");
+
+end
+
+rule "NC94"
+when 
+    f: FactRequest(input["MOTIVO"] == "Comodato",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "DRINV060N002");
+
+end
+
+rule "NC95"
+when 
+    f: FactRequest(input["MOTIVO"] == "Financiamiento",input["TYPE"] =='NC')
+then
+    response.setEntry("REASONCODE", "DRINV060N003");
+end
+
+rule "ND1"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por usuario"|| input["MOTIVO"] == "AJUSTEFACT_150058",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND1");
+
+end
+rule "ND2"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por sistema"|| input["MOTIVO"] == "AJUSTEFACT_150059",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND2");
+
+end
+rule "ND3"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuenta de la tercera edad"|| input["MOTIVO"] == "AJUSTEFACT_150060",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND3");
+
+end
+rule "ND4"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150061",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND4");
+
+end
+rule "ND5"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por penalizacion"|| input["MOTIVO"] == "AJUSTEFACT_150062",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND5");
+
+end
+
+
+rule "ND6"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala venta" || input["MOTIVO"] == "AJUSTEFACT_150063" ,input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND6");
+    response.setEntry("REASON_NAME", "Mala venta");
+
+end
+
+
+rule "ND7"
+when 
+    f: FactRequest(input["MOTIVO"] == "Activacion de servicios no solicitados por cliente"|| input["MOTIVO"] == "AJUSTEFACT_150064",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND7");
+
+end
+rule "ND8"
+when 
+    f: FactRequest(input["MOTIVO"] == "cancelación o negociación no aplicada a tiempo"|| input["MOTIVO"] == "AJUSTEFACT_150065",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND8");
+
+end
+rule "ND9"
+when 
+    f: FactRequest(input["MOTIVO"] == "Anulación de factura"|| input["MOTIVO"] == "AJUSTEFACT_150066",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND9");
+
+end
+rule "ND10"
+when 
+    f: FactRequest(input["MOTIVO"] == "Refacturación"|| input["MOTIVO"] == "AJUSTEFACT_150067",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND10");
+
+end
+
+rule "ND11"
+when 
+    f: FactRequest(input["MOTIVO"] == "Falta de definición del producto"|| input["MOTIVO"] == "AJUSTEFACT_150068",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND11");
+
+end
+rule "ND12"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error en configuración del producto"|| input["MOTIVO"] == "AJUSTEFACT_150069",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND12");
+
+end
+rule "ND13"
+when 
+    f: FactRequest(input["MOTIVO"] == "Promociones y descuentos mal aplicados"|| input["MOTIVO"] == "AJUSTEFACT_150070",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND13");
+
+end
+rule "ND14"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retención de impuesto sobre la venta"|| input["MOTIVO"] == "AJUSTEFACT_150071",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND14");
+
+end
+rule "ND15"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retención de impuesto sobre la renta"|| input["MOTIVO"] == "AJUSTEFACT_150072",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND15");
+
+end
+rule "ND16"
+when 
+    f: FactRequest(input["MOTIVO"] == "Exento de impuesto"|| input["MOTIVO"] == "AJUSTEFACT_150073",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND16");
+
+end
+rule "ND17"
+when 
+    f: FactRequest(input["MOTIVO"] == "Impuesto agente retenedor de gobierno"|| input["MOTIVO"] == "AJUSTEFACT_150074",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND17");
+
+end
+rule "ND18"
+when 
+    f: FactRequest(input["MOTIVO"] == "Crédito por prorrateo de desconexión"|| input["MOTIVO"] == "AJUSTEFACT_150075",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND18");
+
+end
+rule "ND19"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150076",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND19");
+
+end
+rule "ND20"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo con desperfecto de fabrica"|| input["MOTIVO"] == "AJUSTEFACT_150077",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND20");
+
+end
+rule "ND21"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150078",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND21");
+
+end
+rule "ND22"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error por facturación de equipo"|| input["MOTIVO"] == "AJUSTEFACT_150079",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND22");
+
+end
+rule "ND23"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo no retirado"|| input["MOTIVO"] == "AJUSTEFACT_150080",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND23");
+
+end
+rule "ND24"
+when 
+    f: FactRequest(input["MOTIVO"] == "Consumo de actividades de trabajo"|| input["MOTIVO"] == "AJUSTEFACT_150081",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND24");
+
+end
+rule "ND25"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios"|| input["MOTIVO"] == "AJUSTEFACT_150082",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND25");
+
+end
+rule "ND26"
+when 
+    f: FactRequest(input["MOTIVO"] == "Rechazo por seguro celular"|| input["MOTIVO"] == "AJUSTEFACT_150083",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND26");
+
+end
+rule "ND27"
+when 
+    f: FactRequest(input["MOTIVO"] == "Roaming"|| input["MOTIVO"] == "AJUSTEFACT_150084",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND27");
+
+end
+rule "ND28"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversión distribuidores y Otros"|| input["MOTIVO"] == "AJUSTEFACT_150085",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND28");
+
+end
+rule "ND29"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por Simcard"|| input["MOTIVO"] == "AJUSTEFACT_150086",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND29");
+
+end
+rule "ND30"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por publicidad y mercadeo"|| input["MOTIVO"] == "AJUSTEFACT_150087",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND30");
+
+end
+rule "ND31"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por tarjetas"|| input["MOTIVO"] == "AJUSTEFACT_150088",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND31");
+
+end
+rule "ND32"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por teléfonos"|| input["MOTIVO"] == "AJUSTEFACT_150089",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND32");
+
+end
+rule "ND33"
+when 
+    f: FactRequest(input["MOTIVO"] == "Interconexión"|| input["MOTIVO"] == "AJUSTEFACT_150090",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND33");
+
+end
+rule "ND34"
+when 
+    f: FactRequest(input["MOTIVO"] == "Días sin señal"|| input["MOTIVO"] == "AJUSTEFACT_150091",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND34");
+
+end
+rule "ND35"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargos moratorios"|| input["MOTIVO"] == "AJUSTEFACT_150092",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND35");
+
+end
+rule "ND36"
+when 
+    f: FactRequest(input["MOTIVO"] == "Incumplimiento de nivel de servicio"|| input["MOTIVO"] == "AJUSTEFACT_150093",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND36");
+
+end
+rule "ND37"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago mal aplicado de comisiones"|| input["MOTIVO"] == "AJUSTEFACT_150094",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND37");
+
+end
+rule "ND38"
+when 
+    f: FactRequest(input["MOTIVO"] == "Precio mal aplicado"|| input["MOTIVO"] == "AJUSTEFACT_150095",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND38");
+
+end
+rule "ND39"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesión por piloto"|| input["MOTIVO"] == "AJUSTEFACT_150096",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND39");
+
+end
+rule "ND40"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de deposito en garantía"|| input["MOTIVO"] == "AJUSTEFACT_150097",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND40");
+
+end
+rule "ND41"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo en préstamo"|| input["MOTIVO"] == "AJUSTEFACT_150098",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND41");
+
+end
+rule "ND42"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reposición de tarjeta"|| input["MOTIVO"] == "AJUSTEFACT_150099",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND42");
+
+end
+rule "ND43"
+when 
+    f: FactRequest(input["MOTIVO"] == "Complemento de Plan"|| input["MOTIVO"] == "AJUSTEFACT_150100",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND43");
+
+end
+rule "ND44"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de multa por llamadas falsas aplicadas al 911"|| input["MOTIVO"] == "AJUSTEFACT_150101",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND44");
+
+end
+rule "ND45"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala experiencia"|| input["MOTIVO"] == "AJUSTEFACT_150102",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND45");
+
+end
+rule "ND46"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesión"|| input["MOTIVO"] == "AJUSTEFACT_150103",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND46");
+
+end
+rule "ND47"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por usuario mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150104",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND47");
+
+end
+rule "ND48"
+when 
+    f: FactRequest(input["MOTIVO"] == "Plan o servicio mal aplicado por sistema mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150105",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND48");
+
+end
+rule "ND49"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuenta de la tercera edad mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150106",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND49");
+
+end
+rule "ND50"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago de equipo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150107",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND50");
+
+end
+rule "ND51"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por penalización mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150108",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND51");
+
+end
+rule "ND52"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala venta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150109",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND52");
+
+end
+rule "ND53"
+when 
+    f: FactRequest(input["MOTIVO"] == "Activación de servicios no solicitados por cliente mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150110",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND53");
+
+end
+rule "ND54"
+when 
+    f: FactRequest(input["MOTIVO"] == "cancelación o negociación no aplicada a tiempo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150111",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND54");
+
+end
+rule "ND55"
+when 
+    f: FactRequest(input["MOTIVO"] == "Anulación de factura mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150112",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND55");
+
+end
+rule "ND56"
+when 
+    f: FactRequest(input["MOTIVO"] == "Refacturación mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150113",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND56");
+
+end
+rule "ND57"
+when 
+    f: FactRequest(input["MOTIVO"] == "Falta de definición del producto mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150114",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND57");
+
+end
+rule "ND58"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error en configuración del producto mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150115",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND58");
+
+end
+rule "ND59"
+when 
+    f: FactRequest(input["MOTIVO"] == "Promociones y descuentos mal aplicados mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150116",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND59");
+
+end
+rule "ND60"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retención de impuesto sobre la venta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150117",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND60");
+
+end
+rule "ND61"
+when 
+    f: FactRequest(input["MOTIVO"] == "Retención de impuesto sobre la renta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150118",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND61");
+
+end
+rule "ND62"
+when 
+    f: FactRequest(input["MOTIVO"] == "Exento de impuesto mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150119",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND62");
+
+end
+rule "ND63"
+when 
+    f: FactRequest(input["MOTIVO"] == "Impuesto agente retenedor de gobierno mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150120",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND63");
+
+end
+rule "ND64"
+when 
+    f: FactRequest(input["MOTIVO"] == "Crédito por prorrateo de desconexión mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150121",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND64");
+
+end
+rule "ND65"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo de equipo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150122",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND65");
+
+end
+rule "ND66"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo con desperfecto de fabrica mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150123",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND66");
+
+end
+rule "ND67"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de equipo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150124",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND67");
+
+end
+rule "ND68"
+when 
+    f: FactRequest(input["MOTIVO"] == "Error por facturación de equipo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150125",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND68");
+
+end
+rule "ND69"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo no retirado mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150126",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND69");
+
+end
+rule "ND70"
+when 
+    f: FactRequest(input["MOTIVO"] == "Consumo de actividades de trabajo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150127",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND70");
+
+end
+rule "ND71"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150128",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND71");
+
+end
+rule "ND72"
+when 
+    f: FactRequest(input["MOTIVO"] == "Rechazo por seguro celular mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150129",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND72");
+
+end
+rule "ND73"
+when 
+    f: FactRequest(input["MOTIVO"] == "Roaming mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150130",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND73");
+
+end
+rule "ND74"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversión distribuidores y Otros mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150131",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND74");
+
+end
+rule "ND75"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por Simcard mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150132",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND75");
+
+end
+rule "ND76"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por publicidad y mercadeo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150133",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND76");
+
+end
+rule "ND77"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por tarjetas mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150134",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND77");
+
+end
+rule "ND78"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargo por teléfonos mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150135",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND78");
+
+end
+rule "ND79"
+when 
+    f: FactRequest(input["MOTIVO"] == "Interconexión mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150136",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND79");
+
+end
+rule "ND80"
+when 
+    f: FactRequest(input["MOTIVO"] == "Días sin señal mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150137",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND80");
+
+end
+rule "ND81"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cargos moratorios mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150138",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND81");
+
+end
+rule "ND82"
+when 
+    f: FactRequest(input["MOTIVO"] == "Incumplimiento de nivel de servicio mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150139",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND82");
+
+end
+rule "ND83"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pago mal aplicado de comisiones mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150140",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND83");
+
+end
+rule "ND84"
+when 
+    f: FactRequest(input["MOTIVO"] == "Precio mal aplicado mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150141",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND84");
+
+end
+rule "ND85"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesión por piloto mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150142",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND85");
+
+end
+rule "ND86"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de deposito en garantía mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150143",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND86");
+
+end
+rule "ND87"
+when 
+    f: FactRequest(input["MOTIVO"] == "Equipo en préstamo mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150144",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND87");
+
+end
+rule "ND88"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reposición de tarjeta mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150145",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND88");
+
+end
+rule "ND89"
+when 
+    f: FactRequest(input["MOTIVO"] == "Complemento de Plan mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150146",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND89");
+
+end
+rule "ND90"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de multa por llamadas falsas aplicadas al 911 mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150147",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND90");
+
+end
+
+rule "ND91"
+when 
+    f: FactRequest(input["MOTIVO"] == "Mala experiencia mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150148",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND91");
+
+end
+
+rule "ND92"
+when 
+    f: FactRequest(input["MOTIVO"] == "Concesión mas 90"|| input["MOTIVO"] == "AJUSTEFACT_150149",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "ND92");
+
+end
+
+
+
+rule "ND93"
+when 
+    f: FactRequest(input["MOTIVO"] == "Indemnización",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "DRINV060N001");
+
+end
+
+rule "ND94"
+when 
+    f: FactRequest(input["MOTIVO"] == "Comodato",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "DRINV060N002");
+
+end
+
+rule "ND95"
+when 
+    f: FactRequest(input["MOTIVO"] == "Financiamiento",input["TYPE"] =='ND')
+then
+    response.setEntry("REASONCODE", "DRINV060N003");
+
+end
+
+rule "NAC1"
+when 
+    f: FactRequest(input["MOTIVO"] == "Aplicación de cargo por venta en agencia"|| input["MOTIVO"] == "AJUSTEFACT_150150",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC1");
+
+end
+
+rule "NAC2"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por teléfono asignado a empleado"|| input["MOTIVO"] == "AJUSTEFACT_150151",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC2");
+
+end
+
+rule "NAC3"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de saldo"|| input["MOTIVO"] == "AJUSTEFACT_150152",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC3");
+
+end
+
+
+rule "NAC4"
+when 
+    f: FactRequest(input["MOTIVO"] == "Diferencial cambiario distribuidores"|| input["MOTIVO"] == "AJUSTEFACT_150153",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC4");
+
+end
+
+
+rule "NAC5"
+when 
+    f: FactRequest(input["MOTIVO"] == "Aplicación de pagos anticipados"|| input["MOTIVO"] == "AJUSTEFACT_150154",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC5");
+
+end
+
+rule "NAC6"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pérdida cambiaria"|| input["MOTIVO"] == "AJUSTEFACT_150155",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC6");
+
+end
+
+rule "NAC7"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reembolso de pagos indebidos"|| input["MOTIVO"] == "AJUSTEFACT_150156",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC7");
+
+end
+rule "NAC8"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cuentas incobrables"|| input["MOTIVO"] == "AJUSTEFACT_150157",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC8");
+
+end
+rule "NAC9"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversión pago con rechazo de tarjeta de crédito"|| input["MOTIVO"] == "AJUSTEFACT_150158",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC9");
+
+end
+rule "NAC10"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cheques rechazados"|| input["MOTIVO"] == "AJUSTEFACT_150159",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC10");
+
+end
+rule "NAC11"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de dinero"|| input["MOTIVO"] == "AJUSTEFACT_150160",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC11");
+
+end
+rule "NAC12"
+when 
+    f: FactRequest(input["MOTIVO"] == "Afectación de antigüedad"|| input["MOTIVO"] == "AJUSTEFACT_150161",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC12");
+
+end
+rule "NAC13"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de deposito en garantía"|| input["MOTIVO"] == "AJUSTEFACT_150162",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC13");
+
+end
+rule "NAC14"
+when 
+    f: FactRequest(input["MOTIVO"] == "Portabilidad"|| input["MOTIVO"] == "AJUSTEFACT_150163",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC14");
+
+end
+rule "NAC15"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXC"|| input["MOTIVO"] == "AJUSTEFACT_150164",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC15");
+
+end
+rule "NAC16"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXP"|| input["MOTIVO"] == "AJUSTEFACT_150165",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC16");
+
+end
+rule "NAC17"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXC Guatemala"|| input["MOTIVO"] == "AJUSTEFACT_150166",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC17");
+
+end
+rule "NAC18"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado entre sistemas facturadores"|| input["MOTIVO"] == "AJUSTEFACT_150167",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC18");
+
+end
+rule "NAC19"
+when 
+    f: FactRequest(input["MOTIVO"] == "Neteo de saldos"|| input["MOTIVO"] == "AJUSTEFACT_150168",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC19");
+
+end
+rule "NAC20"
+when 
+    f: FactRequest(input["MOTIVO"] == "Alquiler varios"|| input["MOTIVO"] == "AJUSTEFACT_150169",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC20");
+
+end
+rule "NAC21"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cortesía clientes corporativos"|| input["MOTIVO"] == "AJUSTEFACT_150170",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC21");
+
+end
+rule "NAC22"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por descuento por pago anticipado"|| input["MOTIVO"] == "AJUSTEFACT_150171",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC22");
+
+end
+rule "NAC23"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste presupuesto de subsidio"|| input["MOTIVO"] == "AJUSTEFACT_150172",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC23");
+
+end
+rule "NAC24"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuento por venta de recargas electrónicas"|| input["MOTIVO"] == "AJUSTEFACT_150173",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC24");
+
+end
+rule "NAC25"
+when 
+    f: FactRequest(input["MOTIVO"] == "Honorarios por  cobro legal"|| input["MOTIVO"] == "AJUSTEFACT_150174",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC25");
+
+end
+rule "NAC26"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de cartera"|| input["MOTIVO"] == "AJUSTEFACT_150175",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC26");
+
+end
+rule "NAC27"
+when 
+    f: FactRequest(input["MOTIVO"] == "Deducción por planilla"|| input["MOTIVO"] == "AJUSTEFACT_150176",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC27");
+
+end
+rule "NAC28"
+when 
+    f: FactRequest(input["MOTIVO"] == "Proceso de Portación"|| input["MOTIVO"] == "AJUSTEFACT_150177", input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC28");
+
+end
+rule "NAC29"
+when 
+    f: FactRequest(input["MOTIVO"] == "Garantía proceso de portación" || input["MOTIVO"] == "AJUSTEFACT_150178", input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC29");
+
+end
+rule "NAC30"
+when 
+    f: FactRequest(input["MOTIVO"] == "Penalización proceso de portación"|| input["MOTIVO"] == "AJUSTEFACT_150179", input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC30");
+
+end
+rule "NAC31"
+when 
+    f: FactRequest(input["MOTIVO"] == "Decto. Pronto Pago Public"|| input["MOTIVO"] == "AJUSTEFACT_150180",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC31");
+
+end
+rule "NAC32"
+when 
+    f: FactRequest(input["MOTIVO"] == "Neteo de Saldos ICO"|| input["MOTIVO"] == "AJUSTEFACT_150181",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC32");
+
+end
+rule "NAC33"
+when 
+    f: FactRequest(input["MOTIVO"] == "Regularización de Saldos"|| input["MOTIVO"] == "AJUSTEFACT_150182",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC33");
+
+end
+rule "NAC34"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de Saldos B2B"|| input["MOTIVO"] == "AJUSTEFACT_150183",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC34");
+
+end
+rule "NAC35"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de Saldos Home"|| input["MOTIVO"] == "AJUSTEFACT_150184",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC35");
+
+end
+rule "NAC36"
+when 
+    f: FactRequest(input["MOTIVO"] == "Facturas años Anteriores"|| input["MOTIVO"] == "AJUSTEFACT_150185",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC36");
+
+end
+rule "NAC37"
+when 
+    f: FactRequest(input["MOTIVO"] == "Comisión Pagos Masivos"|| input["MOTIVO"] == "AJUSTEFACT_150186",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC37");
+
+end
+rule "NAC38"
+when 
+    f: FactRequest(input["MOTIVO"] == "Intercompany"|| input["MOTIVO"] == "AJUSTEFACT_150187",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC38");
+
+end
+rule "NAC39"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por reversión de tarjeta de crédito"|| input["MOTIVO"] == "AJUSTEFACT_150188",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC39");
+
+end
+rule "NAC40"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por Financiamiento de Deuda/Equipo."|| input["MOTIVO"] == "AJUSTEFACT_150189",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC40");
+
+end
+rule "NAC41"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste Devolución de Efectivo"|| input["MOTIVO"] == "AJUSTEFACT_150190",input["TYPE"] =='NAC')
+then
+    response.setEntry("REASONCODE", "NAC41");
+
+end
+
+
+rule "NAD1"
+when 
+    f: FactRequest(input["MOTIVO"] == "Aplicación de cargo por venta en agencia"|| input["MOTIVO"] == "AJUSTEFACT_150150" || input["MOTIVO"] == "AJUSTEFACT_15010",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD1");
+
+end
+
+rule "NAD2"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por teléfono asignado a empleado"|| input["MOTIVO"] == "AJUSTEFACT_150151",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD2");
+
+end
+
+rule "NAD3"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de saldo"|| input["MOTIVO"] == "AJUSTEFACT_150152",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD3");
+
+end
+
+
+rule "NAD4"
+when 
+    f: FactRequest(input["MOTIVO"] == "Diferencial cambiario distribuidores"|| input["MOTIVO"] == "AJUSTEFACT_150153",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD4");
+
+end
+
+
+rule "NAD5"
+when 
+    f: FactRequest(input["MOTIVO"] == "Aplicación de pagos anticipados"|| input["MOTIVO"] == "AJUSTEFACT_150154",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD5");
+
+end
+
+rule "NAD6"
+when 
+    f: FactRequest(input["MOTIVO"] == "Pérdida cambiaria"|| input["MOTIVO"] == "AJUSTEFACT_150155",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD6");
+
+end
+
+rule "NAD7"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reembolso de pagos indebidos"|| input["MOTIVO"] == "AJUSTEFACT_150156",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD7");
+
+end
+rule "NAD8"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cuentas incobrables"|| input["MOTIVO"] == "AJUSTEFACT_150157",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD8");
+
+end
+rule "NAD9"
+when 
+    f: FactRequest(input["MOTIVO"] == "Reversión pago con rechazo de tarjeta de crédito"|| input["MOTIVO"] == "AJUSTEFACT_150158",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD9");
+
+end
+rule "NAD10"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cheques rechazados"|| input["MOTIVO"] == "AJUSTEFACT_150159",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD10");
+
+end
+rule "NAD11"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de dinero"|| input["MOTIVO"] == "AJUSTEFACT_150160",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD11");
+
+end
+rule "NAD12"
+when 
+    f: FactRequest(input["MOTIVO"] == "Afectación de antigüedad"|| input["MOTIVO"] == "AJUSTEFACT_150161",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD12");
+
+end
+rule "NAD13"
+when 
+    f: FactRequest(input["MOTIVO"] == "Devolución de deposito en garantía"|| input["MOTIVO"] == "AJUSTEFACT_150162",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD13");
+
+end
+rule "NAD14"
+when 
+    f: FactRequest(input["MOTIVO"] == "Portabilidad"|| input["MOTIVO"] == "AJUSTEFACT_150163",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD14");
+
+end
+rule "NAD15"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXC"|| input["MOTIVO"] == "AJUSTEFACT_150164",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD15");
+
+end
+rule "NAD16"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXP"|| input["MOTIVO"] == "AJUSTEFACT_150165",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD16");
+
+end
+rule "NAD17"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado ICO CXC Guatemala"|| input["MOTIVO"] == "AJUSTEFACT_150166",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD17");
+
+end
+rule "NAD18"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado entre sistemas facturadores"|| input["MOTIVO"] == "AJUSTEFACT_150167",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD18");
+
+end
+rule "NAD19"
+when 
+    f: FactRequest(input["MOTIVO"] == "Neteo de saldos"|| input["MOTIVO"] == "AJUSTEFACT_150168",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD19");
+
+end
+rule "NAD20"
+when 
+    f: FactRequest(input["MOTIVO"] == "Alquiler varios"|| input["MOTIVO"] == "AJUSTEFACT_150169",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD20");
+
+end
+rule "NAD21"
+when 
+    f: FactRequest(input["MOTIVO"] == "Cortesía clientes corporativos"|| input["MOTIVO"] == "AJUSTEFACT_150170",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD21");
+
+end
+rule "NAD22"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por descuento por pago anticipado"|| input["MOTIVO"] == "AJUSTEFACT_150171",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD22");
+
+end
+rule "NAD23"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste presupuesto de subsidio"|| input["MOTIVO"] == "AJUSTEFACT_150172",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD23");
+
+end
+rule "NAD24"
+when 
+    f: FactRequest(input["MOTIVO"] == "Descuento por venta de recargas electrónicas"|| input["MOTIVO"] == "AJUSTEFACT_150173",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD24");
+
+end
+rule "NAD25"
+when 
+    f: FactRequest(input["MOTIVO"] == "Honorarios por  cobro legal"|| input["MOTIVO"] == "AJUSTEFACT_150174",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD25");
+
+end
+rule "NAD26"
+when 
+    f: FactRequest(input["MOTIVO"] == "Limpieza de cartera"|| input["MOTIVO"] == "AJUSTEFACT_150175",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD26");
+
+end
+rule "NAD27"
+when 
+    f: FactRequest(input["MOTIVO"] == "Deducción por planilla"|| input["MOTIVO"] == "AJUSTEFACT_150176",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD27");
+
+end
+rule "NAD28"
+when 
+    f: FactRequest(input["MOTIVO"] == "Proceso de Portación"|| input["MOTIVO"] == "AJUSTEFACT_150177", input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD28");
+
+end
+rule "NAD29"
+when 
+    f: FactRequest(input["MOTIVO"] == "Garantía proceso de portación" || input["MOTIVO"] == "AJUSTEFACT_150178", input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD29");
+
+end
+rule "NAD30"
+when 
+    f: FactRequest(input["MOTIVO"] == "Penalización proceso de portación"|| input["MOTIVO"] == "AJUSTEFACT_150179", input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD30");
+
+end
+rule "NAD31"
+when 
+    f: FactRequest(input["MOTIVO"] == "Decto. Pronto Pago Public"|| input["MOTIVO"] == "AJUSTEFACT_150180",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD31");
+
+end
+rule "NAD32"
+when 
+    f: FactRequest(input["MOTIVO"] == "Neteo de Saldos ICO"|| input["MOTIVO"] == "AJUSTEFACT_150181",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD32");
+
+end
+rule "NAD33"
+when 
+    f: FactRequest(input["MOTIVO"] == "Regularización de Saldos"|| input["MOTIVO"] == "AJUSTEFACT_150182",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD33");
+
+end
+rule "NAD34"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de Saldos B2B"|| input["MOTIVO"] == "AJUSTEFACT_150183",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD34");
+
+end
+rule "NAD35"
+when 
+    f: FactRequest(input["MOTIVO"] == "Traslado de Saldos Home"|| input["MOTIVO"] == "AJUSTEFACT_150184",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD35");
+
+end
+rule "NAD36"
+when 
+    f: FactRequest(input["MOTIVO"] == "Facturas años Anteriores"|| input["MOTIVO"] == "AJUSTEFACT_150185",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD36");
+
+end
+rule "NAD37"
+when 
+    f: FactRequest(input["MOTIVO"] == "Comisión Pagos Masivos"|| input["MOTIVO"] == "AJUSTEFACT_150186",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD37");
+
+end
+rule "NAD38"
+when 
+    f: FactRequest(input["MOTIVO"] == "Intercompany"|| input["MOTIVO"] == "AJUSTEFACT_150187",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD38");
+
+end
+rule "NAD39"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por reversión de tarjeta de crédito"|| input["MOTIVO"] == "AJUSTEFACT_150188",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD39");
+
+end
+rule "NAD40"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste por Financiamiento de Deuda/Equipo."|| input["MOTIVO"] == "AJUSTEFACT_150189",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD40");
+
+end
+rule "NAD41"
+when 
+    f: FactRequest(input["MOTIVO"] == "Ajuste Devolución de Efectivo"|| input["MOTIVO"] == "AJUSTEFACT_150190",input["TYPE"] =='NAD')
+then
+    response.setEntry("REASONCODE", "NAD41");
+
+end

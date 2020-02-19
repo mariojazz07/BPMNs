@@ -17,7 +17,8 @@
         "Status": "O",
         "OpenTaxAmount": "1231231",
         "C_INSURANCE_AMT_ADD": "0.00",
-        "C_OTHERSPECIAL_AMT_ADD": "0.00"
+        "C_OTHERSPECIAL_AMT_ADD": "0.00",
+        "InvoiceType":"EQUIPO"//new
       },
       {
         "PrimaryIdentity": "72147060",
@@ -34,7 +35,8 @@
         "Status": "O",
         "OpenTaxAmount": "1231231",
         "C_INSURANCE_AMT_ADD": "0.00",
-        "C_OTHERSPECIAL_AMT_ADD": "0.00"
+        "C_OTHERSPECIAL_AMT_ADD": "0.00",
+        "InvoiceType":"DEUDA"//new
       }
     ]
   }

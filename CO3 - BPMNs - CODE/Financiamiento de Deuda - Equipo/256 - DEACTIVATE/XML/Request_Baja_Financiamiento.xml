@@ -11,13 +11,12 @@
             <comment>Financiamiento de Deuda</comment>
             <additionalParameters>
                <parameter>
-                  <key>SUBPRIMARY_IDENTITY</key>
-                  <value>77777703</value>
-               </parameter>
-
-               <parameter>
                   <key>AMOUNT</key>
                   <value>300</value>
+               </parameter>
+               <parameter>
+                  <key>INSTALLMENTS</key>
+                  <value>12</value>
                </parameter>
                <parameter>
                   <key>FEE_VALUE</key>

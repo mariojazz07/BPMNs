@@ -6,7 +6,7 @@
          <v1:simpleOrderRequest>
             <channelId>1</channelId>
             <subscriberId>77777703</subscriberId>
-            <productId>522</productId>
+            <productId>9002368</productId>
             <quantity>1</quantity>
             <!--Optional:-->
             <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
@@ -16,19 +16,23 @@
                   <key>eventType</key>
                   <value>DEVOLUCION_DPG</value>
                </parameter>
-               <parameter>
-                  <key>subscriberType</key>
-                  <value>POS</value>
+               <!--<parameter>
+                  <key>eventType</key>
+                  <value>AFECTACION_DPG</value>
                </parameter>
+               -->
                <parameter>
-                  <key>typePlan</key>
-                  <value>NRM</value>
+                  <key>ACCOUNT</key>
+                  <value>77777703</value>
                </parameter>
                <parameter>
                   <key>AMOUNT</key>
                   <value>18176277</value>
                </parameter>
-
+               <parameter>
+                  <key>TYPE</key>
+                  <value>DPG</value>
+               </parameter>
             </additionalParameters>
             <!--Optional:-->
          </v1:simpleOrderRequest>

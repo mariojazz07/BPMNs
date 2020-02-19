@@ -32,26 +32,18 @@ var STARTIME = '000000';
 //var vSkey=SVKEY;
 var vExecuteProcess = false;
 var vExecuteValue = false;
-
-
 /* if(typeof TYPE != 'undefined'){
-	vGnricType = TYPE.toUpperCase() == 'GNR';
+    vGnricType = TYPE.toUpperCase() == 'GNR';
 } */
-
 vGnricType = true;
-
-
 if (typeof EXECUTE != 'undefined') {
-
   if (EXECUTE == 'TRUE') {
     vExecuteValue = true;
   }
 }
-
 if (vExecuteValue) {
   vExecuteProcess = true;
   if (vGnricType) {
-
     if (typeof ENTITLEMENT != "undefined") {
       //vEntitlement = ENTITLEMENT.replace('"', '').split(/[",",";"]/)[0];
       vEntitlement = ENTITLEMENT;
@@ -61,7 +53,6 @@ if (vExecuteValue) {
       vMissingParam = true;
       vParams += "ENTITLEMENT";
     }
-
     if (typeof BILLDAY != "undefined") {
       vBillingDay = BILLDAY == "0" || BILLDAY == "00" ? "1" : BILLDAY;
       vBillingDay = new Number(String(vBillingDay));
@@ -70,7 +61,6 @@ if (vExecuteValue) {
       vConcat = vParams == "" ? "" : ",";
       vParams += vConcat + "BILLDAY";
     }
-
     if (typeof subscriberType != "undefined") {
       vTier = subscriberType.toUpperCase() == "PRE" ? "0" : "1";
       vSubType = typeSubscriber.indexOf(subscriberType.toUpperCase()) >= 0 ? subscriberType : "POS";
@@ -79,42 +69,27 @@ if (vExecuteValue) {
       vConcat = vParams == "" ? "" : ",";
       vParams += vConcat + "subscriberType";
     }
-
-
     if (typeof SRVSTARDATE != 'undefined') {
       vStarDateAs400 = SRVSTARDATE + STARTIME;
       vServiceStartDate = getCbsDate(vStarDateAs400);
       if (vServiceStartDate > SysDate) {
         vDoSchedule = true;
-
         vScheduleDateWarning = parseTimeToScheduleDate(vServiceStartDate.getTime());
       }
-
     }
-
-
-
     if (typeof SRVENDDATE != "undefined" && SRVENDDATE != '0') {
       vEndDateAs400 = SRVENDDATE + ENDTIME;
       vUpdateService = true;
-
       vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
       //vServiceEndDate = getCbsDate(vEndDateAs400);
-      vServiceEndDate=vEndDateAs400;
-
+      vServiceEndDate = vEndDateAs400;
     } else {
       vEffectiveTime = parseDateToStringCBS(vEffectiveTime);
       vServiceEndDate = parseDateToStringCBS2(SysDate, vBillingDay);
-
     }
-
     //vCRemarkCbs=transformMtr(C_REMARKS,productId,vSkey);
-
-
   }
 }
-
-
 //FUNCIONES
 //Funcion a la cual se le manda un valor y le hace lpad o rpad con el caracter indicado y la longitud indicada
 function padStr(str, len, pad, dir) {
@@ -144,11 +119,7 @@ function padStr(str, len, pad, dir) {
   }
   return str;
 }
-
-
-
 ///
-
 function getCbsDate(cbsDate) {
   var vYear = cbsDate.substring(0, 4);
   var vMonth = new Number(cbsDate.substring(4, 6)) - 1;
@@ -158,9 +129,6 @@ function getCbsDate(cbsDate) {
   var vSeconds = cbsDate.substring(12, 14);
   return new Date(vYear, vMonth, vDay, vHours, vMinutes, vSeconds);
 }
-
-
-
 
 function parseTimeToCBSDate(gTime) {
   var date = new Date();
@@ -181,8 +149,6 @@ function parseDateToStringCBS(date) {
     year + "" + month + "" + day + "" + hours + "" + minutes + "" + seconds;
   return format;
 }
-
-
 //Convierte un valor texto a al formato hhmiss
 function parseDateToStringCBSTime(date) {
   var day = padStr(String(date.getDate()), 2, "0", STR_PAD_LEFT);
@@ -196,17 +162,13 @@ function parseDateToStringCBSTime(date) {
     hours + "" + minutes + "" + seconds;
   return format;
 }
-
-
-
-
-
 ////Convierte un valor texto a al formato yyyyMMddhhmiss anio 2036
 function parseDateToStringCBS2(date, billday) {
   //var day = padStr(String(date.getDate()), 2, "0", STR_PAD_LEFT);
   date.setDate(billday);
   var day = padStr(String(date.getDate()), 2, "0", STR_PAD_LEFT);
-  var year = date.getFullYear() + 18;
+  //var year = date.getFullYear() + 18;
+  var year = '2036';
   var month = date.getMonth() + 1;
   month = padStr(String(month), 2, "0", STR_PAD_LEFT);
   var hours = padStr(String(date.getHours()), 2, "0", STR_PAD_LEFT);
@@ -216,8 +178,6 @@ function parseDateToStringCBS2(date, billday) {
     year + "" + month + "" + day + "" + hours + "" + minutes + "" + seconds;
   return format;
 }
-
-
 //Convierte un valor texto a al formato yyyyMMdd
 function parseDateToStringAS(Fecha) {
   var strDate = " ";
@@ -230,11 +190,11 @@ function parseDateToStringAS(Fecha) {
     padStr(String(day), 2, "0", STR_PAD_LEFT);
   return strDate;
 }
-
 //Fecha con anio 2036
 function parseDateToStringAS2(Fecha) {
   var strDate = " ";
-  var year = Fecha.getFullYear() + 18;
+  //var year = Fecha.getFullYear() + 18;
+  var year = '2036';
   var month = Fecha.getMonth() + 1;
   var day = Fecha.getDate();
   strDate =
@@ -243,8 +203,6 @@ function parseDateToStringAS2(Fecha) {
     padStr(String(day), 2, "0", STR_PAD_LEFT);
   return strDate;
 }
-
-
 //Convierte un Time a un string de Date en formato yyyyMMddhhmiss
 function parseTimeToDHDate(gTime) {
   var date = new Date();
@@ -347,13 +305,8 @@ function parseDateToStringSchedule(date) {
     seconds;
   return format;
 }
-
-
 var tSaltoL = '\n';
-
 var tLinea = tSaltoL + '************************************************************************' + tSaltoL;
-
-
 LOGGER.info(tLinea + 'vDoSchedule:' + vDoSchedule + tLinea);
 LOGGER.info(tLinea + 'vServiceEndDate:' + vServiceEndDate + tLinea);
 LOGGER.info(tLinea + 'vScheduleDateWarning:' + vScheduleDateWarning + tLinea);

@@ -17,4 +17,8 @@ if(typeof PCCGetSubscriberAllInfTask__platformErrorCode != 'undefined'){
 }
 
 
+LOGGER.info(tLinea+'vCreatePcc:'+vCreatePcc+tLinea);
+LOGGER.info(tLinea+'PCCGetSubscriberAllInfTask__platformErrorCode:'+PCCGetSubscriberAllInfTask__platformErrorCode+tLinea);
+
+
 

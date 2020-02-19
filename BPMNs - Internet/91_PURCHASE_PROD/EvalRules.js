@@ -39,15 +39,18 @@ var vPrecioPromo = '';
 if (typeof PROD_HIST != 'undefined') {
     vExpireProduct = PROD_HIST;
 }
+
 if (typeof vPromoPaq != 'undefined') {
     vPromo = vPromoPaq == 'TRUE';
 }
+
 if (typeof SVC_KEY != 'undefined') {
     vSKey = SVC_KEY;
 }
 if (typeof PRECIO_PAQUETE != 'undefined') {
     vPrecioPromo = PRECIO_PAQUETE;
 }
+
 if (typeof REMARK_ZEROBALANCE != 'undefined') {
     vMtr = transformMtr(REMARK_ZEROBALANCE, vProductId, vCalendariza, vAprovisiona, '', '', '', vSKey, vPrecioPromo);
 } else {
@@ -85,17 +88,18 @@ if (isBlackberry) {
 
 if (typeof vPaqInfo != 'undefined') {
     navInfo = processJson(vPaqInfo);
+    LOGGER.info(tLinea + 'JSON ' + JSON.stringify(navInfo));
     if (validatePlan && typeof navInfo.Plans != 'undefined') {
         //LOGGER.info(tLinea + 'navInfoQuota ' + navInfo.Plans.QuotaBalance);
-        //LOGGER.info(tLinea + 'JSON ' + JSON.stringify(navInfo));
+        
         consumedPlanQuota = navInfo.Plans.QuotaBalance <= 0;
         expiredPlanQuota = navInfo.Plans.ServiceExpired.toUpperCase() == 'TRUE';
         //LOGGER.info(tLinea + 'consumedPlanQuota  ' + consumedPlanQuota + '  expiredPlanQuota ' + expiredPlanQuota);
     }
 
     if (expiredPlanQuota || consumedPlanQuota) {
-        //LOGGER.info(tLinea + 'ingresa  ');
-        validPlan = true;
+        LOGGER.info(tLinea + 'Aqui se hace TRUE esta   ');
+        //validPlan = true;
     }
 }
 
@@ -106,37 +110,45 @@ if(typeof vFreeUnitWallets !='undefined'){
         planWallet=getWalletByType(vPlanBalance,walletJson);
         if(typeof planWallet != 'undefined'){
             planInstances=getSortedInstancesPospaid(planWallet);
+            //LOGGER.info(tLinea+'Llego a planWallet:'+ JSON.stringify(planInstances) +tLinea);
+            //LOGGER.info(tLinea+'Llego a PlanInstances:'+planInstances.length +tLinea);
             if(planInstances.length<=0){
+                //LOGGER.info(tLinea+'DESPUES a PlanInstances:'+planInstances.length +tLinea);
                 validPlan=true;
             }
         }
     }
 }
-//
 
+
+//LOGGER.info(tLinea+'EVAL vSubscriberType:'+vSubscriberType +tLinea);
+//LOGGER.info(tLinea+'EVAL validPlan:'+validPlan +tLinea);
 //LOGGER.info(tLinea + 'validPlan  ' + validPlan + '  validatePlan ' + validatePlan);
 if (typeof vFreeUnitWallets != 'undefined') {
-    //walletJson = getWalletJSON(vFreeUnitWallets);
+
+    walletJson = getWalletJSON(vFreeUnitWallets);
     if (typeof (walletJson) != 'undefined') {
 
         packageWallet = getWalletByType(vPackageBalance, walletJson);
-       
+
         if (validPlan) {
+
             if (typeof (packageWallet) != 'undefined') {
+
                 packageInstances = getSortedInstances(packageWallet);
-                 //
-        //vInstanciasTotal = packageInstances.length;
-		//LOGGER.info('[TOTAL INSTANCIAS] TOTAL PAQUETES ENCOLADOS Mario 6: '+vInstanciasTotal);
-        //
+                vInstanciasTotal = packageInstances.length;
+                LOGGER.info('[TOTAL INSTANCIAS] TOTAL PAQUETES ENCOLADOS: '+vInstanciasTotal);
+                
                 if (packageInstances.length > 0) {
-                    vQueueDate = getCbsDateStr(packageInstances[0].ExpireTime);
-                    vQueueDate.setMinutes(vQueueDate.getMinutes() + vProductDuration);
+                    LOGGER.info('FECHA EXPIRACION: '+packageInstances[0].ExpireTime);
+                    vQueueDate = getCbsDateStr(packageInstances[0].ExpireTime + '');
+                    vQueueDate.setMinutes(vQueueDate.getMinutes()+ vProductDuration);
                     vExpireTime = parseTimeToCBSDate(vQueueDate.getTime());
                     strExpireDate = parseTimeToDateGeneric(vQueueDate.getTime());
                     vEndDhDate = parseTimeToDHDate(vQueueDate.getTime());
-                    vFinalDeezerDate = parseTimeToDate(vQueueDate.getTime(), false);
+                    vFinalDeezerDate = parseTimeToDate(vQueueDate.getTime(),false);
                     vBBEndDate = parseTimeToScheduleDate(vQueueDate.getTime());
-                    vQueueDate.setMinutes(vQueueDate.getMinutes() + vWarningMinutes);
+                    vQueueDate.setMinutes(vQueueDate.getMinutes()+ vWarningMinutes);
                     vScheduleDateWarning = parseTimeToScheduleDate(vQueueDate.getTime());
                     vScheduleDate = parseTimeToScheduleDate(vQueueDate.getTime());
                     vProcess = 'C';
@@ -153,3 +165,5 @@ if (typeof packageInstances.length != 'undefined' && packageInstances.length > 0
 }
 //LOGGER.info(tLinea + 'Llego a Validar EvalRules' + tLinea);
 //LOGGER.info(tLinea + 'validPlan:' + validPlan + tLinea);
+LOGGER.info(tLinea+'DESPUES vSubscriberType:'+vSubscriberType +tLinea);
+LOGGER.info(tLinea+'DESPUES validPlan:'+validPlan +tLinea);

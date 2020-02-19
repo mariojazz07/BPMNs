@@ -1,0 +1,44 @@
+{
+  "DEPOSIT_INFO": {
+    "DPG": [
+      {
+        "ACCOUNT": "7483294",
+        "SUBSCRIBER": "8932013",
+        "DEPOSIT_SERIAL": "cm47382",
+        "BALANCE_NAME": "C_DEPOSITO_PAGO_EN_GARANTIA",
+        "INITIAL_AMOUNT": "100",
+        "CURRENT_AMOUNT": "40",
+        "DEPOSIT_DATE": "20200101",
+        "DEPOSIT_TYPE": "DPG",
+        "STATUS": "ACTIVO",
+        "CRM_ID": "483428"
+      },
+      {
+        "ACCOUNT": "7483294",
+        "SUBSCRIBER": "8932013",
+        "DEPOSIT_SERIAL": "cm47382",
+        "BALANCE_NAME": "C_DEPOSITO_PAGO_EN_GARANTIA",
+        "INITIAL_AMOUNT": "100",
+        "CURRENT_AMOUNT": "40",
+        "DEPOSIT_DATE": "20200101",
+        "DEPOSIT_TYPE": "DPG",
+        "STATUS": "ACTIVO",
+        "CRM_ID": "483428"
+      }
+    ],
+    "DPA": [
+      {
+        "ACCOUNT": "7483294",
+        "SUBSCRIBER": "8932013",
+        "DEPOSIT_SERIAL": "cm47382",
+        "BALANCE_NAME": "C_DEPOSITO_PAGO_EN_GARANTIA",
+        "INITIAL_AMOUNT": "100",
+        "CURRENT_AMOUNT": "40",
+        "DEPOSIT_DATE": "20200101",
+        "DEPOSIT_TYPE": "DPG",
+        "STATUS": "ACTIVO",
+        "CRM_ID": "483428"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <SOAP-ENV:Body>
+      <ns:CreateExternalAsset_Output xmlns:ns="http://siebel.com/CustomUI">
+         <ns:Error_spcCode>0</ns:Error_spcCode>
+         <ns:Error_spcMessage>OK</ns:Error_spcMessage>
+         <ns:Object_spcId/>
+         <ns:Process_spcInstance_spcId>1-8H3D4B</ns:Process_spcInstance_spcId>
+         <ns:Siebel_spcOperation_spcObject_spcId>1-8H3D4E</ns:Siebel_spcOperation_spcObject_spcId>
+         <listOfTggetgralinforqio xmlns="http://www.siebel.com/xml/TGGetGralInfoRqIO">
+            <AssetMgmt-Asset>
+               <assetId>1-8H3D4E</assetId>
+               <assetNumber>1-512439854</assetNumber>
+               <serialNumber/>
+               <productName>Deposito en Garantia</productName>
+               <status>ACTIVO</status>
+               <errorCode>0</errorCode>
+               <errorMessage>OK</errorMessage>
+            </AssetMgmt-Asset>
+         </listOfTggetgralinforqio>
+      </ns:CreateExternalAsset_Output>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

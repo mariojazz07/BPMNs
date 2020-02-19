@@ -1,0 +1,57 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Header>
+      <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdQABp3ZWJsb2dpYy5hcHAuQ0JTQWRhcHRlckVBUgAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMS4xAAA=</WorkContext>
+   </S:Header>
+   <S:Body>
+      <ns0:executeTaskResponse xmlns:ns1="http://adapter.josm.tigo.com.hn/RequestType/V1" xmlns:ns0="http://task.cbs.adapter.orchestrator.josm.tigo.com.hn/">
+         <return>
+            <ns1:_responseCode>0</ns1:_responseCode>
+            <ns1:_responseDescription>Operation successfully.</ns1:_responseDescription>
+            <parameter>
+               <name>JSON_RESPONSE</name>
+               <value>{
+  "QueryCreditServiceOrderByDateResult": {
+    "Notes": [
+      {
+      "ParentOrderId":"123219312",
+      "OrderId":"123219312",
+      "AccountId": "1-M67543853",
+      "InvoiceId": "1231",
+      "Type": "NC",
+      "ReasonId": "NAC41",
+      "ReasonName":"'MALA VENTA'",
+      "InvoiceOpenAmount": "300",
+      "InvoiceTax": "45",
+      "AffectedAmount": "40",
+      "DocumentTax":"12",
+      "Status": "'PENDIENTE'",
+      "Source": "'CRM_INDIVIDUAL'",
+      "CreationDate":"20190101",
+      "ModifyDate":"20190102"
+      },
+      
+       {
+      "ParentOrderId":"123219312",
+      "OrderId":"123219312",
+      "AccountId": "1-M67543853",
+      "InvoiceId": "1231",
+      "Type": "NC",
+      "ReasonId": "NAC41",
+      "ReasonName":"'MALA VENTA'",
+      "InvoiceOpenAmount": "300",
+      "InvoiceTax": "45",
+      "AffectedAmount": "40",
+      "DocumentTax":"12",
+      "Status": "'PENDIENTE'",
+      "Source": "'CRM_INDIVIDUAL'",
+      "CreationDate":"20190101",
+      "ModifyDate":"20190102"
+      }
+    ]
+  }
+}</value>
+            </parameter>
+         </return>
+      </ns0:executeTaskResponse>
+   </S:Body>
+</S:Envelope>

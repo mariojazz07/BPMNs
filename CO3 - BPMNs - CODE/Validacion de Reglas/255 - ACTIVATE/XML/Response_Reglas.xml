@@ -1,0 +1,29 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Header>
+      <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdHABF3ZWJsb2dpYy5hcHAuSk9TTQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMC4zAAA=</WorkContext>
+   </S:Header>
+   <S:Body>
+      <ns0:activateProductResponse xmlns:ns3="http://tigo.com/josm/gateway/services/order/OrderResponseDetail/V1" xmlns:ns0="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
+         <simpleOrderResponse>
+            <transactionID>8085d2da-df1c-44e7-8d52-4b98d876e188</transactionID>
+            <code>0</code>
+            <message>Operation Successful</message>
+            <orderResponseDetail>
+               <ns3:productId>9002331</ns3:productId>
+               <ns3:responseCode>0</ns3:responseCode>
+               <ns3:responseDescription>Operation successful</ns3:responseDescription>
+               <ns3:parameters>
+                  <parameter>
+                     <name>BPMN_RESPONSE_CODE</name>
+                     <value>0</value>
+                  </parameter>
+                  <parameter>
+                     <name>BPMN_RESPONSE_MESSAGE</name>
+                     <value>Aplica a Financiamiento</value>
+                  </parameter>
+               </ns3:parameters>
+            </orderResponseDetail>
+         </simpleOrderResponse>
+      </ns0:activateProductResponse>
+   </S:Body>
+</S:Envelope>

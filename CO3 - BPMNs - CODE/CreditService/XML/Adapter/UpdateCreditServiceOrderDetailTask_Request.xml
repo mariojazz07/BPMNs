@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:task="http://task.creditservice.adapter.orchestrator.josm.tigo.com.hn/" xmlns:v1="http://adapter.josm.tigo.com.hn/RequestType/V1">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <task:executeTask>
+            <!--Optional:-->
+            <arg0>
+                <v1:transactionId>?</v1:transactionId>
+                <!--Optional:-->
+                <v1:parameters>
+                    <!--Zero or more repetitions:-->
+                    <parameter>
+                        <name>JSON</name>
+                        <value>{
+    "UpdateCreditServiceOrderDetail": {
+        "OrderId":"123219312",
+      "Status": "'APLICADO'"
+    }
+  }</value>
+                    </parameter>
+                </v1:parameters>
+            </arg0>
+        </task:executeTask>
+    </soapenv:Body>
+</soapenv:Envelope>

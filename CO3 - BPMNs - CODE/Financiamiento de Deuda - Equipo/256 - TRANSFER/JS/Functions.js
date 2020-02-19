@@ -88,7 +88,8 @@ function getProcessedInstallments(processedCycles, DateInit, infoJson, vOffering
     var vSubscriberObject = getJSON(infoJson);
     var vOfferingItems = getSupplementaryOfferings(vOfferingE, vSubscriberObject);
 
-    var vInitDate = getFinancialDate(DateInit);
+    //var vInitDate = getFinancialDate(DateInit);
+    var vInitDate=DateInit;
     var vTmpDate = new Date();
     var vYear = '';
     var vMonth = '';
@@ -98,14 +99,17 @@ function getProcessedInstallments(processedCycles, DateInit, infoJson, vOffering
 
     for (var i = 1; i <= parseInt(processedCycles); i++) {
         vTmpObject = new Object();
-        vTmpDate = new Date(vInitDate);
+        //vTmpDate = new Date(vInitDate);
+        vTmpDate=vInitDate;
+        //LOGGER.info(tLinea+'vInitDate:'+vInitDate+tLinea);
         vTmpDate.setMonth(vTmpDate.getMonth() + i);
 
         vYear = vTmpDate.getFullYear();
         vMonth = (vTmpDate.getMonth()) < 10 ? '0' + (vTmpDate.getMonth()) : (vTmpDate.getMonth());
         vDay = (vTmpDate.getDate()) < 10 ? '0' + vTmpDate.getDate() : vTmpDate.getDate();
         vTmpObject.InstallNumber = i;
-        vTmpObject.Date = vYear + vMonth + vDay;
+        vTmpObject.Date = vYear.toString() + vMonth.toString() + vDay.toString();
+        
         vTmpObject.Status = "closed";
         vProcessedObject.push(vTmpObject);
 

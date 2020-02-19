@@ -1,0 +1,25 @@
+{
+  "CUENTA_FACTURACION": "1-F123123",
+  "DOCUMENTO": "FCM",
+  "FECHA_INI": "20191201",
+  "FECHA_FIN": "20191231"
+}
+
+
+//"_comment"="JSON_RESPONSE"
+{
+  
+  "CUENTA": "1-F32324",
+  "FACTURAS": [
+    {
+      "CORRELATIVO_FACTURA": "000-250-01-22702158",
+      "CAI": "A601AC-7B7ED7-214F8C-EE9F11-97F919-7C",
+      "NUMERO_FACT_CBS":"6578",//NEW 
+      "FECHA_EMISION": "20190115",
+      "MONTO_TOTAL": "$100.0",
+      "MONTO_PENDIENTE":"$5",//NEW
+      "IMPUESTO": "$15.00",
+      "TASA_CAMBIO":"24.6"  //New
+    }
+  ]
+}

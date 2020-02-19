@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://siebel.com/CustomUI" xmlns:swi="http://www.siebel.com/xml/SWIAssetManagementIO">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:CreateExternalAsset_Input>
+         <swi:ListOfSWIAssetManagementIO>
+            <!--Zero or more repetitions:-->
+            <swi:SwiAssetMgmt-Asset>
+               <!--Optional:-->               
+               <swi:AccountName>WILLY ROLANDO PEREZ SILLO</swi:AccountName>
+               <swi:AssetNumber>AUTOGEN</swi:AssetNumber>
+               <swi:BillingAccountId>1-61L3A5</swi:BillingAccountId>
+               <swi:BillingProfileId>1-61L3A5</swi:BillingProfileId>
+               <swi:CfgStateCode>User Requested Item</swi:CfgStateCode>
+               <swi:CfgType/>
+               <swi:IntegrationId>AUTOGEN</swi:IntegrationId>
+               <swi:Name>Deposito en Garantia</swi:Name>
+               <swi:OperatingStatus>ACTIVO</swi:OperatingStatus>
+               <swi:OwnerAccountId>1-5BI5SR</swi:OwnerAccountId>            
+               <swi:ParentAssetId>AssetId DEPOSITOS</swi:ParentAssetId>
+               <swi:ProdPromId/>
+               <swi:ProdPromInstanceId/>
+               <swi:ProductId>1-68DOG9</swi:ProductId>
+               <swi:ProductXAClassId/>
+               <swi:Quantity>1</swi:Quantity>
+               <swi:RootAssetId> AssetId DEPOSITOS </swi:RootAssetId>
+               <swi:SerialNumber/>
+               <swi:ServiceAccountId>1-62ENYX</swi:ServiceAccountId>
+               <swi:Status>ACTIVO</swi:Status>
+               <swi:ProductName>Deposito en Garantia</swi:ProductName>
+               <swi:TGServiceActivationPoint>SSG</swi:TGServiceActivationPoint>
+               <swi:TGTIGOSalesRepresentative>5897456</swi:TGTIGOSalesRepresentative>
+            </swi:SwiAssetMgmt-Asset>
+         </swi:ListOfSWIAssetManagementIO>
+      </cus:CreateExternalAsset_Input>
+   </soapenv:Body>
+</soapenv:Envelope>

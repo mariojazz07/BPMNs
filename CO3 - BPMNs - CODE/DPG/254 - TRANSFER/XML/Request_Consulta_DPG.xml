@@ -13,8 +13,12 @@
             <comment>Consulta_DPG</comment>
             <additionalParameters>
                <parameter>
-                  <key>SUBPRIMARY_IDENTITY</key>
+                  <key>ACCOUNT</key>
                   <value>77777703</value>
+               </parameter>
+               <parameter>
+                  <key>TYPE</key>
+                  <value>DPG</value>
                </parameter>
             </additionalParameters>
             <!--Optional:-->

@@ -1,0 +1,27 @@
+{
+  "CUENTA_FACTURACION": "1-F123123",
+  "DOCUMENTO": "NC ",  “PUEDE SER NC: NOTA DE CREDITO o ND: NOTA DE DEBITO,
+*:Ambas”
+  "FECHA_INI": "20191201",
+  "FECHA_FIN": "20191231"
+}
+
+
+
+///////////////
+
+{
+  
+  "CUENTA": "1-F32324",
+  "NOTAS": [
+    {
+      "CORRELATIVO_NOTA": "000-250-01-22702158",
+      "CAI": "A601AC-7B7ED7-214F8C-EE9F11-97F919-7C",
+      "TIPO_DOCUMENTO": "CREDITO",
+      "FECHA_EMISION": "20190115",
+      "MONTO_TOTAL": "$100.0",
+      "IMPUESTO": "$15.00",
+      "PDF":""
+    }
+  ]
+}

@@ -20,17 +20,20 @@
                </parameter>
                <parameter>
                   <key>INVOICES_No</key>
-                  <value>231231231,231231232,231231233</value>
+                  <value>231231231 231231232 231231233</value>
                </parameter>
                <parameter>
                   <key>AMOUNTS</key>
-                  <value>20,25,30</value>
+                  <value>20 25 30</value>
+               </parameter>
+               <parameter>
+                  <key>PRIMA</key>
+                  <value>20</value>
                </parameter>
                <parameter>
                   <key>TYPE</key>
                   <value>DEUDA</value>
                </parameter>
-
                <parameter>
                   <key>INSTALLMENTS</key>
                   <value>4</value>
@@ -39,10 +42,8 @@
                   <key>INITIAL_PAYMENT_DATE</key>
                   <value>20190801</value>
                </parameter>
-
-            </additionalParameters>
-            <!--Optional:-->
-         </v1:simpleOrderRequest>
+            </additionalParameters><!--Optional:-->
+            </v1:simpleOrderRequest>
       </v1:purchaseProduct>
    </soapenv:Body>
 </soapenv:Envelope>

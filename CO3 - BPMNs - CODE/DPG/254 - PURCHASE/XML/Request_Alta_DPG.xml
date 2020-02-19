@@ -6,7 +6,7 @@
          <v1:simpleOrderRequest>
             <channelId>1</channelId>
             <subscriberId>77777703</subscriberId>
-            <productId>522</productId>
+            <productId>9002368</productId>
             <quantity>1</quantity>
             <!--Optional:-->
             <externalTransacionId>c94d5387-cdb1-41a7-b4bc-68882d5964b5</externalTransacionId>
@@ -17,8 +17,8 @@
                   <value>ACTIVACION_CLIENTE_DPG</value>
                </parameter>
                <parameter>
-                  <key>subscriberType</key>
-                  <value>POS</value>
+                  <key>ACCOUNT</key>
+                  <value>1231241</value>
                </parameter>
                <parameter>
                   <key>AMOUNT</key>
@@ -27,6 +27,10 @@
                <parameter>
                   <key>TYPE</key>
                   <value>DPA</value>
+               </parameter>
+                <parameter>
+                  <key>PAYMENT_METHOD</key><!--Enviado desde Pagos en activacion externa-->
+                  <value>1045</value><!--Enviar 0 cuando sea alta desde siebel-->
                </parameter>
             </additionalParameters>
             <!--Optional:-->

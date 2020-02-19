@@ -1,0 +1,24 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Header>
+      <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdQABp3ZWJsb2dpYy5hcHAuQ0JTQWRhcHRlckVBUgAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMS4xAAA=</WorkContext>
+   </S:Header>
+   <S:Body>
+      <ns0:executeTaskResponse xmlns:ns1="http://adapter.josm.tigo.com.hn/RequestType/V1" xmlns:ns0="http://task.cbs.adapter.orchestrator.josm.tigo.com.hn/">
+         <return>
+            <ns1:_responseCode>0</ns1:_responseCode>
+            <ns1:_responseDescription>Operation successfully.</ns1:_responseDescription>
+            <parameter>
+               <name>JSON_RESPONSE</name>
+               <value>{
+  "UpdateCreditServiceOrderDetailResult": {
+    
+      "OrderId":"123219312",
+      "OldStatus": "'PENDIENTE'"
+      "NewStatus": "'APLICADO'"
+  }
+}</value>
+            </parameter>
+         </return>
+      </ns0:executeTaskResponse>
+   </S:Body>
+</S:Envelope>

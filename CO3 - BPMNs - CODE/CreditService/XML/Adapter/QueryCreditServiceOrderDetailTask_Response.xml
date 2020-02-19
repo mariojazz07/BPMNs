@@ -1,0 +1,62 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:task="http://task.creditservice.adapter.orchestrator.josm.tigo.com.hn/" xmlns:v1="http://adapter.josm.tigo.com.hn/RequestType/V1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <task:executeTask>
+         <!--Optional:-->
+         <arg0>
+            <v1:transactionId>?</v1:transactionId>
+            <!--Optional:-->
+            <v1:parameters>
+               <!--Zero or more repetitions:-->
+               <parameter>
+                  <name>JSON</name>
+                  <value>{
+    "QueryCreditServiceOrderDetailResult": {
+      
+    "Notes": [
+      {
+      "ParentOrderId":"123219312",
+      "OrderId":"123219312",
+      "Account": "1-M67543853",
+      "InvoiceId": "1231",
+      "Type": "NC",
+      "ReasonId": "NAC41",
+      "ReasonName":"'MALA VENTA'",
+      "InvoiceOpenAmount": "300",
+      "InvoiceTax": "45",
+      "AffectedAmount": "40",
+      "DocumentTax":"12",
+      "Status": "'PENDIENTE'",
+      "Source": "'CRM_INDIVIDUAL'",
+      "CreationDate":"20190101",
+      "ModifyDate":"20190102"
+      },
+      
+       {
+     "ParentOrderId":"123219312",
+      "OrderId":"123219313",
+      "Account": "1-M67543853",
+      "InvoiceId": "1231",
+      "Type": "NC",
+      "ReasonId": "NAC41",
+      "ReasonName":"'MALA VENTA'",
+      "InvoiceOpenAmount": "300",
+      "InvoiceTax": "45",
+      "AffectedAmount": "40",
+      "DocumentTax":"12",
+      "Status": "'PENDIENTE'",
+      "Source": "'CRM_INDIVIDUAL'",
+      "CreationDate":"20190101",
+      "ModifyDate":"20190102"
+      }
+    ]
+  }
+      
+    }
+  }</value>
+               </parameter>
+            </v1:parameters>
+         </arg0>
+      </task:executeTask>
+   </soapenv:Body>
+</soapenv:Envelope>

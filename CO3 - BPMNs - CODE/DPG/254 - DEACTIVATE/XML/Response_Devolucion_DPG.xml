@@ -30,10 +30,6 @@
                      <value>0</value>
                   </parameter>
                   <parameter>
-                     <name>BPMN_RESPONSE_CODE</name>
-                     <value>0</value>
-                  </parameter>
-                  <parameter>
                      <name>BPMN_RESPONSE_MESSAGE</name>
                      <value>DPG Activado Correctamente</value>
                   </parameter>

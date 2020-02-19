@@ -1,15 +1,15 @@
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Header>
-      <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdHABF3ZWJsb2dpYy5hcHAuSk9TTQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMC4zAAA=</WorkContext>
+      <WorkContext xmlns="http://oracle.com/weblogic/soap/workarea/">rO0ABXdHABF3ZWJsb2dpYy5hcHAuSk9TTQAAANYAAAAjd2VibG9naWMud29ya2FyZWEuU3RyaW5nV29ya0NvbnRleHQABTIuMC40AAA=</WorkContext>
    </S:Header>
    <S:Body>
       <ns0:transferProductResponse xmlns:ns3="http://tigo.com/josm/gateway/services/order/OrderResponseDetail/V1" xmlns:ns0="http://tigo.com/josm/gateway/services/order/SimpleOrderRequest/V1">
          <simpleOrderResponse>
-            <transactionID>065ab03c-5c23-4eb1-8202-89207e40bdd3</transactionID>
+            <transactionID>e6321191-7f5c-402b-9740-3a65d61441c7</transactionID>
             <code>0</code>
             <message>Operation Successful</message>
             <orderResponseDetail>
-               <ns3:productId>522</ns3:productId>
+               <ns3:productId>9002368</ns3:productId>
                <ns3:responseCode>0</ns3:responseCode>
                <ns3:responseDescription>Operation successful</ns3:responseDescription>
                <ns3:parameters>
@@ -22,16 +22,16 @@
                      <value>Operation Successful</value>
                   </parameter>
                   <parameter>
-                     <name>DPG_INITIAL_AMOUNT</name>
-                     <value>10</value>
-                  </parameter>
-               <parameter>
-                     <name>DPG_AMOUNT</name>
-                     <value>0</value>
+                     <name>DEPOSIT_INITIAL_AMOUNT</name>
+                     <value/>
                   </parameter>
                   <parameter>
-                     <name>DPG_STATUS</name>
-                     <value>Disponible</value>
+                     <name>DEPOSIT_CURRENT_AMOUNT</name>
+                     <value>0.00</value>
+                  </parameter>
+                  <parameter>
+                     <name>DEPOSIT_STATUS</name>
+                     <value/>
                   </parameter>
                </ns3:parameters>
             </orderResponseDetail>

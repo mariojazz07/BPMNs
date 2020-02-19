@@ -8,32 +8,37 @@ var vInvoice = '';
 var vInvoiceAmount = '';
 var vCounter = 0;
 var vInstallmentOffer = '';
-var vInstallmentNumber='';
-var vInstallmentDate=INITIAL_PAYMENT_DATE;
+var vInstallmentNumber = '';
+var vInstallmentDate = INITIAL_PAYMENT_DATE;
+var vTmpString = '';
+var vPrima=PRIMA;
+var vTotalAmount='';
 
 if (typeof TYPE != 'undefined') {
     vType = TYPE;
 }
 
-if (vType == 'DEUDA') {
+if (vType.toUpperCase() == 'DEUDA') {
     vIsDeuda = true;
-    vInvoicesNo = INVOICES_No.split(",");
-    vAmounts = AMOUNTS.split(",");
-    vInvoice = vInvoicesNo[vCounter];
-    vInvoiceAmount = vAmounts[vCounter];
+    // vInvoicesNo = INVOICES_No.split(" ");
+     vAmounts = AMOUNTS.split(" ");
+    // vInvoice = vInvoicesNo[vCounter];
+    // vInvoiceAmount = vAmounts[vCounter];
     vInstallmentOffer = OFFERING_NUMBER_DEUDA;
-    vInstallmentNumber=INSTALLMENTS.parseInt();
-    
-    for(var i=0;i<vAmounts.length;i++){
+    vInstallmentNumber = parseInt(INSTALLMENTS);
 
-        vDeudaTotal+=vAmounts[i].parseFloat();
+    for (var i = 0; i < vAmounts.length; i++) {
+
+        vDeudaTotal += parseFloat(vAmounts[i]);
     }
+
+    vTotalAmount=vDeudaTotal-parseFloat(vPrima);
 
 } else {
     vInstallmentOffer = OFFERING_NUMBER_EQUIPO;
-    vInstallmentNumber=INSTALLMENTS.parseInt();
-    for(var i=0;i<vAmounts.length;i++){
-
-        vDeudaTotal+=vAmounts[i].parseFloat();
-    }
+    vInstallmentNumber = parseInt(INSTALLMENTS);
+    vInvoicesNo = INVOICES_No;
+    vAmounts = AMOUNTS;
+    vDeudaTotal += parseFloat(vAmounts);
+    vTotalAmount=vDeudaTotal-parseFloat(vPrima);
 }

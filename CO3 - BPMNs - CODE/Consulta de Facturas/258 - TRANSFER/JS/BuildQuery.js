@@ -5,41 +5,34 @@ var vRetrieveDetail = '0';
 var vTotalRow = '100';
 var vBeginRow = '0';
 var vFetchRow = '0';
-var vIsEnhanced=false;
-var vIsDetail=false;
-var vJsonQuery = {
-    queryObj: {
-        acctAccessCode: new Object()
-    },
-    invoiceHeaderFilter: new Object()
-};
+var vIsEnhanced = false;
+var vIsDetail = false;
+var vJsonQueryObj = {queryObj: {acctAccessCode: new Object()},invoiceHeaderFilter: new Object()};
+var vJsonQueryObjDetail = {acctAccessCode: new Object()};
+var vJsonQuery = '';
+
+
 
 if (productId == '9002366') {
     if (typeof INVOICE_TYPE != 'undefined') {
         vStatus = (INVOICE_TYPE == 'OPEN') ? 'O' : ((INVOICE_TYPE == 'CLOSED') ? 'C' : '');
-
-
+        vJsonQueryObj.queryObj.acctAccessCode.accountCode = vAccount;
+        vJsonQueryObj.invoiceHeaderFilter.status = vStatus;
+        vJsonQueryObj.retrieveDetail = vRetrieveDetail;
+        vJsonQueryObj.totalRowNum = vTotalRow;
+        vJsonQueryObj.beginRowNum = vBeginRow;
+        vJsonQueryObj.fetchRowNum = vFetchRow;
+        vIsEnhanced = true;
+        vJsonQuery = JSON.stringify(vJsonQueryObj);
+    } else {
     }
-    vJsonQuery.queryObj.acctAccessCode.accountCode = vAccount;
-    vJsonQuery.invoiceHeaderFilter.Status = vStatus;
-    vJsonQuery.retrieveDetail = vRetrieveDetail;
-    vJsonQuery.totalRowNum = vTotalRow;
-    vJsonQuery.beginRowNum = vBeginRow;
-    vJsonQuery.fetchRowNum = vFetchRow;
-    vIsEnhanced=true;
-
-
-
-}
-
-else if(productId=='9002367'){
-
-    vJsonQuery.queryObj.acctAccessCode.accountCode = vAccount;
-    vJsonQuery.invoice=new Object();
-    vJsonQuery.invoice.invoiceID=INVOICE_ID;
-    vJsonQuery.totalRowNum = vTotalRow;
-    vJsonQuery.beginRowNum = vBeginRow;
-    vJsonQuery.fetchRowNum = vFetchRow;
-    vIsDetail=true;
-
+} else if (productId == '9002367') {
+    vJsonQueryObjDetail.acctAccessCode.accountCode = vAccount;
+    vJsonQueryObjDetail.invoice = new Object();
+    vJsonQueryObjDetail.invoice.invoiceID = INVOICE_ID;
+    vJsonQueryObjDetail.totalRowNum = vTotalRow;
+    vJsonQueryObjDetail.beginRowNum = vBeginRow;
+    vJsonQueryObjDetail.fetchRowNum = vFetchRow;
+    vIsDetail = true;
+    vJsonQuery = JSON.stringify(vJsonQueryObjDetail);
 }

@@ -1,0 +1,108 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cus="http://siebel.com/CustomUI" xmlns:tg="http://www.siebel.com/xml/TG%20Asset%20Mgmt%20XA">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cus:UpsertAttibutes_Input>
+         <tg:ListOfTgAssetMgmtXa>
+            <!--Deposito por Pago Adelantado-->
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Estado</tg:Name>
+               <tg:DisplayName>Estado</tg:DisplayName>          
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue>Disponible</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Fecha de pago</tg:Name> 
+               <tg:DisplayName>Fecha de pago</tg:DisplayName>           
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue></tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Medio de pago</tg:Name>  
+               <tg:DisplayName>Medio de pago</tg:DisplayName>        
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue>Tarjeta</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Monto Disponible</tg:Name>  
+               <tg:DisplayName>Monto Disponible</tg:DisplayName>         
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue></tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Monto Inicial</tg:Name>  
+               <tg:DisplayName>Monto Inicial</tg:DisplayName>        
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue>54879</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Numero de Recibo</tg:Name>
+               <tg:DisplayName>Numero de Recibo</tg:DisplayName>          
+               <tg:ObjectId>1-8GIV88</tg:ObjectId>
+               <tg:TextValue>888</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+
+		  <!--Deposito en Garantia-->
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Estado</tg:Name>
+               <tg:DisplayName>Estado</tg:DisplayName>          
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue>Disponible</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Fecha de pago</tg:Name> 
+               <tg:DisplayName>Fecha de pago</tg:DisplayName>           
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue></tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Medio de pago</tg:Name>  
+               <tg:DisplayName>Medio de pago</tg:DisplayName>        
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue>Tarjeta</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Monto Disponible</tg:Name>  
+               <tg:DisplayName>Monto Disponible</tg:DisplayName>         
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue></tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Monto Inicial</tg:Name>  
+               <tg:DisplayName>Monto Inicial</tg:DisplayName>        
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue>54879</tg:TextValue> 
+            </tg:AssetMgmt-AssetXa>
+            <tg:AssetMgmt-AssetXa>
+               <tg:DataType>Texto</tg:DataType>
+               <tg:Description></tg:Description>
+               <tg:Name>Numero de Recibo</tg:Name>
+               <tg:DisplayName>Numero de Recibo</tg:DisplayName>          
+               <tg:ObjectId>1-8H3D4E</tg:ObjectId>
+               <tg:TextValue>7777</tg:TextValue>                           
+            </tg:AssetMgmt-AssetXa>
+         </tg:ListOfTgAssetMgmtXa>
+      </cus:UpsertAttibutes_Input>
+   </soapenv:Body>
+</soapenv:Envelope>

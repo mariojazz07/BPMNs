@@ -1,0 +1,328 @@
+package hn.com.tigo.josm.rule.getAddress
+dialect "mvel"
+import hn.com.tigo.josm.rule.dto.FactRequest
+import hn.com.tigo.josm.rule.dto.FactResponse
+import hn.com.tigo.josm.rule.dto.FactStatus
+global FactResponse response;
+//**********************************Inicio Planes Internet**********************************
+
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
+rule "CELTEL1"
+when 
+    f: FactRequest(input["SUCURSAL"] == "Plaza Tigo (Principal)" )
+then
+    response.setEntry("ADDRESS", "Plaza Tigo Colonia Los Almendros al final del Blv. Morazan, Tegucigalpa");
+    response.setEntry("CITY", "Tegucigalpa");
+    response.setEntry("PHONE", "2265-8446");
+    response.setEntry("SAR_NUMBER", "000");
+    
+
+end
