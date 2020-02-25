@@ -10,122 +10,40 @@
 
     <script>
         function myFunction() {
-			
-			function getJSON(strJson) {
-    var vExpr = "([a,r,s]+|[t*,n,s,(0-9)*]+|[v,(0-9)*]+|[a,r,c]+|[c,b,s]+):";
-    var vNumExpr = '("[a-z]+":)([0-9]+)(s*,|}|$)';
-    var regEx;
-    var numRegExp;
-    var tmpJson = "";
-    if (typeof REG_EXP != "undefined") {
-        vExpr = REG_EXP;
-    }
-    regEx = new RegExp(vExpr, "gi");
-    numRegExp = new RegExp(vNumExpr, "gmi");
-    tmpJson = strJson.replace(regEx, "");
-    tmpJson = tmpJson.replace(numRegExp, '$1"$2"$3');
-    return JSON.parse(tmpJson);
+            var vAttrJson;
+var vAttrObject=new Object();
+var vAttrArray=['Estado','Fecha de pago','Medio de pago','Monto Disponible','Monto Inicial','Numero de Recibo'];
+var vAttrArrayValues=['Disponible','date','Efectivo','100','100',''];
+var vAttrJsonArray=new Array();
+var vTmpObject=new Object();
+var TmpJson='';
+var vAssetId='vAssetId';
+
+
+
+console.log(vAttrArray[5]);
+ 
+
+
+for(var i=0;i<=vAttrArray.length;i++){
+    vTmpObject.dataType='Texto';
+    vTmpObject.name=vAttrArray[i];
+    vTmpObject.displayName=vAttrArray[i];
+    vTmpObject.objectId=vAssetId;
+    vTmpObject.textValue=vAttrArrayValues[i];
+    vAttrJsonArray.push(vTmpObject);
 }
 
+vAttrObject.listOfTgAssetMgmtXa=new Object();
+vAttrObject.listOfTgAssetMgmtXa.assetMgmtAssetXa=vAttrJsonArray;
+vAttrJson=JSON.stringify(vAttrObject);
 
-			var vJsonResponse='{"ars:QueryInvoiceEnhancedResultMsg":{"xmlns:arc":"http://cbs.huawei.com/ar/wsservice/arcommon","xmlns:ars":"http://www.huawei.com/bme/cbsinterface/arservices","xmlns:cbs":"http://www.huawei.com/bme/cbsinterface/cbscommon","QueryInvoiceEnhancedResult":{"ars:InvoiceInfo":{"ars:BillCycleID":20191125,"ars:AdditionalProperty":{"arc:Value":24.8716,"arc:Code":"ExchangeRate"},"ars:OpenAmount":1150000000,"ars:EXTTransID":"CBSAR340691197","ars:AcctKey":6000053917,"ars:InvoiceNo":"20191206000000292057","ars:SubKey":6000097226,"ars:PrimaryIdentity":94360432,"ars:TransType":"DNT","ars:BillCycleBeginTime":20191125000000,"ars:CustKey":"05029000001320NIHN","ars:TaxList":{"ars:TaxAmt":150000000,"ars:CurrencyId":1153,"ars:TaxCode":1569737936700485099},"ars:TAXAmount":150000000,"ars:CurrencyID":1153,"ars:InvoiceID":528131,"ars:Status":"O","ars:NPE":"","ars:BillCycleEndTime":20191225000000,"ars:InvoiceAmount":1150000000,"ars:InvoiceType":"C","ars:OpenTaxAmount":150000000,"ars:InvoiceDate":20191206091409,"ars:EXTTransType":1,"ars:DueDate":20200115000000},"ars:TotalRowNum":1},"ResultHeader":{"cbs:Version":1,"cbs:ResultCode":0,"cbs:MsgLanguageCode":2002,"cbs:ResultDesc":"Operation successfully."}}}';
-			var vJsonResult = getJSON(vJsonResponse);
-var vTmpObject = new Object();
-var vInvoiceInfo = new Array();
-var InvoicesObj = {
-    Invoices: new Object
-};
-var vResultError = '';
-var vTaskResult = false;
-
-var vTmpJson = '';
-if (vJsonResult.QueryInvoiceEnhancedResultMsg.ResultHeader.ResultCode == '0') {
-
-    vTmpJson = vJsonResult.QueryInvoiceEnhancedResultMsg.QueryInvoiceEnhancedResult.InvoiceInfo;
+console.log(vAttrJson);
 
 
-    if (vTmpJson instanceof Array) {
-        for (var i = 0; i < vTmpJson.length; i++) {
-            vTmpObject = new Object();
-            vTmpObject.PrimaryIdentity = subscriberId;
-            vTmpObject.AccountKey = vTmpJson[i].AcctKey;
-            vTmpObject.InvoiceType = vTmpJson[i].InvoiceType;
-            vTmpObject.TransType = vTmpJson[i].TransType;
-            vTmpObject.InvoiceID = vTmpJson[i].InvoiceID;
-            vTmpObject.InvoiceNo = vTmpJson[i].InvoiceNo;
-            vTmpObject.BillCycleID = vTmpJson[i].BillCycleID;
-            vTmpObject.InvoiceAmount = vTmpJson[i].InvoiceAmount;
-            vTmpObject.TAXAmount = vTmpJson[i].TAXAmount;
-            vTmpObject.OpenAmount = vTmpJson[i].OpenAmount;
-            vTmpObject.InvoiceDate = vTmpJson[i].InvoiceDate;
-            vTmpObject.DueDate = vTmpJson[i].DueDate;
-            vTmpObject.Status = vTmpJson[i].Status;
-            vTmpObject.OpenTaxAmount = vTmpJson[i].OpenTaxAmount;
-            //Adicionales
-            if (vTmpJson.AdditionalProperty instanceof Array) {
-                for (var j = 0; j < vTmpJson.AdditionalProperty.length; j++) {
-                    var vTmpValue = vTmpJson.AdditionalProperty[j].Value;
-                    var vTmpCode = vTmpJson.AdditionalProperty[j].Code;
-                    vTmpObject[vTmpValue] = vTmpCode;
-
-                }
-            } else if (typeof vTmpJson.AdditionalProperty != 'undefined') {
-                var vTmpValue = vTmpJson.AdditionalProperty.Value;
-                var vTmpCode = vTmpJson.AdditionalProperty.Code;
-                vTmpObject[vTmpValue] = vTmpCode;
-            }
-
-            //
-            vInvoiceInfo.push(vTmpObject);
-
-
-        }
-	}
-	
-	else{
-        vTmpObject = new Object();
-            vTmpObject.PrimaryIdentity = 6000053917;
-            vTmpObject.AccountKey = vTmpJson.AcctKey;
-            vTmpObject.InvoiceType = vTmpJson.InvoiceType;
-            vTmpObject.TransType = vTmpJson.TransType;
-            vTmpObject.InvoiceID = vTmpJson.InvoiceID;
-            vTmpObject.InvoiceNo = vTmpJson.InvoiceNo;
-            vTmpObject.BillCycleID = vTmpJson.BillCycleID;
-            vTmpObject.InvoiceAmount = vTmpJson.InvoiceAmount;
-            vTmpObject.TAXAmount = vTmpJson.TAXAmount;
-            vTmpObject.OpenAmount = vTmpJson.OpenAmount;
-            vTmpObject.InvoiceDate = vTmpJson.InvoiceDate;
-            vTmpObject.DueDate = vTmpJson.DueDate;
-            vTmpObject.Status = vTmpJson.Status;
-            vTmpObject.OpenTaxAmount = vTmpJson.OpenTaxAmount;
-            //Adicionales
-            if (vTmpJson.AdditionalProperty instanceof Array) {
-                for (var j = 0; j < vTmpJson.AdditionalProperty.length; j++) {
-                    var vTmpValue = vTmpJson.AdditionalProperty[j].Value;
-                    var vTmpCode = vTmpJson.AdditionalProperty[j].Code;
-                    vTmpObject[vTmpValue] = vTmpCode;
-
-                }
-            } else if (typeof vTmpJson.AdditionalProperty != 'undefined') {
-                var vTmpValue = vTmpJson.AdditionalProperty.Value;
-                var vTmpCode = vTmpJson.AdditionalProperty.Code;
-                vTmpObject[vTmpValue] = vTmpCode;
-            }
-
-            //
-            vInvoiceInfo.push(vTmpObject);
-
-    }
-
-    InvoicesObj.Invoices.InvoiceInfo = vInvoiceInfo;
-    vTaskResult = true;
-} else {
-    vResultError = vJsonResult.QueryInvoiceEnhancedResultMsg.ResultHeader.ResultDesc;
-
-}
            
 
-document.getElementById("demo").innerHTML = "validPlan:"+JSON.stringify(InvoicesObj);
+document.getElementById("demo").innerHTML = "vAttrJson:"+JSON.stringify(vAttrJson);
 
 return vTaskResult;
 

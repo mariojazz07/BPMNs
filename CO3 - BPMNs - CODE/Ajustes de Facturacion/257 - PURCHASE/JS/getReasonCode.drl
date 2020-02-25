@@ -183,7 +183,7 @@ then
 end
 rule "NC25"
 when 
-    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios", input["TYPE"] =='NC'|| input["MOTIVO"] == "AJUSTEFACT_150082",input["TYPE"] =='NC')
+    f: FactRequest(input["MOTIVO"] == "Pruebas de productos y servicios"|| input["MOTIVO"] == "AJUSTEFACT_150082",input["TYPE"] =='NC')
 then
     response.setEntry("REASONCODE", "NC25");
 
